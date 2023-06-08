@@ -1,0 +1,72 @@
+&__banner {
+  background-color: $red;
+  padding:          40px 0;
+  position:         relative;
+  overflow:         hidden;
+  @include media-breakpoint-up(lg) {
+    padding: 30px 0;
+  }
+
+  .container {
+    position: relative;
+    z-index:  1;
+  }
+
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, #ED5A7F 0%, #CC0033 100%);
+    width:      160px;
+    height:     160px;
+    content:    '';
+    position:   absolute;
+    top:        -45px;
+    right:      -76px;
+
+    @include media-breakpoint-up(lg) {
+      width:  363px;
+      height: 363px;
+      top:    -212px;
+      right:  -116px;
+    }
+  }
+
+  &::after {
+    background: radial-gradient(50% 50% at 50% 50%, #ED5A7F 0%, #CC0033 100%);
+    width:      160px;
+    height:     160px;
+    content:    '';
+    position:   absolute;
+    display:    none;
+    @include media-breakpoint-up(lg) {
+      width:   363px;
+      height:  363px;
+      bottom:  -212px;
+      left:    -116px;
+      display: block;
+    }
+  }
+
+  &__logo {
+    @include media-breakpoint-up(lg) {
+      svg {
+        width:  128px;
+        height: auto;
+
+
+      }
+    }
+  }
+
+  &__description {
+    color:       $white;
+    font-weight: 700;
+    font-size:   14px;
+    line-height: 18px;
+    margin:      20px 0 32px;
+
+    @include media-breakpoint-up(lg) {
+      margin:      0;
+      font-size:   16px;
+      line-height: 20px;
+    }
+  }
+}

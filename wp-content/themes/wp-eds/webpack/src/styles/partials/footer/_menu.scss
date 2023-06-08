@@ -8,12 +8,17 @@
       margin-bottom: 8px;
 
       a {
-        font-size: 12px;
-        line-height: 14px;
-        color: $graphite;
+        font-size:       12px;
+        line-height:     14px;
+        color:           $graphite;
         text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 500;
+        text-transform:  uppercase;
+        font-weight:     500;
+
+        @include media-breakpoint-up(lg) {
+          font-size:   15px;
+          line-height: 19px;
+        }
       }
     }
   }
