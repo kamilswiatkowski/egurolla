@@ -1,0 +1,20 @@
+&__menu {
+  padding: 40px 0;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-bottom: 8px;
+
+      a {
+        font-size: 12px;
+        line-height: 14px;
+        color: $graphite;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+  }
+}

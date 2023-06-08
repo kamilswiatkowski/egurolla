@@ -22,7 +22,6 @@
     }
     ?></div>
 <header class="header">
-    <?php include(TDS\get_partial('header-bar')); ?>
 </header>
 
 <main class="main">

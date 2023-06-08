@@ -1,5 +1,2 @@
-<footer class="footer">
-    <div class="container">
-
-    </div>
-</footer>
+<?php include(TDS\get_partial('footer/menu')); ?>
+<?php include(TDS\get_partial('footer/copy')); ?>

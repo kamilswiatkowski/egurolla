@@ -1,0 +1,26 @@
+&__copyrights {
+  background-color: $black;
+  color: $white;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  padding: 18px 0;
+  font-weight: 700;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 20px 0;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    @include media-breakpoint-up(lg) {
+      border-left: 2px solid $white;
+      padding-left: 10px;
+      margin-left: 10px;
+    }
+  }
+}
