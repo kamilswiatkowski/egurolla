@@ -8,9 +8,12 @@
 @import "utils/fonts";
 @import "utils/animation";
 @import "utils/buttons";
-
+@import "utils/section";
 
 @import "partials/footer";
 @import "partials/socials";
+@import "partials/block/events";
 
-
+body {
+  background: #E6E6E6;
+}

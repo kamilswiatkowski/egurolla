@@ -19,7 +19,15 @@
     color: $red;
   }
 
+  &--white {
+    color: $white;
+  }
+
   &--white-bg {
     background-color: $white;
+  }
+
+  &--red-bg {
+    background-color: $red;
   }
 }

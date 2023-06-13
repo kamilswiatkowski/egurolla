@@ -3,7 +3,7 @@
         <div class="row d-lg-flex align-items-lg-center">
             <div class="col-12 col-lg-3">
                 <div class="footer__banner__logo">
-                    <?php echo TDS\get_svg('logo-white'); ?>
+                    <?php echo Like\get_svg('logo-white'); ?>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
