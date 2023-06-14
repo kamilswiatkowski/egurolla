@@ -16,6 +16,7 @@ class Main {
     onDocumentLoad() {
         window.addEventListener("load", (event) => {
             sliders.eventsSlider();
+            sliders.advantagesSlider();
         });
     }
 

@@ -29,6 +29,18 @@ function my_acf_init()
             'post_types'      => ['page', 'post'],
           ]
         );
+        acf_register_block(
+          [
+            'name'            => 'advantages',
+            'title'           => __('Zalety szkoły'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['zalety', 'szkoły'],
+            'post_types'      => ['page', 'post'],
+          ]
+        );
     }
 }
 

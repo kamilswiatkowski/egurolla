@@ -11,13 +11,35 @@ function eventsSlider() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    infinite: true,
+                    infinite: false,
                     dots: true
                 }
             },
-
         ]
     });
 }
 
-export default {eventsSlider};
+function advantagesSlider() {
+    $('.advantages__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1.2,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: true,
+                    arrows: false
+                }
+            },
+        ]
+    });
+}
+
+
+export default {eventsSlider, advantagesSlider};

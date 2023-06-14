@@ -1,0 +1,169 @@
+.advantages {
+  background-color: $red;
+  padding:          60px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 120px 0 80px;
+  }
+
+  .section__header {
+    display:        flex;
+    flex-direction: column-reverse;
+
+    * {
+      color: $white;
+    }
+
+    .section__label {
+      &::before {
+        background-color: $white;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right:    -70px;
+    top:      -120px;
+    display:  none;
+    @include media-breakpoint-up(lg) {
+      display:   block;
+      max-width: 300px;
+    }
+  }
+
+  &__slider {
+    margin-top: 20px;
+
+    .slick-track {
+      display:        flex;
+      align-items:    stretch;
+      padding-bottom: 32px;
+    }
+
+    .slick-slide {
+      height: auto;
+      flex:   1;
+
+      & > div {
+        height: 100%;
+      }
+    }
+
+    .slick-slide {
+      padding: 0 8px;
+    }
+
+    .slick-next,
+    .slick-prev {
+      width:   26px;
+      height:  26px;
+      z-index: 1;
+      top:     96px;
+
+      @include media-breakpoint-up(lg) {
+        width:  44px;
+        height: 44px;
+        top:    160px;
+      }
+
+      &::before {
+        content:          '';
+        background-image: url('./images/slider-arrow.svg');
+        background-size:  cover;
+        width:            100%;
+        height:           100%;
+        display:          block;
+        opacity:          1;
+      }
+    }
+
+    .slick-next {
+      right: -5px;
+
+      @include media-breakpoint-up(lg) {
+        right: -12px;
+      }
+    }
+
+    .slick-prev {
+      left: -5px;
+      @include media-breakpoint-up(lg) {
+        left: -12px;
+      }
+
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+
+    .slick-dots {
+      li {
+        width:            8px;
+        height:           8px;
+        border-radius:    8px;
+        background-color: $white;
+        transition:       all 350ms;
+
+        &.slick-active {
+          width: 28px;
+        }
+
+        button {
+          padding: 0;
+          width:   inherit;
+          height:  inherit;
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.advantage-box {
+  background-color: $white;
+  padding:          32px 16px;
+  border-radius:    8px;
+  height:           100%;
+
+  @include media-breakpoint-up(lg) {
+    padding: 42px 32px 48px 32px;
+  }
+
+  &__title {
+    font-weight:   700;
+    font-size:     16px;
+    line-height:   20px;
+    margin-bottom: 12px;
+
+    @include media-breakpoint-up(lg) {
+      font-size:   18px;
+      line-height: 26px;
+    }
+  }
+
+  &__description {
+    font-size:   14px;
+    line-height: 18px;
+    font-weight: 400;
+
+    @include media-breakpoint-up(lg) {
+      font-size:   16px;
+      line-height: 20px;
+    }
+  }
+
+  &__icon {
+    width:         40px;
+    margin-bottom: 16px;
+    margin-left:   auto;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 32px;
+      width:         62px;
+    }
+  }
+}
