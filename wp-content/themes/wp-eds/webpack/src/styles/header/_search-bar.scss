@@ -24,13 +24,16 @@
     position: relative;
     max-width: 410px;
     margin: 0 auto;
+    .search-bar__item:nth-child(3):after{
+        display: none;
+    }
   }
 
   &__item {
     position: relative;
     padding: 0 30px;
 
-    &:before {
+    &:after {
       content: '';
       position: absolute;
       right: 0px;
