@@ -7,82 +7,40 @@ function my_acf_init()
     if (function_exists('acf_register_block')) {
         acf_register_block(
           [
-            'name'            => 'sign-up',
-            'title'           => __('Sign Up (TD)'),
+            'name'            => 'events',
+            'title'           => __('Wydarzenia'),
             'render_callback' => 'my_acf_block_render_callback',
             'category'        => 'formatting',
             'icon'            => 'admin-comments',
             'align'           => 'full',
-            'keywords'        => ['sign', 'up'],
+            'keywords'        => ['wydarzenia'],
             'post_types'      => ['page', 'post'],
           ]
         );
         acf_register_block(
           [
-            'name'            => 'main-hero',
-            'title'           => __('Main Hero (TD)'),
+            'name'            => 'about-agustin',
+            'title'           => __('O Agustin Egurrola'),
             'render_callback' => 'my_acf_block_render_callback',
             'category'        => 'formatting',
             'icon'            => 'admin-comments',
             'align'           => 'full',
-            'keywords'        => ['main', 'hero'],
-            'post_types'      => ['page'],
+            'keywords'        => ['o', 'agustin', 'egurrola'],
+            'post_types'      => ['page', 'post'],
           ]
         );
-
-	    acf_register_block(
-		    [
-			    'name'            => 'about-platform',
-			    'title'           => __('About Platform (TD)'),
-			    'render_callback' => 'my_acf_block_render_callback',
-			    'category'        => 'formatting',
-			    'icon'            => 'admin-comments',
-			    'align'           => 'full',
-			    'keywords'        => ['about', 'platform'],
-			    'post_types'      => ['page'],
-		    ]
-	    );
-
-	    acf_register_block(
-		    [
-			    'name'            => 'key-features',
-			    'title'           => __('Key Features (TD)'),
-			    'render_callback' => 'my_acf_block_render_callback',
-			    'category'        => 'formatting',
-			    'icon'            => 'admin-comments',
-			    'align'           => 'full',
-			    'keywords'        => ['key', 'features'],
-			    'post_types'      => ['page'],
-		    ]
-	    );
-
-	    acf_register_block(
-		    [
-			    'name'            => 'feature',
-			    'title'           => __('Feature (TD)'),
-			    'render_callback' => 'my_acf_block_render_callback',
-			    'category'        => 'formatting',
-			    'icon'            => 'admin-comments',
-			    'align'           => 'full',
-			    'keywords'        => ['feature'],
-			    'post_types'      => ['page'],
-		    ]
-	    );
-
-	    acf_register_block(
-		    [
-			    'name'            => 'comming-features',
-			    'title'           => __('Comming Features (TD)'),
-			    'render_callback' => 'my_acf_block_render_callback',
-			    'category'        => 'formatting',
-			    'icon'            => 'admin-comments',
-			    'align'           => 'full',
-			    'keywords'        => ['feature'],
-			    'post_types'      => ['page'],
-		    ]
-	    );
-
-
+        acf_register_block(
+          [
+            'name'            => 'advantages',
+            'title'           => __('Zalety szkoły'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['zalety', 'szkoły'],
+            'post_types'      => ['page', 'post'],
+          ]
+        );
     }
 }
 

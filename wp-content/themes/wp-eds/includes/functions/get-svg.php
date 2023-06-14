@@ -1,6 +1,6 @@
 <?php
 
-namespace TDS;
+namespace Like;
 
 function get_svg($name = false)
 {

@@ -3,6 +3,7 @@ import 'slick-carousel/slick/slick';
 import 'bootstrap';
 import functions from './functions.js';
 import sliders from "./sliders";
+
 class Main {
     constructor() {
         this.onDOMLoaded();
@@ -14,7 +15,8 @@ class Main {
 
     onDocumentLoad() {
         window.addEventListener("load", (event) => {
-            sliders.featuredSlider();
+            sliders.eventsSlider();
+            sliders.advantagesSlider();
         });
     }
 

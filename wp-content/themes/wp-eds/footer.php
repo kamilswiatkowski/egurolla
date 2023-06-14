@@ -1,5 +1,5 @@
 </main>
-<?php include(TDS\get_partial('footer')); ?>
+<?php include(Like\get_partial('footer')); ?>
 
 <?php wp_footer(); ?>
 </body>
