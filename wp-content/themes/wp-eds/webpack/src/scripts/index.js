@@ -17,6 +17,7 @@ class Main {
         window.addEventListener("load", (event) => {
             sliders.eventsSlider();
             sliders.advantagesSlider();
+            sliders.whyYouShouldDanceSlider();
         });
     }
 

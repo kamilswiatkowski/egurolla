@@ -21,6 +21,28 @@ function eventsSlider() {
 
 function advantagesSlider() {
     $('.advantages__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1.2,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: true,
+                    arrows: false
+                }
+            },
+        ]
+    });
+}
+
+function whyYouShouldDanceSlider() {
+    $('.why-you-should-dance__slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: true,
@@ -42,4 +64,4 @@ function advantagesSlider() {
 }
 
 
-export default {eventsSlider, advantagesSlider};
+export default {eventsSlider, advantagesSlider, whyYouShouldDanceSlider};

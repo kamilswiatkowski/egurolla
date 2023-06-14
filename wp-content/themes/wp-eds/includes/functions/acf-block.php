@@ -41,6 +41,18 @@ function my_acf_init()
             'post_types'      => ['page', 'post'],
           ]
         );
+        acf_register_block(
+          [
+            'name'            => 'why-you-should-dance',
+            'title'           => __('Dlaczego warto tańczyć'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['dlaczego', 'warto', 'tańczyć'],
+            'post_types'      => ['page', 'post'],
+          ]
+        );
     }
 }
 
