@@ -5,9 +5,11 @@
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
 @import "utils/mixins";
 @import "utils/variables";
+@import "utils/global";
 @import "utils/fonts";
 @import "utils/animation";
 @import "utils/buttons";
+@import "header/top-bar";
 
 
 @import "partials/footer";

@@ -21,8 +21,9 @@
         include( $svg_path );
     }
     ?></div>
-<header class="header">
-</header>
+<?php
+    echo get_template_part( 'partials/header/top-bar' );
+?>
 
 <main class="main">
 
