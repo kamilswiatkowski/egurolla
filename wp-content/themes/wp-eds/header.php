@@ -23,6 +23,7 @@
     ?></div>
 <?php
     echo get_template_part( 'partials/header/top-bar' );
+    echo get_template_part( 'partials/header/search-bar' );
 ?>
 
 <main class="main">
