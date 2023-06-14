@@ -1492,10 +1492,10 @@ class Ai1wm_Main_Controller
           'display'  => __('Weekly', AI1WM_PLUGIN_NAME),
           'interval' => 60 * 60 * 24 * 7,
         ];
-        $schedules['monthly'] = array(
+        $schedules['monthly'] = [
           'display'  => __('Monthly', AI1WM_PLUGIN_NAME),
           'interval' => (strtotime('+1 month') - time()),
-        );
+        ];
 
         return $schedules;
     }

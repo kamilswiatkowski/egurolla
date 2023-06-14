@@ -19,9 +19,11 @@ $fields = [
         </div>
         <div class="row">
             <div class="col-12">
-                <?php echo Like\get_event_box(); ?>
-                <?php echo Like\get_event_box(); ?>
-                <?php echo Like\get_event_box(); ?>
+                <div class="events__slider">
+                    <?php echo Like\get_event_box(); ?>
+                    <?php echo Like\get_event_box(); ?>
+                    <?php echo Like\get_event_box(); ?>
+                </div>
             </div>
         </div>
     </div>

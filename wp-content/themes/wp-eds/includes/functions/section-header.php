@@ -4,7 +4,7 @@ namespace Like;
 
 function get_section_header(string $label, string $title, string $description): string
 {
-    $output = '';
+    $output = '<div class="section__header">';
     if ($label != '') {
         $output .= '<span class="section__label">' . $label . '</span>';
     }
@@ -14,6 +14,7 @@ function get_section_header(string $label, string $title, string $description): 
     if ($description != '') {
         $output .= '<p class="section__description">' . $description . '</p>';
     }
+    $output .= '</div>';
 
     return $output;
 }
