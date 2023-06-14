@@ -24,6 +24,10 @@
 <?php
     echo get_template_part( 'partials/header/top-bar' );
     echo get_template_part( 'partials/header/search-bar' );
+    ?>
+<div class="divider"></div>
+<?php
+    echo get_template_part( 'partials/header/menu' );
 ?>
 
 <main class="main">

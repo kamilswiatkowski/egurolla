@@ -3,7 +3,7 @@ namespace TDS;
 
 function register_nav() {
 	register_nav_menus( array(
-		'landing' => esc_html__( 'Landing pages menu', 'namespace' ), //TODO: Fill in
+		'primary' => esc_html__( 'Main menu', 'namespace' ), //TODO: Fill in
 	) );
 
 }
