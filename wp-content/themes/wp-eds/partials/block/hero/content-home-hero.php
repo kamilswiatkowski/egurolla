@@ -3,6 +3,7 @@
 		$title = get_field('title');
 		$subtitle = get_field('subtitle');
 		$background = get_field('background_image');
+		$show_search = get_field('show_search');
 ?>
 
 <section class="home-hero" style="background: url('<?php echo $background['url']; ?>') center center no-repeat;">
@@ -16,9 +17,11 @@
 										<div class="home-hero__subtitle">
 												<?php echo $subtitle; ?>
 										</div>
-										<div class="home-hero__search-bar">
-												<?php showSearchBar(); ?>
-										</div>
+										<?php if($show_search) { ?>
+												<div class="home-hero__search-bar">
+														<?php showSearchBar(); ?>
+												</div>
+										<?php } ?>
 								</div>
 						</div>
 				</div>

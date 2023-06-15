@@ -66,6 +66,26 @@
             "max_size": "",
             "mime_types": "",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_648b7d5cbec88",
+            "label": "Pokaż wyszukiwarkę",
+            "name": "show_search",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -73,7 +93,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/home-hero"
+                "value": "all"
             }
         ]
     ],
@@ -86,5 +106,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686860399
+    "modified": 1686863280
 }
