@@ -3,7 +3,7 @@
         <li>
             <a href="">
                 <div class="socials__icon-wrapper">
-                    <?php echo TDS\get_svg('icon-fb'); ?>
+                    <?php echo Like\get_svg('icon-fb'); ?>
                 </div>
                 <span class="socials__name">FACEBOOK</span>
             </a>
@@ -12,7 +12,7 @@
         <li>
             <a href="">
                 <div class="socials__icon-wrapper">
-                    <?php echo TDS\get_svg('icon-yt'); ?>
+                    <?php echo Like\get_svg('icon-yt'); ?>
                 </div>
                 <span class="socials__name">YOUTUBE</span>
             </a>
@@ -21,7 +21,7 @@
         <li>
             <a href="">
                 <div class="socials__icon-wrapper">
-                    <?php echo TDS\get_svg('icon-ig'); ?>
+                    <?php echo Like\get_svg('icon-ig'); ?>
                 </div>
                 <span class="socials__name">INSTAGRAM</span>
             </a>
@@ -30,7 +30,7 @@
         <li>
             <a href="">
                 <div class="socials__icon-wrapper">
-                    <?php echo TDS\get_svg('icon-tiktok'); ?>
+                    <?php echo Like\get_svg('icon-tiktok'); ?>
                 </div>
                 <span class="socials__name">TIKTOK</span>
             </a>

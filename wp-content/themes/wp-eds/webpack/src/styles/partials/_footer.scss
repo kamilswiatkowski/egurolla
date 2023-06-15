@@ -1,5 +1,8 @@
 .footer {
+  background-color: $white;
   @import "footer/banner";
   @import "footer/menu";
   @import "footer/copy";
 }
+
+@import "footer/newsletter";

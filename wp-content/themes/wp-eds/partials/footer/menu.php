@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-4">
-                <?php include(TDS\get_partial('socials')); ?>
+                <?php include(Like\get_partial('socials')); ?>
             </div>
         </div>
     </div>
