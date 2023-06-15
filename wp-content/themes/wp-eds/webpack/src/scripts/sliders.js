@@ -21,7 +21,7 @@ function eventsSlider() {
 
 function advantagesSlider() {
     $('.advantages__slider').slick({
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1,
         dots: true,
         arrows: true,
@@ -29,6 +29,16 @@ function advantagesSlider() {
         responsive: [
             {
                 breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1.2,
                     slidesToScroll: 1,
