@@ -17,13 +17,13 @@
 										<div class="search-bar__item">Szkoła</div>
 										<div class="search-bar__item">Styl</div>
 										<div class="search-bar__icon">
-												<?php echo TDS\get_svg('lupe'); ?>
+												<?php echo Like\get_svg('lupe'); ?>
 										</div>
 								</div>
 						</div>
 						<div class="col-3">
 								<div class="search-bar__login">
-										<?php echo TDS\get_svg('people-icon'); ?>
+										<?php echo Like\get_svg('people-icon'); ?>
 										Zaloguj się
 								</div>
 						</div>
