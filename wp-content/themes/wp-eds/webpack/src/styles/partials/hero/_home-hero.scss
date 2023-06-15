@@ -1,0 +1,30 @@
+.home-hero{
+  padding: 220px 0;
+  background-size: cover !important;
+  &__wrapper{
+    margin: 0 auto;
+    max-width: 775px;
+  }
+  &__title{
+    margin-bottom: 42px;
+    h1{
+      font-style: italic;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 82px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+  &__subtitle{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    color:#fff;
+    text-align: center;
+  }
+}

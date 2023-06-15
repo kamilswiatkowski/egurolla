@@ -53,6 +53,18 @@ function my_acf_init()
             'post_types'      => ['page', 'post'],
           ]
         );
+		    acf_register_block(
+			    [
+				    'name'            => 'home-hero',
+				    'title'           => __('Strona główna hero'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['strona', 'główna', 'hero'],
+				    'post_types'      => ['page', 'post'],
+			    ]
+		    );
     }
 }
 
@@ -64,6 +76,9 @@ function my_acf_block_render_callback($block)
     if (file_exists(get_theme_file_path("/partials/block/content-{$slug}.php"))) {
         include get_theme_file_path("/partials/block/content-{$slug}.php");
     }
+		if (file_exists(get_theme_file_path("/partials/block/hero/content-{$slug}.php"))) {
+				include get_theme_file_path("/partials/block/hero/content-{$slug}.php");
+		}
 }
 
 $version = \file_get_contents(locate_template('version.php'));

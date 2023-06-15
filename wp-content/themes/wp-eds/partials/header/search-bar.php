@@ -12,14 +12,7 @@
 								</div>
 						</div>
 						<div class="col-6">
-								<div class="search-bar__wrapper">
-										<div class="search-bar__item">Grupa wiekowa</div>
-										<div class="search-bar__item">Szkoła</div>
-										<div class="search-bar__item">Styl</div>
-										<div class="search-bar__icon">
-												<?php echo Like\get_svg('lupe'); ?>
-										</div>
-								</div>
+								<?php showSearchBar(); ?>
 						</div>
 						<div class="col-3">
 								<div class="search-bar__login">
