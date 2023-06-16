@@ -1,0 +1,36 @@
+.teams{
+  background-color: $white;
+  padding: 50px 0;
+  &__filters{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    align-items: center;
+    font-weight: 400;
+    &-wrapper{
+
+    }
+    &-clear{
+      text-decoration-line: underline;
+      color: $red;
+      cursor: pointer;
+
+    }
+    &-item{
+      padding: 10px 20px;
+      border: 1px solid $gray;
+      border-radius: 40px;
+      cursor: pointer;
+      font-weight: 400;
+      margin-right: 20px;
+      svg{
+        margin-left: 5px;
+        margin-bottm: 2px;
+      }
+      &:first-child{
+        margin-left: 20px
+      }
+    }
+  }
+
+}
