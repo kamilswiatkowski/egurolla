@@ -2,26 +2,25 @@
 namespace TDS\cpt;
 
 function register_post_types() {
-	/*
-    register_post_type('library',
+    register_post_type('teams',
         array(
-            'label'               => 'Download library',
-            'description'         => 'Download library all item',
+            'label'               => 'Zespoły',
+            'description'         => 'Zespoły',
             'labels'              => array(
-                'name'                => 'Library',
-                'singular_name'       => 'Library',
-                'menu_name'           => 'Library',
-                'name_admin_bar'      => 'Library',
+                'name'                => 'Zespoły',
+                'singular_name'       => 'Zespoły',
+                'menu_name'           => 'Zespoły',
+                'name_admin_bar'      => 'Zespoły',
                 'parent_item_colon'   => 'Parent',
-                'all_items'           => 'Show all',
-                'add_new_item'        => 'Add new item',
-                'add_new'             => 'Add new',
-                'new_item'            => 'New item',
-                'edit_item'           => 'Edit item',
-                'update_item'         => 'Update',
-                'search_items'        => 'Search',
-                'not_found'           => 'Not found',
-                'not_found_in_trash'  => 'Not found in trash',
+                'all_items'           => 'Pokaż wszystkie',
+                'add_new_item'        => 'Dodaj nowy',
+                'add_new'             => 'Dodaj nowy',
+                'new_item'            => 'Nowy',
+                'edit_item'           => 'Edytuj',
+                'update_item'         => 'Aktualizuj',
+                'search_items'        => 'Szukaj',
+                'not_found'           => 'Nie znaleziono',
+                'not_found_in_trash'  => 'Nie znaleziono w koszu',
             ),
             'supports'            => array('title', 'editor', 'thumbnail','excerpt'),
             'hierarchical'        => false,
@@ -36,10 +35,10 @@ function register_post_types() {
             'exclude_from_search' => false,
             'publicly_queryable'  => true,
             'capability_type'     => 'post',
-            'menu_icon'           => 'dashicons-format-aside'
+            'menu_icon'           => 'dashicons-format-aside',
+						'taxonomies'  => array( 'category' ),
         )
     );
-	*/
 }
 
 function register_taxonomies() {

@@ -1,0 +1,208 @@
+.map{
+  padding: 120px 0;
+  background-color: $white;
+  &__container{
+    position: relative;
+    display: flex;
+  }
+  &__google{
+    height: 250px;
+    max-width: 692px;
+    border-radius: 8px;
+    width: 100%;
+    @media (min-width: $screen-md) {
+      height: 600px;
+    }
+  }
+  &__subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #CC0033;
+    margin-bottom: 40px;
+  }
+  &__title{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: $red;
+    margin-bottom: 15px;
+  }
+  &__content{
+    margin-right: 22px;
+  }
+  &__info{
+    background-color: #fff;
+    padding: 20px 10px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+    @media (min-width: $screen-md) {
+      padding: 20px 30px;
+    }
+    &-title{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px
+    }
+    &-address{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+    &-hours{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
+    &-btn{
+      background: #F20000;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 12px 12px;
+      color: #fff;
+      cursor: pointer;
+      @media (min-width: $screen-md) {
+        padding: 12px 24px;
+      }
+    }
+  }
+  &__search{
+    padding: 30px 10px;
+    background: #fff;
+    z-index: 2;
+    max-width: 480px;
+    width: 100%;
+    border: 1px solid $gray;
+    border-radius: 8px;
+    @media (min-width: $screen-md) {
+    height: calc(100% - 52px);
+      padding: 20px;
+    }
+    &-title{
+      font-weight: 400;
+      margin-bottom: 4px;
+      font-size: 12px;
+      @media (min-width: $screen-md) {
+        font-size: 15px;
+      }
+    }
+    &-input{
+      margin-bottom: 10px;
+      position: relative;
+      .search-bar__icon{
+        padding: 10px;
+      }
+      input{
+        padding: 12px 31px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        background: $white;
+        border-radius: 40px;
+        border:1px solid $gray;
+      }
+    }
+    &-localization{
+      font-weight: 700;
+      font-size: 12px;
+      color: #F20000;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    &-results{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 10px;
+    }
+    &__partners{
+      max-height: 200px;
+      overflow-y: auto;
+      @media (min-width: $screen-md) {
+        max-height: 490px;
+      }
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #BEBEBE;
+        border-radius: 8px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $red;
+        border-radius: 8px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #F20000;
+      }
+    }
+
+    &__partner{
+
+      padding: 12px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #b6b6b6;
+      &:first-child{
+        border-top: none;
+      }
+      &-data{
+        max-width: 300px;
+        width: 100%;
+      }
+      &-name{
+        font-style: italic;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: $red;
+        @media (min-width: $screen-md) {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+      &-address{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        @media (min-width: $screen-md) {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      &-button{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: $white;
+        cursor: pointer;
+        margin-right: 10px;
+        padding: 12px 14px;
+        background: $red;
+        border-radius: 100px;
+      }
+    }
+  }
+}

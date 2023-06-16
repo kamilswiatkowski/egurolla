@@ -5,19 +5,28 @@
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
 @import "utils/mixins";
 @import "utils/variables";
+@import "utils/global";
 @import "utils/fonts";
 @import "utils/animation";
 @import "utils/buttons";
 @import "utils/section";
+@import "header/top-bar";
+@import "header/search-bar";
+@import "header/menu";
+
 
 @import "partials/footer";
 @import "partials/socials";
+@import "partials/block/map";
 @import "partials/block/events";
+@import "partials/block/teams";
 @import "partials/block/about-agustin";
 @import "partials/block/advantages";
 @import "partials/block/why-you-should-dance";
+@import "partials/hero/home-hero";
 @import "partials/block/contact";
 
 body {
   background: #E6E6E6;
+  font-family: 'Helvetica Neue LT Pro', sans-serif;
 }

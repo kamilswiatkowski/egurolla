@@ -16,7 +16,7 @@ function assets_load() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_style( 'main-styles', $uri . '/dist/style.css', [], $version );
 
-	wp_enqueue_script( 'main-js', $uri . "/dist/main.js", [], $version, false );
+	wp_enqueue_script( 'main-js', $uri . "/dist/main.js", [], $version, true );
 
 	/* Enqueue comment-reply script if needed */
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

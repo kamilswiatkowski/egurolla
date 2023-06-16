@@ -1,8 +1,10 @@
 import '../styles/index.scss';
+import 'babel-polyfill';
 import 'slick-carousel/slick/slick';
 import 'bootstrap';
 import functions from './functions.js';
 import sliders from "./sliders";
+import map from './map.js';
 
 class Main {
     constructor() {
@@ -18,6 +20,7 @@ class Main {
             sliders.eventsSlider();
             sliders.advantagesSlider();
             sliders.whyYouShouldDanceSlider();
+            map.mapInit();
         });
     }
 

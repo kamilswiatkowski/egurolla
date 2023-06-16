@@ -1,0 +1,13 @@
+.top-bar{
+  padding: 14px 0;
+  background-color: #000000;
+  &__img{
+    margin-right: 10px;
+  }
+  &__text, &__link{
+    color:#fff;
+  }
+  &__link{
+    margin-left: 10px;
+  }
+}
