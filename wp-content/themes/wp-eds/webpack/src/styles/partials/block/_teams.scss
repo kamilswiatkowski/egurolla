@@ -32,5 +32,24 @@
       }
     }
   }
+  &__team{
+    &-content{
+      max-width: 380px;
+      width: 100%;
+      height: 310px;
+      border-radius: 8px;
+      background-size: cover !important;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    &-title{
+      font-style: italic;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $red;
+    }
+  }
 
 }

@@ -2,7 +2,7 @@
 namespace TDS\cpt;
 
 function register_post_types() {
-    register_post_type('team',
+    register_post_type('teams',
         array(
             'label'               => 'Zespoły',
             'description'         => 'Zespoły',
