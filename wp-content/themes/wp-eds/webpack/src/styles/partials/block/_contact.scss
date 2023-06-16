@@ -1,0 +1,50 @@
+.contact {
+
+  padding: 60px 0;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(xl) {
+    padding: 120px 0 80px;
+
+    .container {
+      max-width: 1000px;
+
+    }
+  }
+
+  &__item {
+    max-width: 1000px;
+    
+    &-headline{
+      display:flex;
+      align-items: center;
+    }
+
+    &-icon{
+      width:34px;
+      height:34px;
+      padding-right: 15px;
+      
+    }
+
+    &-header{
+      font-family: 'Helvetica Neue LT Pro';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      text-transform: uppercase;
+      
+    }
+    
+   
+    &-desc{
+    font-family: 'Helvetica Neue LT Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    
+    }
+  }
+}

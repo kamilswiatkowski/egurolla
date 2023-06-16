@@ -53,6 +53,18 @@ function my_acf_init()
             'post_types'      => ['page', 'post'],
           ]
         );
+        acf_register_block(
+          [
+            'name'            => 'contact',
+            'title'           => __('Dane kontaktowe'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['dane, kontaktowe'],
+            'post_types'      => ['page', 'post'],
+          ]
+        );
     }
 }
 
