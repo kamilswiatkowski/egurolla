@@ -1,4 +1,5 @@
 import '../styles/index.scss';
+import 'babel-polyfill';
 import 'slick-carousel/slick/slick';
 import 'bootstrap';
 import functions from './functions.js';

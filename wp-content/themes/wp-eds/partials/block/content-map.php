@@ -35,8 +35,13 @@
 		<div class="container">
 				<div class="row">
 						<div class="col-12">
-								<h2 class="title">ZNAJDŹ PUNKT PARTNERSKI <br>
+								<h2 class="map__title">ZNAJDŹ PUNKT PARTNERSKI <br>
 										I SKORZYSTAJ Z PROMOCJI</h2>
+						</div>
+						<div class="col-12">
+								<div class="map__subtitle">
+										/      Wybierz jedną z wielu szkół w całej Polsce
+								</div>
 						</div>
 				</div>
 				<div class="row">
@@ -67,43 +72,40 @@
                         });
 										</script>
 										<?php if($school_list) { ?>
-										<div class="map__search">
-												<div class="map__search-title">
-														Wpisz miejscowość lub kod pocztowy
-												</div>
-												<div class="map__search-input">
-														<input
-															id="pac-input"
-															class="controls"
-															type="text"
-															placeholder="Wyszukaj"
-														/>
-												</div>
-												<div class="map__search-localization">
-														Użyj mojej lokalizacji
-												</div>
-												<div class="map__search-results">
-														Wynik: <?php echo count(json_decode($json_partners)); ?>
-												</div>
-												<div class="map__search__partners">
-														<?php foreach (json_decode($json_partners) as $partner) { ?>
-																<div class="map__search__partner">
-																		<div class="map__search__partner-data">
-																				<div class="map__search__partner-name">
-																						<?php echo $partner->company; ?>
-																				</div>
-																				<div class="map__search__partner-address">
-																						<?php echo $partner->address; ?>
-																				</div>
-																		</div>
-																		<div class="map__search__partner-button" data-toggle-popup="punkt-partnerski"
-																		     data-lat data-lng>
-																				WYBIERZ
-																		</div>
-																</div>
-														<?php } ?>
-												</div>
-										</div>
+											<div class="map__content">
+													<div class="map__search-input">
+															<input
+																id="pac-input"
+																class="controls"
+																type="text"
+																placeholder="Wpisz miejscowość lub kod pocztowy"
+															/>
+															<div class="search-bar__icon">
+																	<?php echo Like\get_svg('lupe'); ?>
+															</div>
+													</div>
+													<div class="map__search">
+															<div class="map__search__partners">
+																	<?php foreach (json_decode($json_partners) as $partner) { ?>
+																			<div class="map__search__partner">
+																					<div class="map__search__partner-data">
+																							<div class="map__search__partner-name">
+																									<?php echo $partner->company; ?>
+																							</div>
+																							<div class="map__search__partner-address">
+																									<?php echo $partner->address; ?>
+																							</div>
+																					</div>
+																					<div class="map__search__partner-button" data-toggle-popup="punkt-partnerski"
+																					     data-lat data-lng>
+																							WYBIERZ
+																					</div>
+																			</div>
+																	<?php } ?>
+															</div>
+													</div>
+											</div>
+
 										<?php } ?>
 										<div id="map" class="map__google">
 										
