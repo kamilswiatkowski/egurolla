@@ -34,9 +34,22 @@
 								<div class="col-lg-4 col-12">
 										<div class="teams__team">
 												<div class="teams__team-content" style="background: url('<?php echo get_the_post_thumbnail_url($team->ID); ?>') center center no-repeat">
-												
+														<div class="teams__team-casting">
+																Otwarty Casting
+														</div>
+														<div class="teams__team-categories">
+																<div class="teams__team-category">
+																		Wrocław
+																</div>
+																<div class="teams__team-category">
+																		Wrocław
+																</div>
+																<div class="teams__team-category">
+																		Wrocław
+																</div>
+														</div>
 												</div>
-												<div class="teams__team-title">VOLT</div>
+												<div class="teams__team-title"><?php echo $team->post_title; ?></div>
 										</div>
 								</div>
 						<?php } ?>
