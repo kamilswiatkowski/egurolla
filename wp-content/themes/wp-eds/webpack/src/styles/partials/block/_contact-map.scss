@@ -1,0 +1,142 @@
+.contact-map {
+
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    background-color: white;
+
+    @include media-breakpoint-up(xl) {
+        padding: 120px 0 80px;
+
+        .container {
+            max-width: 1000px;
+
+        }
+        .row{
+            align-items: center;
+        }
+        
+    }
+
+    @media screen and (max-width: 992px) {
+        .col-left{
+            order:2;
+        }
+        .col-right{
+            order:1;
+        }
+    }
+    
+
+    &_map {
+        > img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            padding:0 0 24 0;
+        }    
+    }
+
+    &_data {
+
+
+
+
+        &-title {
+            color: $red;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            padding-bottom: 12px;
+
+            @include media-breakpoint-up(xl) {
+                font-size: 32px;
+                line-height: 38px;
+
+            }
+        }
+
+        &-address {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+
+            @include media-breakpoint-up(xl) {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        &-companydata {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+
+            @include media-breakpoint-up(xl) {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        &-path {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            text-decoration-line: underline;
+            color: $red;
+            padding: 12px 0px;
+
+            @include media-breakpoint-up(xl) {
+                font-size: 16px;
+                line-height: 19px;
+
+            }
+        }
+
+        &-socials {
+            display: flex;
+
+            &-icons {
+                height: 18px;
+                width: auto;
+                padding: 12 12 0 0;
+                display:flex;
+                align-items: center;
+            }
+        }
+
+        &-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 28px 10px;
+            gap: 10px;
+            width: 193px;
+            height: 41px;
+            background: $red;
+            border-radius: 100px;
+            margin: 32 0 32px 0;
+
+            color: $white;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            text-decoration: none;
+
+
+            @include media-breakpoint-up(xl) {
+                padding: 18px 28px 14px;
+                width: 213px;
+                height: 51px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
