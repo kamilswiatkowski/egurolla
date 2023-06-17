@@ -6,7 +6,7 @@ function mapInit() {
 
 
     async function initMap() {
-        const mapContainer = document.querySelector('.map__google')
+        const mapContainer = document.querySelector('.map__google');
         if (!mapContainer) return;
         const {Map, InfoWindow} = await google.maps.importLibrary("maps");
         const {AdvancedMarkerElement, PinElement} = await google.maps.importLibrary(

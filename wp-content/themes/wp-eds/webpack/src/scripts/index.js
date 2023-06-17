@@ -5,6 +5,7 @@ import 'bootstrap';
 import functions from './functions.js';
 import sliders from "./sliders";
 import map from './map.js';
+import filters from './filters';
 
 class Main {
     constructor() {
@@ -21,6 +22,7 @@ class Main {
             sliders.advantagesSlider();
             sliders.whyYouShouldDanceSlider();
             map.mapInit();
+            filters.filtersInit();
         });
     }
 

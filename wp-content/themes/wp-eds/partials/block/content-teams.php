@@ -2,7 +2,7 @@
 		
 		$teams = get_posts([
 			                   'post_type'   => 'teams',
-			                   'numberposts' => -1,
+			                   'numberposts' => 6,
 		                   ]);
 		$terms = get_categories([
 			                        
@@ -16,11 +16,11 @@
 				$sorted_terms = [];
 				foreach ($terms as $term) {
 						if($term->parent === 0) {
-								if(!array_key_exists($term->term_id, $sorted_terms)) {
+								if( ! array_key_exists($term->term_id, $sorted_terms)) {
 										$sorted_terms[$term->term_id] = [];
 								}
 						} else {
-								if(!array_key_exists($term->parent, $sorted_terms)){
+								if( ! array_key_exists($term->parent, $sorted_terms)) {
 										$sorted_terms[$term->parent] = [];
 								}
 								$sorted_terms[$term->parent][] = $term;
@@ -29,7 +29,6 @@
 				
 				return $sorted_terms;
 		}
-		
 
 ?>
 <section class="teams">
@@ -47,7 +46,8 @@
 														?>
 														<div class="teams__filters-item <?php echo $children; ?>">
 																<div class="teams__filters-item-wrapper">
-																		<?php echo $main_term->name; ?> <?php echo Like\get_svg(
+																		<span class="team__filters-name"><?php echo $main_term->name; ?></span>
+																		<?php echo Like\get_svg(
 																			'arrow-red-bottom'
 																		); ?>
 																		<?php if(count($term) !== 0) { ?>
@@ -65,7 +65,7 @@
 								</div>
 						</div>
 				</div>
-				<div class="row">
+				<div class="row teams__container">
 						<?php foreach ($teams as $team) {
 								$categories = get_the_category($team->ID);
 								?>
@@ -93,6 +93,13 @@
 										</div>
 								</div>
 						<?php } ?>
+				</div>
+				<div class="row">
+						<div class="col-12">
+								<div class="teams__load-more">
+										ZAŁADUJ WIĘCEJ
+								</div>
+						</div>
 				</div>
 		</div>
 </section>
