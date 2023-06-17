@@ -14,7 +14,7 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['wydarzenia'],
-            'post_types'      => ['page', 'post'],
+            'post_types'      => ['page', 'post', 'teams'],
           ]
         );
         acf_register_block(
@@ -26,7 +26,7 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['o', 'agustin', 'egurrola'],
-            'post_types'      => ['page', 'post'],
+            'post_types'      => ['page', 'post', 'teams'],
           ]
         );
         acf_register_block(
@@ -38,7 +38,7 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['zalety', 'szkoły'],
-            'post_types'      => ['page', 'post'],
+            'post_types'      => ['page', 'post', 'teams'],
           ]
         );
         acf_register_block(
@@ -50,7 +50,7 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['dlaczego', 'warto', 'tańczyć'],
-            'post_types'      => ['page', 'post'],
+            'post_types'      => ['page', 'post', 'teams'],
           ]
         );
 		    acf_register_block(
@@ -62,7 +62,7 @@ function my_acf_init()
 				    'icon'            => 'admin-comments',
 				    'align'           => 'full',
 				    'keywords'        => ['strona', 'główna', 'hero'],
-				    'post_types'      => ['page', 'post'],
+				    'post_types'      => ['page', 'post', 'teams'],
 			    ]
 		    );
 		    acf_register_block(
@@ -74,7 +74,7 @@ function my_acf_init()
 				    'icon'            => 'admin-comments',
 				    'align'           => 'full',
 				    'keywords'        => ['zespoły'],
-				    'post_types'      => ['page', 'post'],
+				    'post_types'      => ['page', 'post', 'teams'],
 			    ]
 		    );
 		    acf_register_block(
@@ -86,7 +86,19 @@ function my_acf_init()
 				    'icon'            => 'admin-comments',
 				    'align'           => 'full',
 				    'keywords'        => ['mapa'],
-				    'post_types'      => ['page', 'post'],
+				    'post_types'      => ['page', 'post', 'teams'],
+			    ]
+		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'about-team',
+				    'title'           => __('O zespole'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['o', 'zespole'],
+				    'post_types'      => ['page', 'post', 'teams'],
 			    ]
 		    );
     }
