@@ -1,7 +1,9 @@
 .about-team {
   background: $white;
-  padding: 60px 0 120px;
-
+  padding: 40px 0 60px;
+  @media (min-width: $screen-md) {
+    padding: 60px 0 120px;
+  }
   &__img {
     img {
       border-radius: 8px;
@@ -10,15 +12,6 @@
     }
   }
 
-  &__title {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 1;
-    text-transform: uppercase;
-    color: $red;
-    margin-bottom: 28px;
-  }
 
   &__categories {
     display: flex;

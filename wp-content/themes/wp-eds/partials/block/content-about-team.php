@@ -11,7 +11,7 @@
 		<div class="container">
 				<div class="row">
 						<div class="col-lg-6 col-12">
-								<div class="about-team__title show-mobile-block"><?php echo $title; ?></div>
+								<div class="red-title-italic show-mobile-block"><?php echo $title; ?></div>
 								<div class="about-team__categories show-mobile-flex">
 										<?php foreach ($categories as $category) { ?>
 												<div class="about-team__category">
@@ -25,7 +25,7 @@
 						</div>
 						<div class="col-lg-6 col-12">
 								<div class="about-team__content">
-										<div class="about-team__title show-desktop-block"><?php echo $title; ?></div>
+										<div class="red-title-italic show-desktop-block"><?php echo $title; ?></div>
 										<div class="about-team__categories show-desktop-flex">
 												<?php foreach ($categories as $category) { ?>
 												<div class="about-team__category">
