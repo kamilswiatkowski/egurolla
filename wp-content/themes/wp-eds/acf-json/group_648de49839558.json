@@ -123,6 +123,22 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_648e0a3654bf4",
+            "label": "Przycisk",
+            "name": "button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -143,5 +159,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687021107
+    "modified": 1687030362
 }
