@@ -52,9 +52,9 @@
 																			'arrow-red-bottom'
 																		); ?>
 																		<?php if(count($term) !== 0) { ?>
-																				<div class="teams__dropdown">
+																				<div class="teams__dropdown" data-current-filter>
 																						<?php foreach ($term as $child_term) { ?>
-																								<div class="teams__dropdown-item"><?php echo $child_term->name; ?></div>
+																								<div class="teams__dropdown-item" data-filter="<?php echo $child_term->term_id; ?>"><?php echo $child_term->name; ?></div>
 																						<?php } ?>
 																				</div>
 																		<?php } ?>

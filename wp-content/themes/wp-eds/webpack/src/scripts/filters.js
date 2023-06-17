@@ -12,10 +12,24 @@ function teamsFilters(){
         filterItems.forEach((item) => {
             item.addEventListener('click', (event) => {
                 let mainFilterName = item.parentElement.parentElement.querySelector('.team__filters-name');
+                let filterDropdown = item.parentElement;
+                filterDropdown.dataset.currentFilter = item.dataset.filter;
                 mainFilterName.innerHTML = item.innerHTML;
+                ajaxLoadMorePostsByFilter(1, collectFiltersIds());
             });
         });
     }
+}
+
+function collectFiltersIds(){
+    let filtersIds = [];
+    let teamsDropdowns = document.querySelectorAll('.teams__dropdown');
+    teamsDropdowns.forEach((dropdown) => {
+        if(dropdown.dataset.currentFilter){
+            filtersIds.push(dropdown.dataset.currentFilter);
+        }
+    });
+    return JSON.stringify(filtersIds);
 }
 function loadMoreButton(){
     let loadMoreButton = document.querySelector('.teams__load-more');
@@ -30,7 +44,6 @@ function loadMoreButton(){
     }
 }
 function ajaxLoadMorePosts(currentPage){
-
     const ajaxData = {
         action: 'loadMoreTeams',
         page: currentPage,
@@ -45,6 +58,23 @@ function ajaxLoadMorePosts(currentPage){
             hideLoadMoreButton();
         });
 
+}
+
+function ajaxLoadMorePostsByFilter(currentPage, filter){
+    const ajaxData = {
+        action: 'loadMoreTeamsByFilter',
+        page: currentPage,
+        filter: filter
+    };
+    $.post(settings.ajax_url, ajaxData)
+        .done((response) => {
+            response = JSON.parse(response);
+            if(response.teams) {
+                let teamsContainer = document.querySelector('.teams__container');
+                teamsContainer.innerHTML = response.teams;
+            }
+            hideLoadMoreButton();
+        });
 }
 
 function hideLoadMoreButton(){
