@@ -125,6 +125,18 @@ function my_acf_init()
 				    'post_types'      => ['page', 'post', 'teams'],
 			    ]
 		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'event-desc',
+				    'title'           => __('Opis wydarzenia'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['opis', 'wydarzenia'],
+				    'post_types'      => ['page', 'post', 'teams'],
+			    ]
+		    );
 				
     }
 }

@@ -1,0 +1,18 @@
+.event-desc{
+  padding: 120px 0;
+  background-color: $white;
+  .odd{
+    .event-desc__col{
+        &:first-child{
+            order: 2;
+        }
+    }
+  }
+  &__subtitle{
+    max-width: 400px;
+    display: flex;
+    &:before{
+      margin-right: 20px;
+    }
+  }
+}
