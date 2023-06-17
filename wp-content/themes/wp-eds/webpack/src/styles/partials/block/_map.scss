@@ -9,6 +9,7 @@
     margin-top: 50px;
     @media (min-width: $screen-md) {
       margin-top: 0;
+      flex-wrap: nowrap;
     }
   }
 
