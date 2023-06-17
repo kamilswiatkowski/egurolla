@@ -1,20 +1,38 @@
-.map{
+.map {
   padding: 120px 0;
   background-color: $white;
-  &__container{
+
+  &__container {
     position: relative;
     display: flex;
-  }
-  &__google{
-    height: 250px;
-    max-width: 692px;
-    border-radius: 8px;
-    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
     @media (min-width: $screen-md) {
-      height: 600px;
+      margin-top: 0;
     }
   }
-  &__subtitle{
+
+  &__content {
+    order: 2;
+    @media (min-width: $screen-md) {
+      order: unset;
+    }
+  }
+
+  &__google {
+    height: 250px;
+    max-width: 692px;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    order: 1;
+    @media (min-width: $screen-md) {
+      height: 600px;
+      order: unset;
+      border-radius: 8px;
+    }
+  }
+
+  &__subtitle {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -24,7 +42,8 @@
     color: #CC0033;
     margin-bottom: 40px;
   }
-  &__title{
+
+  &__title {
     font-style: italic;
     font-weight: 700;
     font-size: 44px;
@@ -33,10 +52,14 @@
     color: $red;
     margin-bottom: 15px;
   }
-  &__content{
-    margin-right: 22px;
+
+  &__content {
+    @media (min-width: $screen-md) {
+      margin-right: 22px;
+    }
   }
-  &__info{
+
+  &__info {
     background-color: #fff;
     padding: 20px 10px;
     max-width: 300px;
@@ -49,24 +72,28 @@
     @media (min-width: $screen-md) {
       padding: 20px 30px;
     }
-    &-title{
+
+    &-title {
       font-weight: 700;
       font-size: 18px;
       line-height: 24px
     }
-    &-address{
+
+    &-address {
       font-weight: 400;
       font-size: 15px;
       line-height: 24px;
       margin-bottom: 10px;
     }
-    &-hours{
+
+    &-hours {
       font-weight: 400;
       font-size: 15px;
       line-height: 26px;
       margin-bottom: 10px;
     }
-    &-btn{
+
+    &-btn {
       background: #F20000;
       font-weight: 700;
       font-size: 16px;
@@ -79,19 +106,22 @@
       }
     }
   }
-  &__search{
+
+  &__search {
     padding: 30px 10px;
     background: #fff;
     z-index: 2;
     max-width: 480px;
     width: 100%;
     border: 1px solid $gray;
-    border-radius: 8px;
+    border-radius: 0 0 8px 8px;
     @media (min-width: $screen-md) {
-    height: calc(100% - 52px);
+      height: calc(100% - 52px);
       padding: 20px;
+      border-radius: 8px;
     }
-    &-title{
+
+    &-title {
       font-weight: 400;
       margin-bottom: 4px;
       font-size: 12px;
@@ -99,13 +129,23 @@
         font-size: 15px;
       }
     }
-    &-input{
-      margin-bottom: 10px;
-      position: relative;
-      .search-bar__icon{
+
+    &-input {
+      position: absolute;
+      top: -50px;
+      width: 100%;
+      z-index: 3;
+      @media (min-width: $screen-md) {
+        position: relative;
+        top: unset;
+        margin-bottom: 10px;
+      }
+
+      .search-bar__icon {
         padding: 10px;
       }
-      input{
+
+      input {
         padding: 12px 31px;
         width: 100%;
         font-weight: 400;
@@ -113,28 +153,32 @@
         line-height: 16px;
         background: $white;
         border-radius: 40px;
-        border:1px solid $gray;
+        border: 1px solid $gray;
       }
     }
-    &-localization{
+
+    &-localization {
       font-weight: 700;
       font-size: 12px;
       color: #F20000;
       margin-bottom: 10px;
       cursor: pointer;
     }
-    &-results{
+
+    &-results {
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
       margin-bottom: 10px;
     }
-    &__partners{
+
+    &__partners {
       max-height: 200px;
       overflow-y: auto;
       @media (min-width: $screen-md) {
         max-height: 490px;
       }
+
       &::-webkit-scrollbar {
         width: 5px;
       }
@@ -157,21 +201,24 @@
       }
     }
 
-    &__partner{
+    &__partner {
 
       padding: 12px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-top: 1px solid #b6b6b6;
-      &:first-child{
+
+      &:first-child {
         border-top: none;
       }
-      &-data{
+
+      &-data {
         max-width: 300px;
         width: 100%;
       }
-      &-name{
+
+      &-name {
         font-style: italic;
         font-weight: 700;
         line-height: 26px;
@@ -182,7 +229,8 @@
           line-height: 26px;
         }
       }
-      &-address{
+
+      &-address {
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -192,7 +240,8 @@
           line-height: 20px;
         }
       }
-      &-button{
+
+      &-button {
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
