@@ -6,6 +6,7 @@
     img {
       border-radius: 8px;
       max-width: 484px;
+      width: 100%;
     }
   }
 
@@ -52,6 +53,9 @@
       display: flex;
       text-decoration: unset;
       margin-right: 16px;
+      .socials__name{
+        display: block;
+      }
         &:last-child{
             margin-right: 0;
         }

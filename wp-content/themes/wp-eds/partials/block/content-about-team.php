@@ -11,14 +11,22 @@
 		<div class="container">
 				<div class="row">
 						<div class="col-lg-6 col-12">
+								<div class="about-team__title show-mobile-block"><?php echo $title; ?></div>
+								<div class="about-team__categories show-mobile-flex">
+										<?php foreach ($categories as $category) { ?>
+												<div class="about-team__category">
+														<?php echo $category->name; ?>
+												</div>
+										<?php } ?>
+								</div>
 								<div class="about-team__img">
 										<img src="<?php echo $image['url']; ?>" alt="">
 								</div>
 						</div>
 						<div class="col-lg-6 col-12">
 								<div class="about-team__content">
-										<div class="about-team__title"><?php echo $title; ?></div>
-										<div class="about-team__categories">
+										<div class="about-team__title show-desktop-block"><?php echo $title; ?></div>
+										<div class="about-team__categories show-desktop-flex">
 												<?php foreach ($categories as $category) { ?>
 												<div class="about-team__category">
 														<?php echo $category->name; ?>

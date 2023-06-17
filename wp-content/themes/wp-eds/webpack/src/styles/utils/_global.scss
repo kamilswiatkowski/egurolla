@@ -23,3 +23,27 @@
     border: 1px solid $red;
   }
 }
+.show-desktop-block{
+  display: none;
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+}
+.show-desktop-flex{
+    display: none !important;
+    @media (min-width: $screen-md) {
+        display: flex !important;
+    }
+}
+.show-mobile-flex{
+    display: flex !important;
+    @media (min-width: $screen-md) {
+        display: none !important;
+    }
+}
+.show-mobile-block{
+    display: block;
+    @media (min-width: $screen-md) {
+        display: none;
+    }
+}
