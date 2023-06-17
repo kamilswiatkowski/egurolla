@@ -17,17 +17,17 @@ $fields = [
 <div class="container">
 	<div class="row">
         <div class="col-lg-4 col-12 col-left">
-            <div class="contact-map_data">
-                <h3 class="contact-map_data-title"><?php echo $fields['title']; ?></h3>
-                <p class="contact-map_data-address"><?php echo $fields['address']; ?></p><br>
-                <a href="<?php echo $fields['path']; ?>" class="contact-map_data-path">Pokaż trasę</a><br>
+            <div class="contact-map__data">
+                <h3 class="contact-map__data-title"><?php echo $fields['title']; ?></h3>
+                <p class="contact-map__data-address"><?php echo $fields['address']; ?></p><br>
+                <a href="<?php echo $fields['path']; ?>" class="contact-map__data-path">Pokaż trasę</a><br>
                 <br>
-                <p class="contact-map_data-address"><?php echo $fields['companydata']; ?></p>
-                <a href="<?php echo $fields['find']['url']; ?>" class="contact-map_data-button">Znajdź szkołę</a>
+                <p class="contact-map__data-address"><?php echo $fields['companydata']; ?></p>
+                <a href="<?php echo $fields['find']['url']; ?>" class="contact-map__data-button">Znajdź szkołę</a>
             </div>
-            <div class="contact-map_data-socials">
+            <div class="contact-map__data-socials">
                 <?php if($fields['fb']) { ?>
-                        <div class="contact-map_data-socials-icons">
+                        <div class="contact-map__data-socials-icons">
                                 <a href="<?php echo $fields['fb']; ?>" target="_blank">
                                         <?php echo Like\get_svg('fb'); ?> 
                                 </a>
@@ -35,7 +35,7 @@ $fields = [
                 <?php } ?>
 
                 <?php if($fields['yt']) { ?>
-                        <div class="contact-map_data-socials-icons">
+                        <div class="contact-map__data-socials-icons">
                                 <a href="<?php echo $fields['yt']; ?>" target="_blank">
                                         <?php echo Like\get_svg('yt'); ?> 
                                 </a>
@@ -43,7 +43,7 @@ $fields = [
                 <?php } ?>
 
                 <?php if($fields['ig']) { ?>
-                        <div class="contact-map_data-socials-icons">
+                        <div class="contact-map__data-socials-icons">
                                 <a href="<?php echo $fields['ig']; ?>" target="_blank">
                                         <?php echo Like\get_svg('ig'); ?> 
                                 </a>
@@ -51,7 +51,7 @@ $fields = [
                 <?php } ?>
 
                 <?php if($fields['tiktok']) { ?>
-                        <div class="contact-map_data-socials-icons">
+                        <div class="contact-map__data-socials-icons">
                                 <a href="<?php echo $fields['tiktok']; ?>" target="_blank">
                                         <?php echo Like\get_svg('tiktok'); ?> 
                                 </a>
@@ -60,7 +60,7 @@ $fields = [
             </div>
         </div>
         <div class="col-lg-8 col-12 col-right">
-           <div class="contact-map_map">
+           <div class="contact-map__map">
             <?php echo Like\get_png('contact-map'); ?>
            </div>
         </div>
