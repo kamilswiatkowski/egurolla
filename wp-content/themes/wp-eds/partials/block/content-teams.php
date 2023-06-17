@@ -5,9 +5,9 @@
 			                   'numberposts' => 6,
 		                   ]);
 		$teams_count = wp_count_posts('teams')->publish;
-		$terms = get_categories([
+		$terms = get_terms([
 			                        
-			                        'taxonomy'   => 'category',
+			                        'taxonomy'   => 'teams-cat',
 			                        'hide_empty' => false,
 			                        'post_type'  => 'teams',
 		                        
@@ -30,7 +30,6 @@
 				
 				return $sorted_terms;
 		}
-
 ?>
 <section class="teams">
 		<div class="container">
@@ -43,7 +42,7 @@
 										<div class="teams__filters-wrapper flex-center">
 												<?php foreach (sortTermsByParent($terms) as $key => $term) {
 														$children = count($term) === 0 ? 'no_children' : 'has_children';
-														$main_term = get_term_by('id', $key, 'category');
+														$main_term = get_term_by('id', $key, 'teams-cat');
 														?>
 														<div class="teams__filters-item <?php echo $children; ?>">
 																<div class="teams__filters-item-wrapper">
