@@ -21,6 +21,7 @@ class Main {
             sliders.eventsSlider();
             sliders.advantagesSlider();
             sliders.whyYouShouldDanceSlider();
+            sliders.experienceSlider();
             map.mapInit();
             filters.filtersInit();
         });

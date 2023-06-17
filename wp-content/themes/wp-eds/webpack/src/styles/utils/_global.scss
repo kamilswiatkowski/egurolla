@@ -60,4 +60,25 @@
     font-size: 44px;
     line-height: 46px;
   }
+  color: w
+}
+.red-subtitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+    color: $red;
+  &:before{
+    content: '/';
+    margin-right: 10px;
+    color: $red;
+  }
+}
+.red-button-white-text{
+  padding: 10px 20px;
+  color:$white;
+  background: $red;
+  border-radius: 40px;
 }

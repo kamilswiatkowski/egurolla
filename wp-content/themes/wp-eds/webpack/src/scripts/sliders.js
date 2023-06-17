@@ -18,6 +18,26 @@ function eventsSlider() {
         ]
     });
 }
+function experienceSlider() {
+    $('.experience__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: true
+                }
+            },
+        ]
+    });
+}
 
 function advantagesSlider() {
     $('.advantages__slider').slick({
@@ -74,4 +94,4 @@ function whyYouShouldDanceSlider() {
 }
 
 
-export default {eventsSlider, advantagesSlider, whyYouShouldDanceSlider};
+export default {eventsSlider, advantagesSlider, whyYouShouldDanceSlider, experienceSlider};

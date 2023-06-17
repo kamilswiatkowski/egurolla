@@ -101,6 +101,18 @@ function my_acf_init()
 				    'post_types'      => ['page', 'post', 'teams'],
 			    ]
 		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'experience',
+				    'title'           => __('Wyjątkowe doświadczenia'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['wyjątkowe', 'doświadczenia'],
+				    'post_types'      => ['page', 'post', 'teams'],
+			    ]
+		    );
     }
 }
 
