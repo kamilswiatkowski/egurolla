@@ -7,6 +7,9 @@
     margin: 0 auto 40px;
     align-items: center;
     font-weight: 400;
+    &-text{
+      margin-top: -8px;
+    }
     &-wrapper{
 
     }
@@ -14,7 +17,7 @@
       text-decoration-line: underline;
       color: $red;
       cursor: pointer;
-
+      margin-top: -8px;
     }
     &-item{
       margin-right: 20px;
@@ -91,6 +94,7 @@
     cursor: pointer;
   }
   &__team{
+    margin-bottom: 40px;
     &-categories{
       display: flex;
       position: absolute;
