@@ -1,5 +1,6 @@
 .experience{
   padding: 120px 0;
+  overflow-x: hidden;
   &__top{
     display: flex;
     justify-content: space-between;
@@ -27,8 +28,13 @@
   }
   &__img{
     border-radius: 8px;
+
   }
   &__slider{
+    //opacity: 0;
+    &.slick-initialized{
+      //opacity: 1;
+    }
     .slick-slide {
       margin: 0 10px;
     }
@@ -37,6 +43,9 @@
     }
     .slick-next{
         right: -200px;
+    }
+    .slick-disabled{
+      display: none !important;
     }
   }
   .slick-next,
