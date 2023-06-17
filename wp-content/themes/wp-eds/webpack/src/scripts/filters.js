@@ -3,6 +3,7 @@ function filtersInit(){
     if(filters){
         teamsFilters();
         loadMoreButton();
+        clearFiltersButton();
     }
 }
 
@@ -72,9 +73,31 @@ function ajaxLoadMorePostsByFilter(currentPage, filter){
             if(response.teams) {
                 let teamsContainer = document.querySelector('.teams__container');
                 teamsContainer.innerHTML = response.teams;
+            } else {
+                let teamsContainer = document.querySelector('.teams__container');
+                teamsContainer.innerHTML = '<p class="teams__no-posts">Brak wyników</p>';
             }
             hideLoadMoreButton();
         });
+}
+
+function clearFilters(){
+    let teamsDropdowns = document.querySelectorAll('.teams__dropdown');
+    teamsDropdowns.forEach((dropdown) => {
+        dropdown.dataset.currentFilter = '';
+        let mainFilterName = dropdown.parentElement.querySelector('.team__filters-name');
+        mainFilterName.innerHTML = mainFilterName.dataset.mainCategory;
+    });
+}
+
+function clearFiltersButton(){
+    let clearFiltersButton = document.querySelector('.teams__filters-clear');
+    if(clearFiltersButton){
+        clearFiltersButton.addEventListener('click', (event) => {
+            clearFilters();
+            ajaxLoadMorePostsByFilter(1, collectFiltersIds());
+        });
+    }
 }
 
 function hideLoadMoreButton(){

@@ -47,7 +47,7 @@
 														?>
 														<div class="teams__filters-item <?php echo $children; ?>">
 																<div class="teams__filters-item-wrapper">
-																		<span class="team__filters-name"><?php echo $main_term->name; ?></span>
+																		<span class="team__filters-name" data-main-category="<?php echo $main_term->name; ?>"><?php echo $main_term->name; ?></span>
 																		<?php echo Like\get_svg(
 																			'arrow-red-bottom'
 																		); ?>

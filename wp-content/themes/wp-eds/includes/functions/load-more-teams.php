@@ -24,7 +24,7 @@
 		
 		function loadMoreTeamsByFilter(){
 				ob_start();
-				$filters = json_encode($_POST['filter']);
+				$filters = json_decode(stripslashes($_POST['filter']));
 				$teams = get_posts([
 					                   'post_type'   => 'teams',
 					                   'numberposts' => 6,
