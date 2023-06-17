@@ -1,5 +1,25 @@
-.flex-center{
+.flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 100px;
+
+  &--white-text {
+    color: $white;
+    background: $red;
+  }
+
+  &--red-text {
+    color: $red;
+    background: $white;
+    border: 1px solid $red;
+  }
 }

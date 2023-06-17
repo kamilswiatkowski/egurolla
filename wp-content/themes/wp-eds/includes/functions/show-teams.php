@@ -9,8 +9,8 @@
 										<div class="teams__team-content" style="background: url('<?php echo get_the_post_thumbnail_url(
 											$team->ID
 										); ?>') center center no-repeat">
-												<div class="teams__team-overlay">
-														<div class="teams__team-btn">DOWIEDZ SIĘ WIĘCEJ</div>
+												<div class="teams__team-overlay flex-center">
+														<a href="<?php echo get_permalink($team->ID); ?>" class="teams__team-btn btn btn--white-text">DOWIEDZ SIĘ WIĘCEJ</a>
 												</div>
 												<?php ?>
 												<div class="teams__team-casting">
