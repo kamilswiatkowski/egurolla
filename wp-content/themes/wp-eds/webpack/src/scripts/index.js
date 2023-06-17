@@ -22,6 +22,7 @@ class Main {
             sliders.advantagesSlider();
             sliders.whyYouShouldDanceSlider();
             sliders.experienceSlider();
+            sliders.winsSlider();
             map.mapInit();
             filters.filtersInit();
         });

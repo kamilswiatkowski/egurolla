@@ -38,6 +38,26 @@ function experienceSlider() {
         ]
     });
 }
+function winsSlider() {
+    $('.team-wins__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false
+                }
+            },
+        ]
+    });
+}
 
 function advantagesSlider() {
     $('.advantages__slider').slick({
@@ -94,4 +114,4 @@ function whyYouShouldDanceSlider() {
 }
 
 
-export default {eventsSlider, advantagesSlider, whyYouShouldDanceSlider, experienceSlider};
+export default {eventsSlider, advantagesSlider, whyYouShouldDanceSlider, experienceSlider, winsSlider};

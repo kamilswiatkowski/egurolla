@@ -115,16 +115,17 @@ function my_acf_init()
 		    );
 		    acf_register_block(
 			    [
-				    'name'            => 'team-history',
-				    'title'           => __('Historia zespołu'),
+				    'name'            => 'team-wins',
+				    'title'           => __('Najważniejsze osiągnięcia'),
 				    'render_callback' => 'my_acf_block_render_callback',
 				    'category'        => 'formatting',
 				    'icon'            => 'admin-comments',
 				    'align'           => 'full',
-				    'keywords'        => ['historia', 'zespołu'],
+				    'keywords'        => ['najważniejsze', 'osiągnięcia'],
 				    'post_types'      => ['page', 'post', 'teams'],
 			    ]
 		    );
+				
     }
 }
 
