@@ -74,6 +74,22 @@
       }
     }
   }
+  &__load-more{
+    padding: 18px 28px;
+    background: #FFFFFF;
+    border: 1px solid #CC0033;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $red;
+    max-width: 260px;
+    text-align: center;
+    margin: 32px auto 0;
+    cursor: pointer;
+  }
   &__team{
     &-categories{
       display: flex;
