@@ -4,6 +4,7 @@
 			                   'post_type'   => 'teams',
 			                   'numberposts' => 6,
 		                   ]);
+		$teams_count = wp_count_posts('teams')->publish;
 		$terms = get_categories([
 			                        
 			                        'taxonomy'   => 'category',
@@ -65,7 +66,7 @@
 								</div>
 						</div>
 				</div>
-				<div class="row teams__container">
+				<div class="row teams__container" data-max-posts="<?php echo $teams_count; ?>">
 						<?php foreach ($teams as $team) {
 								$categories = get_the_category($team->ID);
 								?>

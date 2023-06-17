@@ -41,11 +41,20 @@ function ajaxLoadMorePosts(currentPage){
             if(response.teams) {
                 let teamsContainer = document.querySelector('.teams__container');
                 teamsContainer.innerHTML += response.teams;
-            } else {
-                let loadMoreButton = document.querySelector('.teams__load-more');
-                loadMoreButton.style.display = 'none';
             }
+            hideLoadMoreButton();
         });
 
+}
+
+function hideLoadMoreButton(){
+    let teamsElements = document.querySelectorAll('.teams__team');
+    let maxElements = document.querySelector('[data-max-posts]');
+    if(teamsElements.length >= maxElements.dataset.maxPosts) {
+        let loadMoreButton = document.querySelector('.teams__load-more');
+        if (loadMoreButton) {
+            loadMoreButton.style.display = 'none';
+        }
+    }
 }
 export default {filtersInit};
