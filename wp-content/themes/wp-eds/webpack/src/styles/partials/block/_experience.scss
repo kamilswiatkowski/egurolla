@@ -1,11 +1,21 @@
 .experience{
-  padding: 120px 0;
+  padding: 60px 0;
   overflow-x: hidden;
+  @include media-breakpoint-up(lg) {
+    padding: 120px 0;
+  }
   &__top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  &__descriptions{
+    margin-bottom: 32px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
   }
   &__filters{
     display: flex;

@@ -32,7 +32,7 @@ function experienceSlider() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: false,
-                    dots: true
+                    dots: false
                 }
             },
         ]
