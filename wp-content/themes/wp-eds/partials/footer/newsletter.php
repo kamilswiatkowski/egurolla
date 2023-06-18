@@ -26,7 +26,7 @@ i bądź na bieżąco ze wszystkimi wydarzeniami w jedynej takiej szkole tańca 
                     <p class="section__description">Wybierz interesującą Cię kategorię</p>
                     <form action="">
                             <label for="category">
-                            <span class="label-text">Kategoria</span>
+                            <span class="label-text">Kategoria*</span>
                             <select name="category" id="category" class="dropdown-arrow">
                                 <option value="">Kategoria 1</option>
                                 <option value="">Kategoria 2</option>

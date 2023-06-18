@@ -8,6 +8,8 @@
     border-radius: 8px;
     background-color: $white;
     padding: 32px 16px;
+    margin: 32px 16px;
+    width:auto;
 
     @include media-breakpoint-up(xl) {
       max-width: 1000px;
@@ -17,14 +19,15 @@
 
 
   .section__label {
-    letter-spacing: 0.2em;
     text-transform: uppercase;
-    display: none;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.18em;
 
     @include media-breakpoint-up(xl) {
       font-size: 20px;
       line-height: 26px;
-      display: block;
+      letter-spacing: 0.2em;
     }
   }
 
@@ -43,22 +46,31 @@
 
 
   .section__description {
-    display: none;
-
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+        
     @include media-breakpoint-up(xl) {
       font-size: 16px;
       line-height: 20px;
-      display: block;
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      
     }
   }
 
 
   &__left {
+    padding: 0 16px;
+    @include media-breakpoint-up(xl) {
     padding: 50px;
   }
-
+  }
   &__right {
+    padding: 0 16px;
+    @include media-breakpoint-up(xl) {
     padding: 50px;
+  }
   }
 
   .acceptance {
@@ -129,10 +141,9 @@
   }
   
  
-  
+
 
   
-
 
   input[type="checkbox"] {
     margin-right: 15px;
@@ -162,16 +173,14 @@
   }
 
   .newsletter__right {
-
-    padding: 25px 75px 25px 25px;
     position: relative;
-  }
-}
 
-.section__description {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-}
+    @include media-breakpoint-up(xl) {
+    padding: 25px 75px 25px 25px;
+    
+  }
+  }
+
 
 label {
   display: flex;
@@ -195,6 +204,7 @@ label {
   line-height: 18px;
   }
 
+  
 
 
 select,
@@ -222,4 +232,4 @@ input[type="email"] {
   padding-left: 24px;
   color:$gray;
 }
-
+}
