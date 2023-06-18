@@ -26,6 +26,7 @@ class Main {
             map.mapInit();
             filters.filtersInit();
             sliders.whoIsAgustinSlider();
+            sliders.ourTeamSlider();
         });
     }
 

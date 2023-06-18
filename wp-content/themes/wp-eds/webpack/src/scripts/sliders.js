@@ -18,6 +18,7 @@ function eventsSlider() {
         ]
     });
 }
+
 function experienceSlider() {
     $('.experience__slider').slick({
         slidesToShow: 1,
@@ -38,6 +39,7 @@ function experienceSlider() {
         ]
     });
 }
+
 function winsSlider() {
     $('.team-wins__slider').slick({
         slidesToShow: 3,
@@ -131,4 +133,45 @@ function whoIsAgustinSlider() {
     });
 }
 
-export default {eventsSlider, advantagesSlider, whyYouShouldDanceSlider, experienceSlider, winsSlider, whoIsAgustinSlider};
+function ourTeamSlider() {
+    $('.our-team__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: true,
+                    arrows: false
+                }
+            },
+        ]
+    });
+}
+
+
+export default {
+    eventsSlider,
+    advantagesSlider,
+    whyYouShouldDanceSlider,
+    experienceSlider,
+    winsSlider,
+    whoIsAgustinSlider,
+    ourTeamSlider
+};
