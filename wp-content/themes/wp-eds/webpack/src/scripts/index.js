@@ -28,6 +28,7 @@ class Main {
             sliders.whoIsAgustinSlider();
             sliders.ourTeamSlider();
             sliders.eventPlanSlider();
+            functions.timer();
         });
     }
 

@@ -174,6 +174,54 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams'],
           ]
         );
+        acf_register_block(
+          [
+            'name'            => 'participation-conditions',
+            'title'           => __('Jakie warunki musisz spełni, by z nami pojechać'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['jakie', 'warunki', 'musisz', 'spełnić', 'by', 'z', 'nami', 'pojechać'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'departure-information',
+            'title'           => __('Informacje o wyjeździe i zebrania'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['informacje', 'o', 'wyjeźdie', 'i', 'zebrania'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'camp-prize',
+            'title'           => __('Poznaj cenę campa'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['poznaj', 'cenę', 'campa'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'do-you-have-questions',
+            'title'           => __('Masz pytania'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['masz', 'pytania'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
     }
 }
 

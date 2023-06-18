@@ -10,6 +10,7 @@
 @import "utils/animation";
 @import "utils/buttons";
 @import "utils/section";
+@import "utils/download";
 @import "header/top-bar";
 @import "header/search-bar";
 @import "header/menu";
@@ -30,8 +31,13 @@
 @import "partials/block/who-is-agustin";
 @import "partials/block/our-team";
 @import "partials/block/event-plan";
+@import "partials/block/participation-conditions";
+@import "partials/block/departure-information";
+@import "partials/block/camp-prize";
+@import "partials/block/do-you-have-questions";
 
 body {
   background:  #E6E6E6;
   font-family: 'Helvetica Neue LT Pro', sans-serif;
+  overflow-x:  hidden;
 }

@@ -1,9 +1,16 @@
 .event-plan {
   background-color: $white;
   padding:          60px 0;
+  overflow-x:       hidden;
 
   @include media-breakpoint-up(lg) {
     padding: 120px 0;
+  }
+
+  .section__header {
+    display:        flex;
+    flex-direction: column-reverse;
+    margin-bottom:  40px;
   }
 
   &__slider {
