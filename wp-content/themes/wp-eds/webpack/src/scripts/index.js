@@ -25,6 +25,7 @@ class Main {
             sliders.winsSlider();
             map.mapInit();
             filters.filtersInit();
+            sliders.whoIsAgustinSlider();
         });
     }
 
