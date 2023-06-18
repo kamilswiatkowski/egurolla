@@ -73,5 +73,22 @@ function whyYouShouldDanceSlider() {
     });
 }
 
+function whoIsAgustinSlider() {
+    $('.who-is-agustin__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false
+                }
+            },
+        ]
+    });
+}
 
-export default {eventsSlider, advantagesSlider, whyYouShouldDanceSlider};
+export default {eventsSlider, advantagesSlider, whyYouShouldDanceSlider, whoIsAgustinSlider};

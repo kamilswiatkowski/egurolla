@@ -18,6 +18,7 @@ class Main {
             sliders.eventsSlider();
             sliders.advantagesSlider();
             sliders.whyYouShouldDanceSlider();
+            sliders.whoIsAgustinSlider();
         });
     }
 
