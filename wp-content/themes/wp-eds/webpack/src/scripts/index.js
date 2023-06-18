@@ -27,6 +27,7 @@ class Main {
             filters.filtersInit();
             sliders.whoIsAgustinSlider();
             sliders.ourTeamSlider();
+            sliders.eventPlanSlider();
         });
     }
 

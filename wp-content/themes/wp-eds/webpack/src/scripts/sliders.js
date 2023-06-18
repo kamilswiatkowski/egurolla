@@ -166,6 +166,28 @@ function ourTeamSlider() {
 }
 
 
+function eventPlanSlider() {
+    $('.event-plan__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: true,
+                    arrows: true
+                }
+            },
+        ]
+    });
+}
+
 export default {
     eventsSlider,
     advantagesSlider,
@@ -173,5 +195,6 @@ export default {
     experienceSlider,
     winsSlider,
     whoIsAgustinSlider,
-    ourTeamSlider
+    ourTeamSlider,
+    eventPlanSlider
 };

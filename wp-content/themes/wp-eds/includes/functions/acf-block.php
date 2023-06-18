@@ -162,6 +162,18 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams'],
           ]
         );
+        acf_register_block(
+          [
+            'name'            => 'event-plan',
+            'title'           => __('Poznaj program wydarzenia'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['poznaj', 'program', 'wydarzenia'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
     }
 }
 
