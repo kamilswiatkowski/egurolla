@@ -18,9 +18,7 @@ function deb() {
 	call_user_func_array('var_dymp', func_get_args());
 }
 
-if(in_array($_SERVER['SERVER_NAME'], unserialize(WHITELIST))){
-	require( dirname(__FILE__).'/../../includes/functions/kint/kint.phar' );
-}
+
 
 //for kint debug
 if (!function_exists("d")){

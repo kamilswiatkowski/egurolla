@@ -5,6 +5,7 @@ import 'bootstrap';
 import functions from './functions.js';
 import sliders from "./sliders";
 import map from './map.js';
+import filters from './filters';
 
 class Main {
     constructor() {
@@ -20,7 +21,16 @@ class Main {
             sliders.eventsSlider();
             sliders.advantagesSlider();
             sliders.whyYouShouldDanceSlider();
+            sliders.experienceSlider();
+            sliders.winsSlider();
             map.mapInit();
+            filters.filtersInit();
+            sliders.whoIsAgustinSlider();
+            sliders.ourTeamSlider();
+            sliders.eventPlanSlider();
+            functions.timer();
+            sliders.aboutInstructorSlider();
+            sliders.teamLedBySlider();
         });
     }
 

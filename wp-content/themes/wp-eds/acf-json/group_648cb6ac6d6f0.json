@@ -1,6 +1,6 @@
 {
     "key": "group_648cb6ac6d6f0",
-    "title": "[ZESPOŁY]: Zespoły",
+    "title": "ZESPOŁY: Zespoły",
     "fields": [
         {
             "key": "field_648cb6acf5dc0",
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686943799
+    "modified": 1686956194
 }

@@ -1,0 +1,85 @@
+.participation-conditions {
+  padding: 60px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 120px 0;
+  }
+
+  .section__header {
+    display:        flex;
+    flex-direction: column-reverse;
+    margin-bottom:  40px;
+  }
+
+  &__box {
+    background-color: $white;
+    border-radius:    8px;
+    padding:          16px;
+    margin-bottom:    12px;
+    @include media-breakpoint-up(lg) {
+      display:       flex;
+      align-items:   center;
+      padding:       32px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__top {
+    margin-bottom: 12px;
+
+    @include media-breakpoint-up(lg) {
+      display:       flex;
+      align-items:   center;
+      margin-right:  60px;
+      width:         350px;
+      flex-shrink:   0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__index {
+    font-weight: 700;
+    font-size:   32px;
+    line-height: 38px;
+    color:       $red;
+    font-style:  italic;
+
+    @include media-breakpoint-up(lg) {
+      font-size:    72px;
+      line-height:  82px;
+      padding:      10px;
+      margin-right: 60px;
+    }
+  }
+
+  &__title {
+    font-size:      17px;
+    line-height:    20px;
+    font-style:     italic;
+    text-transform: uppercase;
+    font-weight:    700;
+
+    @include media-breakpoint-up(lg) {
+      font-size:   22px;
+      line-height: 26px;
+    }
+  }
+
+  &__description {
+    font-size:   14px;
+    line-height: 18px;
+
+    @include media-breakpoint-up(lg) {
+      font-size:   16px;
+      line-height: 20px;
+    }
+
+    a {
+      color: $red;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}

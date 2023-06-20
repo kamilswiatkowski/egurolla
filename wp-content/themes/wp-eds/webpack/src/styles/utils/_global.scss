@@ -1,5 +1,87 @@
-.flex-center{
+.flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 100px;
+
+  &--white-text {
+    color: $white;
+    background: $red;
+  }
+
+  &--red-text {
+    color: $red;
+    background: $white;
+    border: 1px solid $red;
+  }
+}
+.show-desktop-block{
+  display: none;
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+}
+.show-desktop-flex{
+    display: none !important;
+    @media (min-width: $screen-md) {
+        display: flex !important;
+    }
+}
+.show-mobile-flex{
+    display: flex !important;
+    @media (min-width: $screen-md) {
+        display: none !important;
+    }
+}
+.show-mobile-block{
+    display: block;
+    @media (min-width: $screen-md) {
+        display: none;
+    }
+}
+.red-title-italic{
+  font-style: italic;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: $red;
+  margin-bottom: 20px;
+  @media (min-width: $screen-md) {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 46px;
+  }
+}
+.red-subtitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+    color: $red;
+  &:before{
+    content: '/';
+    margin-right: 10px;
+    color: $red;
+  }
+}
+.red-button-white-text{
+  padding: 10px 20px;
+  color:$white;
+  background: $red;
+  border-radius: 40px;
+  text-decoration: unset;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }

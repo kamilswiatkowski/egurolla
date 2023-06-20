@@ -6,6 +6,8 @@ function mapInit() {
 
 
     async function initMap() {
+        const mapContainer = document.querySelector('.map__google');
+        if (!mapContainer) return;
         const {Map, InfoWindow} = await google.maps.importLibrary("maps");
         const {AdvancedMarkerElement, PinElement} = await google.maps.importLibrary(
             "marker"
@@ -26,7 +28,6 @@ function mapInit() {
         });
         let markers = [];
         const input = document.getElementById("pac-input");
-        // const searchBox = new google.maps.places.SearchBox(input);
         const options = {
             types: ['(regions)'],
             componentRestrictions: {country: "pl"} // 2-letters code
@@ -34,29 +35,6 @@ function mapInit() {
 
         let searchBox = new google.maps.places.Autocomplete(input, options);
         const locationButton = document.querySelector(".map__search-localization");
-        locationButton.addEventListener("click", () => {
-            // Try HTML5 geolocation.
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        const pos = {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude,
-                        };
-                        searchPartners(pos.lat, pos.lng, Map, InfoWindow, AdvancedMarkerElement, PinElement);
-                        infoWindow.setPosition(pos);
-                        map.setCenter(pos);
-                        map.setZoom(10);
-                    },
-                    () => {
-                        handleLocationError(true, infoWindow, map.getCenter());
-                    }
-                );
-            } else {
-                // Browser doesn't support Geolocation
-                handleLocationError(false, infoWindow, map.getCenter());
-            }
-        });
         searchBox.addListener("place_changed", () => {
             const place = searchBox.getPlace();
             if (place.length == 0) {

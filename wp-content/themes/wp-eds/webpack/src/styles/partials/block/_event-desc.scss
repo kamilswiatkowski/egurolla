@@ -1,0 +1,65 @@
+.event-desc{
+  padding: 120px 0;
+  background-color: $white;
+  .even{
+    .event-desc__col{
+      @media screen and (min-width: $screen-md){
+        &:first-child{
+          order: 2;
+        }
+      }
+    }
+  }
+  &__img{
+    img{
+      max-width: 484px;
+        margin: 0 auto;
+      border-radius: 8px;
+      width: 100%;
+    }
+  }
+  &__content{
+    &-title{
+      font-style: italic;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-transform: uppercase;
+      color:$black;
+      margin-bottom: 20px;
+    }
+    &-desc{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $black;
+    }
+  }
+  .odd{
+    .event-desc__col{
+        &:first-child{
+            display: flex;
+          align-items: center;
+        }
+    }
+  }
+  .even{
+    .event-desc__col{
+        &:first-child{
+            display: flex;
+          align-items: center;
+        }
+    }
+  }
+  &__col{
+    margin-bottom: 80px;
+  }
+  &__subtitle{
+    max-width: 400px;
+    display: flex;
+    margin-bottom: 40px;
+    &:before{
+      margin-right: 20px;
+    }
+  }
+}
