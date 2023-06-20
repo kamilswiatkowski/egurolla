@@ -82,6 +82,45 @@ function register_post_types()
         'menu_icon'           => 'dashicons-format-aside',
       ]
     );
+
+    register_post_type(
+      'styl',
+      [
+        'label'               => 'Style taneczne',
+        'description'         => 'Style taneczne',
+        'labels'              => [
+          'name'               => 'Style taneczne',
+          'singular_name'      => 'Style taneczne',
+          'menu_name'          => 'Style taneczne',
+          'name_admin_bar'     => 'Style taneczne',
+          'parent_item_colon'  => 'Parent',
+          'all_items'          => 'Pokaż wszystkie',
+          'add_new_item'       => 'Dodaj nowy',
+          'add_new'            => 'Dodaj nowy',
+          'new_item'           => 'Nowy',
+          'edit_item'          => 'Edytuj',
+          'update_item'        => 'Aktualizuj',
+          'search_items'       => 'Szukaj',
+          'not_found'          => 'Nie znaleziono',
+          'not_found_in_trash' => 'Nie znaleziono w koszu',
+        ],
+        'show_in_rest'        => true,
+        'supports'            => ['title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'],
+        'hierarchical'        => false,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => 6,
+        'show_in_admin_bar'   => true,
+        'show_in_nav_menus'   => true,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'post',
+        'menu_icon'           => 'dashicons-format-aside',
+      ]
+    );
 }
 
 function register_taxonomies()

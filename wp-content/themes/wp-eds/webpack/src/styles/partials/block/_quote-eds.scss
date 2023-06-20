@@ -1,0 +1,52 @@
+.quote-eds {
+  margin: 40px 0;
+
+  &__wrapper {
+    padding:       32px 16px;
+    box-shadow:    0 0 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 80px 100px;
+    }
+  }
+
+  &__quote {
+    font-size:     18px;
+    line-height:   22px;
+    color:         $black;
+    font-style:    italic;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+      font-size:     22px;
+      line-height:   28px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__author {
+    color:          $red;
+    font-size:      24px;
+    line-height:    28px;
+    font-style:     italic;
+    font-weight:    700;
+    text-transform: uppercase;
+    text-align:     right;
+
+    @include media-breakpoint-up(lg) {
+      font-size:     32px;
+      line-height:   38px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__description {
+    font-size:   14px;
+    line-height: 18px;
+    text-align:  right;
+    @include media-breakpoint-up(lg) {
+      font-size:   16px;
+      line-height: 20px;
+    }
+  }
+}

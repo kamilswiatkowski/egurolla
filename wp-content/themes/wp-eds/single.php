@@ -4,8 +4,15 @@ $post = get_post();
 $content = $post->post_content;
 get_header();
 
-while (have_posts()) : the_post();
-    echo apply_filters('the_content', $content);
-endwhile;
+?>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <?php while (have_posts()) : the_post();
+                    echo apply_filters('the_content', $content);
+                endwhile; ?>
+            </div>
+        </div>
+    </div>
 
-get_footer();
+<?php get_footer();

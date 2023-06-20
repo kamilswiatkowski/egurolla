@@ -98,7 +98,7 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['o', 'zespole'],
-            'post_types'      => ['page', 'post', 'teams'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy', 'style'],
           ]
         );
         acf_register_block(
@@ -255,6 +255,42 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['zespoły', 'prowadzone', 'przez'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'quote-eds',
+            'title'           => __('Cytat EDS'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['cytat', 'eds'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'looking-for-idea',
+            'title'           => __('Szukasz pomysłu na wakacje dla swojego dziecka'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['szukasz', 'pomysłu', 'na', 'wakacje', 'dla', 'swojeg', 'dziecka'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'small-advantages-single',
+            'title'           => __('Przykładowe koszyści - wpis'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['przykładowe', 'korzyści'],
             'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
           ]
         );
