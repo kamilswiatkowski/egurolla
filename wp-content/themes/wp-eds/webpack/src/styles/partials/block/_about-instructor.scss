@@ -1,0 +1,110 @@
+.about-instructor {
+  padding:          60px 0;
+  background-color: $white;
+
+  @include media-breakpoint-up(lg) {
+    padding: 80px 0;
+  }
+
+  &__wrapper {
+    padding:       32px 16px;
+    box-shadow:    0 0 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    @include media-breakpoint-up(lg) {
+      padding:    0;
+      box-shadow: none;
+      border:     0;
+    }
+  }
+
+  &__title {
+    font-style:     italic;
+    font-size:      24px;
+    line-height:    28px;
+    color:          $black;
+    font-weight:    700;
+    text-transform: uppercase;
+    margin-bottom:  7px;
+
+    @include media-breakpoint-up(lg) {
+      font-size:     32px;
+      line-height:   38px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    p {
+      margin-bottom: 18px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 20px;
+      }
+    }
+
+    font-size:   14px;
+    line-height: 18px;
+    font-weight: 400;
+    color:       $black;
+
+    @include media-breakpoint-up(lg) {
+      font-size:   16px;
+      line-height: 20px;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &__slider {
+    margin-top: 20px;
+
+    .slick-track {
+      display:        flex;
+      align-items:    stretch;
+      padding-bottom: 20px;
+    }
+
+    .slick-slide {
+      height: auto;
+      flex:   1;
+
+      & > div {
+        height: 100%;
+      }
+    }
+
+    .slick-slide {
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .slick-dots {
+      li {
+        width:            8px;
+        height:           8px;
+        border-radius:    8px;
+        background-color: $red;
+        transition:       all 350ms;
+
+        &.slick-active {
+          width: 28px;
+        }
+
+        button {
+          padding: 0;
+          width:   inherit;
+          height:  inherit;
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
   background-size:     auto 90%;
   background-position: center;
   background-repeat:   no-repeat;
-
+  overflow-x:          hidden;
   @include media-breakpoint-up(md) {
     background-size: cover;
   }

@@ -10,10 +10,10 @@
 @import "utils/animation";
 @import "utils/buttons";
 @import "utils/section";
+@import "utils/download";
 @import "header/top-bar";
 @import "header/search-bar";
 @import "header/menu";
-
 
 @import "partials/footer";
 @import "partials/socials";
@@ -28,8 +28,36 @@
 @import "partials/block/advantages";
 @import "partials/block/why-you-should-dance";
 @import "partials/hero/home-hero";
+@import "partials/block/discover-more";
+@import "partials/block/who-is-agustin";
+@import "partials/block/our-team";
+@import "partials/block/event-plan";
+@import "partials/block/participation-conditions";
+@import "partials/block/departure-information";
+@import "partials/block/camp-prize";
+@import "partials/block/do-you-have-questions";
+@import "partials/block/instructor-description";
+@import "partials/block/about-instructor";
+@import "partials/block/teams-led-by";
 
 body {
-  background: #E6E6E6;
+  background:  #E6E6E6;
   font-family: 'Helvetica Neue LT Pro', sans-serif;
+  overflow-x:  hidden;
+}
+
+.wp-block-embed {
+  background-color: $white;
+  text-align:       center;
+  padding:          0 15px;
+}
+
+.wp-block-embed__wrapper {
+  max-width: 800px;
+  width:     100%;
+  margin:    0 auto;
+
+  iframe {
+    width: 100%;
+  }
 }

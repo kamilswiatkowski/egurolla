@@ -25,6 +25,12 @@ class Main {
             sliders.winsSlider();
             map.mapInit();
             filters.filtersInit();
+            sliders.whoIsAgustinSlider();
+            sliders.ourTeamSlider();
+            sliders.eventPlanSlider();
+            functions.timer();
+            sliders.aboutInstructorSlider();
+            sliders.teamLedBySlider();
         });
     }
 

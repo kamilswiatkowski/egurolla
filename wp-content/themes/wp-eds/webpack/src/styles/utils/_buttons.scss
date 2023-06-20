@@ -19,6 +19,10 @@
     color: $red;
   }
 
+  &--outline-red {
+    border: 1px solid $red;
+  }
+
   &--white {
     color: $white;
   }
