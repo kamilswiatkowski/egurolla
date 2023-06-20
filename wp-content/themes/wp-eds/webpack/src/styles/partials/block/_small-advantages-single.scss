@@ -1,0 +1,39 @@
+.small-advantages-single {
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 80px;
+  }
+
+  &__wrapper {
+    display:   flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    text-align: center;
+    margin:     0 8px 32px;
+    width:      calc(50% - 16px);
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+      width:      calc(25% - 16px);
+    }
+  }
+
+  img {
+    width:         46px;
+    margin-bottom: 13px;
+  }
+
+  h4 {
+    font-size:   16px;
+    line-height: 20px;
+    color:       $black;
+    font-weight: 700;
+    @include media-breakpoint-up(lg) {
+      font-size:   18px;
+      line-height: 26px;
+    }
+  }
+}
