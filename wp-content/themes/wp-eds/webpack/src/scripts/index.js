@@ -29,6 +29,8 @@ class Main {
             sliders.ourTeamSlider();
             sliders.eventPlanSlider();
             functions.timer();
+            sliders.aboutInstructorSlider();
+            sliders.teamLedBySlider();
         });
     }
 

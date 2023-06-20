@@ -222,6 +222,42 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams'],
           ]
         );
+        acf_register_block(
+          [
+            'name'            => 'instructor-description',
+            'title'           => __('Opis instruktora'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['opis', 'instruktora'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'about-instructor',
+            'title'           => __('O instruktorze'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['o', 'instruktorze'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'teams-led-by',
+            'title'           => __('Zespoły prowadzone przez'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['zespoły', 'prowadzone', 'przez'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
     }
 }
 
