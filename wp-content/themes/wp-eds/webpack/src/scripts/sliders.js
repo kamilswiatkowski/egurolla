@@ -226,6 +226,54 @@ function teamLedBySlider() {
     });
 }
 
+function seeAlsoSlider() {
+    $('.see-also__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+}
+
+function dancingStyleInOurSchoolSlider() {
+    $('.dancing-styles-in-our-school__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+}
+
 export default {
     eventsSlider,
     advantagesSlider,
@@ -236,5 +284,7 @@ export default {
     ourTeamSlider,
     eventPlanSlider,
     aboutInstructorSlider,
-    teamLedBySlider
+    teamLedBySlider,
+    seeAlsoSlider,
+    dancingStyleInOurSchoolSlider
 };

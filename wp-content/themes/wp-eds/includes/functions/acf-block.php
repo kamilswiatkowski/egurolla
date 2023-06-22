@@ -53,91 +53,91 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams'],
           ]
         );
-		    acf_register_block(
-			    [
-				    'name'            => 'home-hero',
-				    'title'           => __('Strona główna hero'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['strona', 'główna', 'hero'],
-				    'post_types'      => ['page', 'post', 'teams'],
-			    ]
-		    );
-		    acf_register_block(
-			    [
-				    'name'            => 'teams',
-				    'title'           => __('Zespoły'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['zespoły'],
-				    'post_types'      => ['page', 'post', 'teams'],
-			    ]
-		    );
-		    acf_register_block(
-			    [
-				    'name'            => 'map',
-				    'title'           => __('Mapa'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['mapa'],
-				    'post_types'      => ['page', 'post', 'teams'],
-			    ]
-		    );
-		    acf_register_block(
-			    [
-				    'name'            => 'about-team',
-				    'title'           => __('O zespole'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['o', 'zespole'],
-				    'post_types'      => ['page', 'post', 'teams'],
-			    ]
-		    );
-		    acf_register_block(
-			    [
-				    'name'            => 'experience',
-				    'title'           => __('Wyjątkowe doświadczenia'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['wyjątkowe', 'doświadczenia'],
-				    'post_types'      => ['page', 'post', 'teams'],
-			    ]
-		    );
-		    acf_register_block(
-			    [
-				    'name'            => 'team-wins',
-				    'title'           => __('Najważniejsze osiągnięcia'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['najważniejsze', 'osiągnięcia'],
-				    'post_types'      => ['page', 'post', 'teams'],
-			    ]
-		    );
-		    acf_register_block(
-			    [
-				    'name'            => 'event-desc',
-				    'title'           => __('Opis wydarzenia'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['opis', 'wydarzenia'],
-				    'post_types'      => ['page', 'post', 'teams'],
-			    ]
-		    );
-				
+        acf_register_block(
+          [
+            'name'            => 'home-hero',
+            'title'           => __('Strona główna hero'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['strona', 'główna', 'hero'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'teams',
+            'title'           => __('Zespoły'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['zespoły'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'map',
+            'title'           => __('Mapa'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['mapa'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'about-team',
+            'title'           => __('O zespole'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['o', 'zespole'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'experience',
+            'title'           => __('Wyjątkowe doświadczenia'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['wyjątkowe', 'doświadczenia'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'team-wins',
+            'title'           => __('Najważniejsze osiągnięcia'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['najważniejsze', 'osiągnięcia'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'event-desc',
+            'title'           => __('Opis wydarzenia'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['opis', 'wydarzenia'],
+            'post_types'      => ['page', 'post', 'teams'],
+          ]
+        );
+
         acf_register_block(
           [
             'name'            => 'home-hero',
@@ -376,6 +376,18 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['przykładowe', 'korzyści'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'dancing-styles-in-our-school',
+            'title'           => __('Style tańca dostępne w naszej szkole'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['style', 'tańca', 'dostępne', 'w', 'naszej', 'szkole'],
             'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
           ]
         );

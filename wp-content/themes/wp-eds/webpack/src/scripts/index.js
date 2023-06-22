@@ -31,6 +31,8 @@ class Main {
             functions.timer();
             sliders.aboutInstructorSlider();
             sliders.teamLedBySlider();
+            sliders.seeAlsoSlider();
+            sliders.dancingStyleInOurSchoolSlider();
         });
     }
 
