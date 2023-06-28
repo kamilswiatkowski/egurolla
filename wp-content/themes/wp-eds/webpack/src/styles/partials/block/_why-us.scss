@@ -1,0 +1,55 @@
+.why-us{
+    background-color: #CC0033;
+    padding: 120px 0;
+    .red-subtitle{
+        margin-bottom: 40px;
+    }
+    &__wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    &__accordion{
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    &__top{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        background: $white;
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+        position: relative;
+      cursor: pointer;
+        &.active{
+            svg{
+                transform: rotate(180deg);
+            }
+        }
+        .plus{
+            color:$red;
+            margin-right: 5px;
+        }
+        svg{
+            position: absolute;
+            right: 32px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &__bottom{
+        height: 0;
+        font-size: 16px;
+        line-height: 20px;
+        background: $white;
+        visibility: hidden;
+        &.open{
+            transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            height: auto;
+            padding: 32px 16px;
+            opacity: 0.88;
+            visibility: inherit;
+        }
+    }
+}

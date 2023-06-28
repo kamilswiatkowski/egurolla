@@ -6,6 +6,7 @@ import functions from './functions.js';
 import sliders from "./sliders";
 import map from './map.js';
 import filters from './filters';
+import accordion from "./accordion";
 
 class Main {
     constructor() {
@@ -23,6 +24,7 @@ class Main {
             sliders.whyYouShouldDanceSlider();
             sliders.experienceSlider();
             sliders.winsSlider();
+            accordion.accordion();
             map.mapInit();
             filters.filtersInit();
             sliders.whoIsAgustinSlider();

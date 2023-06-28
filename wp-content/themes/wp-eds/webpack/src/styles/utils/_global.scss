@@ -55,6 +55,9 @@
   text-transform: uppercase;
   color: $red;
   margin-bottom: 20px;
+  &--white{
+    color:$white;
+  }
   @media (min-width: $screen-md) {
     font-weight: 700;
     font-size: 44px;
@@ -69,6 +72,12 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
     color: $red;
+  &--white{
+    color:$white;
+    &:before{
+      color: $white;
+    }
+  }
   &:before{
     content: '/';
     margin-right: 10px;
