@@ -19,22 +19,13 @@ class Main {
 
     onDocumentLoad() {
         window.addEventListener("load", (event) => {
-            sliders.eventsSlider();
-            sliders.advantagesSlider();
-            sliders.whyYouShouldDanceSlider();
-            sliders.experienceSlider();
-            sliders.winsSlider();
+            sliders.slidersInit();
             accordion.accordion();
             map.mapInit();
             filters.filtersInit();
-            sliders.whoIsAgustinSlider();
-            sliders.ourTeamSlider();
-            sliders.eventPlanSlider();
+
             functions.timer();
-            sliders.aboutInstructorSlider();
-            sliders.teamLedBySlider();
-            sliders.seeAlsoSlider();
-            sliders.dancingStyleInOurSchoolSlider();
+
         });
     }
 

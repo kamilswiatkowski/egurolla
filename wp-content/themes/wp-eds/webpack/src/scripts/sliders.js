@@ -61,6 +61,27 @@ function winsSlider() {
     });
 }
 
+function testimonialsSlider() {
+    $('.testimonials__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false
+                }
+            },
+        ]
+    });
+}
+
 function advantagesSlider() {
     $('.advantages__slider').slick({
         slidesToShow: 4,
@@ -274,17 +295,23 @@ function dancingStyleInOurSchoolSlider() {
     });
 }
 
+
+function slidersInit(){
+    eventsSlider();
+    advantagesSlider();
+    whyYouShouldDanceSlider();
+    experienceSlider();
+    winsSlider();
+    whoIsAgustinSlider();
+    ourTeamSlider();
+    eventPlanSlider();
+    aboutInstructorSlider();
+    teamLedBySlider();
+    seeAlsoSlider();
+    dancingStyleInOurSchoolSlider();
+    testimonialsSlider();
+}
+
 export default {
-    eventsSlider,
-    advantagesSlider,
-    whyYouShouldDanceSlider,
-    experienceSlider,
-    winsSlider,
-    whoIsAgustinSlider,
-    ourTeamSlider,
-    eventPlanSlider,
-    aboutInstructorSlider,
-    teamLedBySlider,
-    seeAlsoSlider,
-    dancingStyleInOurSchoolSlider
+    slidersInit
 };

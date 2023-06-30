@@ -1,0 +1,72 @@
+.testimonials{
+  padding: 120px 0;
+  .red-subtitle{
+    margin-bottom: 80px;
+  }
+  &__content{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__author{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    color: $red;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  &__source{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: $dark-gray;
+    text-align: center;
+  }
+  &__slider{
+    position: relative;
+  }
+  .slick-next,
+  .slick-prev {
+    width:   26px;
+    height:  26px;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    @include media-breakpoint-up(lg) {
+      width:  44px;
+      height: 44px;
+    }
+
+    &::before {
+      content:          '';
+      background-image: url('./images/slider-arrow.svg');
+      background-size:  cover;
+      width:            100%;
+      height:           100%;
+      display:          block;
+      opacity:          1;
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+    @include media-breakpoint-up(lg) {
+      left: -100px;
+    }
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+  .slick-next{
+    right: 0;
+    @include media-breakpoint-up(lg) {
+      right: -100px;
+    }
+  }
+}
