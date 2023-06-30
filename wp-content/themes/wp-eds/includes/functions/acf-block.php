@@ -415,6 +415,18 @@ function my_acf_init()
 				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
 			    ]
 		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'pricing',
+				    'title'           => __('Cennik'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['cennik'],
+				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+			    ]
+		    );
     }
 }
 
