@@ -28,7 +28,6 @@ echo get_template_part('partials/header/search-bar');
 <div class="divider"></div>
 <?php
 echo get_template_part('partials/header/menu');
-echo get_template_part('partials/block/content-map');
 ?>
 
 <main class="main">
