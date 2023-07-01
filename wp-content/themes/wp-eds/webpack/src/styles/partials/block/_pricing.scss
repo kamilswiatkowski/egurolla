@@ -22,6 +22,22 @@
   &__odd{
     background-color: $light-gray2;
   }
+  &__row-title{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  &__price{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 26px;
+  }
   .divTable{
     display: table;
     max-width: 1000px;
@@ -31,8 +47,15 @@
   .divTableRow {
     display: table-row;
   }
+  &__head{
+    .divTableCell{
+      color:$white;
+    }
+  }
   .divTableRow{
     .divTableCell{
+      width: 33%;
+      text-align: center;
      &:first-child{
        border-radius: 8px 0 0 8px;
      }

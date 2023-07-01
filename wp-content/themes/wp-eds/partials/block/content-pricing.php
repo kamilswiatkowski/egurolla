@@ -35,7 +35,7 @@
 				</div>
 				<div class="row">
 						<div class="col-12">
-								<div class="divTable" style="width: 1000px;" >
+								<div class="divTable" style="width: 1000px;">
 										<div class="divTableBody">
 												<div class="divTableRow pricing__head">
 														<div class="divTableCell">&nbsp;</div>
@@ -43,9 +43,17 @@
 														<div class="divTableCell">&nbsp;</div>
 												</div>
 												<div class="divTableRow pricing__even">
-														<div class="divTableCell">&nbsp;</div>
-														<div class="divTableCell">&nbsp;</div>
-														<div class="divTableCell">&nbsp;</div>
+														<div class="divTableCell">
+																<span class="pricing__row-title">
+																		UMOWA SEMESTRALNA
+																</span>
+														</div>
+														<div class="divTableCell"><span class="pricing__price">250zł</span>
+																<span class="pricing__text"> / miesiąc</span>
+														</div>
+														<div class="divTableCell"><span class="pricing__price">250zł</span>
+																<span class="pricing__text"> / miesiąc</span>
+														</div>
 												</div>
 												<div class="divTableRow pricing__odd">
 														<div class="divTableCell">&nbsp;</div>
