@@ -427,6 +427,18 @@ function my_acf_init()
 				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
 			    ]
 		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'important',
+				    'title'           => __('Ważne infromacje'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['ważne', 'informacje'],
+				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+			    ]
+		    );
     }
 }
 
