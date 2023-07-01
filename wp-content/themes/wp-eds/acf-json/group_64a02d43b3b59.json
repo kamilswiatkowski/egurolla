@@ -1,10 +1,50 @@
 {
-    "key": "group_648cb86697ffc",
-    "title": "BLOK: Kontakt mapa",
+    "key": "group_64a02d43b3b59",
+    "title": "BLOK: Thank you page",
     "fields": [
         {
-            "key": "field_648cb8669ba68",
-            "label": "Nagłówek",
+            "key": "field_64a02d43b5b3a",
+            "label": "Dziękujęmy - tytuł",
+            "name": "label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64a074730064d",
+            "label": "Podtytuł",
+            "name": "sublabel",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64a02d43b5b54",
+            "label": "Tytuł",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -23,9 +63,9 @@
             "append": ""
         },
         {
-            "key": "field_648cb8669ba84",
-            "label": "Adres",
-            "name": "address",
+            "key": "field_64a02d83dffb9",
+            "label": "Podpis",
+            "name": "description",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -43,46 +83,9 @@
             "append": ""
         },
         {
-            "key": "field_648cb965b2ac1",
-            "label": "Trasa",
-            "name": "path",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_648cb968b2ac2",
-            "label": "Dane firmy",
-            "name": "companydata",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_648cb961b2ac0",
-            "label": "Znajdź szkołę",
-            "name": "find",
+            "key": "field_64a02d90dffba",
+            "label": "Button",
+            "name": "button",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -96,11 +99,11 @@
             "return_format": "array"
         },
         {
-            "key": "field_648cf6e43c23c",
-            "label": "Facebook",
-            "name": "fb",
+            "key": "field_64a02d43b5b5b",
+            "label": "Zdjęcie",
+            "name": "image",
             "aria-label": "",
-            "type": "url",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -109,59 +112,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_648cf7183c23d",
-            "label": "Youtube",
-            "name": "yt",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_648cf71b3c23e",
-            "label": "Instagram",
-            "name": "ig",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_648cf71f3c23f",
-            "label": "Tiktok",
-            "name": "tiktok",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         }
     ],
     "location": [
@@ -169,7 +129,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/contact-map"
+                "value": "acf\/thankyou-page"
             }
         ]
     ],
@@ -182,5 +142,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687372078
+    "modified": 1688237212
 }

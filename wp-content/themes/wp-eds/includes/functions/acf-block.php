@@ -343,6 +343,97 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
           ]
         );
+
+        acf_register_block(
+          [
+            'name'            => 'contact',
+            'title'           => __('Kontakt'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['kontakt', 'dane'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+
+        acf_register_block(
+          [
+            'name'            => 'newsletter',
+            'title'           => __('Newsletter'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['newsletter'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+
+        acf_register_block(
+          [
+            'name'            => 'contact-map',
+            'title'           => __('Kontakt mapa'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['mapa', 'kontakt mapa'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+
+        acf_register_block(
+          [
+            'name'            => 'casting-form',
+            'title'           => __('Formularz castingowy'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['casting', 'formularz', 'form casting'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+
+        acf_register_block(
+          [
+            'name'            => 'thankyou-page',
+            'title'           => __('Thank You page'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['thank', 'thankyou', 'thankyoupage', 'dziekujemy'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+
+        acf_register_block(
+          [
+            'name'            => 'contact-coop',
+            'title'           => __('Kontakt w sprawach współpracy'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['kontakt', 'współpraca', 'patronat', 'reklama'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy']
+          ]
+        );
+
+        acf_register_block(
+          [
+            'name'            => 'document-download',
+            'title'           => __('Dokumenty do pobrania'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['dokumenty', 'pobieranie', 'załączniki',],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy']
+          ]
+        );
     }
 }
 

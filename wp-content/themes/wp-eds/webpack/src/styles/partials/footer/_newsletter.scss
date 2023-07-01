@@ -196,8 +196,8 @@ label {
   display: block;
   margin-bottom: 5px;
   background-color: #ffffff;
-  padding: 0 5px;
-  top: -5px;
+  padding: 0 10px;
+  top: -8px;
   z-index: 1;
   position: absolute;
   left: 20px;
@@ -219,7 +219,7 @@ input[type="email"] {
   background-color: #ffffff;
   position: relative;
   z-index: 0;
-  color:$gray;
+  color:$black;
 
 }
 
