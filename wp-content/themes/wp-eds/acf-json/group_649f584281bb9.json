@@ -3,9 +3,29 @@
     "title": "BLOK: Cennik",
     "fields": [
         {
-            "key": "field_649f584397170",
-            "label": "",
-            "name": "",
+            "key": "field_64a01a7d4370e",
+            "label": "Tytuł",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64a01abafcc2c",
+            "label": "Podtytuł",
+            "name": "subtitle",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -41,5 +61,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688164437
+    "modified": 1688216964
 }
