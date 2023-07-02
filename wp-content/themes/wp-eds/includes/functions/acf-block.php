@@ -529,6 +529,18 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams', 'events', 'instruktorzy'],
           ]
         );
+		    acf_register_block(
+			    [
+				    'name'            => 'featured-post',
+				    'title'           => __('Wyróżniony posty'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['wyróżniony', 'posty'],
+				    'post_types'      => ['page', 'post', 'teams', 'events', 'instruktorzy'],
+			    ]
+		    );
     }
 }
 
