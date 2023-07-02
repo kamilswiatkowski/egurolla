@@ -47,7 +47,7 @@
                 {
                     "key": "field_64a03f7afe0fb",
                     "label": "Ikona",
-                    "name": "ikona",
+                    "name": "icon",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -96,7 +96,7 @@
                     "label": "Content",
                     "name": "content",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -106,10 +106,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
                     "parent_repeater": "field_64a03ecefe0fa"
                 },
                 {
@@ -139,7 +139,7 @@
                             "label": "Plik",
                             "name": "file",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "file",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -148,11 +148,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": "",
                             "parent_repeater": "field_64a03f9ece09f"
                         }
                     ],
@@ -164,9 +164,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "block",
                 "operator": "==",
-                "value": "post"
+                "value": "acf\/important"
             }
         ]
     ],
@@ -179,5 +179,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688223675
+    "modified": 1688242935
 }

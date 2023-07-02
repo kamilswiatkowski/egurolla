@@ -430,7 +430,7 @@ function my_acf_init()
 		    acf_register_block(
 			    [
 				    'name'            => 'important',
-				    'title'           => __('Ważne infromacje'),
+				    'title'           => __('Ważne informacje'),
 				    'render_callback' => 'my_acf_block_render_callback',
 				    'category'        => 'formatting',
 				    'icon'            => 'admin-comments',
