@@ -2,7 +2,7 @@
 ?>
 <header>
 		<div class="container">
-				<div class="menu d-md-flex d-none">
+				<div class="menu menu-desktop d-md-flex d-none">
 						<?php
 								wp_nav_menu([
 									            'menu'        => 'primary',
@@ -13,10 +13,13 @@
 						?>
 				</div>
 				<div class="menu-mobile-wrapper d-md-none d-flex">
-						<div class="menu-mobile__burger">
+						<div class="menu-mobile__burger" data-toggle-menu>
 								<?php echo Like\get_svg('burger-mobile'); ?>
 						</div>
-						<div class="menu-mobile__container">
+						<div class="menu-mobile__close d-none">
+								<?php echo Like\get_svg('red-close'); ?>
+						</div>
+						<div class="menu-mobile__container" data-mobile-menu>
 								<?php
 										wp_nav_menu([
 											            'menu'        => 'primary',
