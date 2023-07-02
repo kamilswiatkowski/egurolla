@@ -1,0 +1,37 @@
+.post-type-archive-kariera {
+  background-color: $white;
+
+  &__list {
+    padding: 60px 0;
+
+    @include media-breakpoint-up(lg) {
+      padding: 120px 0;
+    }
+
+    .section__header {
+      display:        flex;
+      flex-direction: column-reverse;
+      margin-bottom:  40px;
+    }
+  }
+
+  .who-is-agustin {
+    background-color: $light-gray;
+    padding:          60px 0;
+    @include media-breakpoint-up(lg) {
+      padding: 120px 0;
+    }
+
+    .section__header {
+      display:        flex;
+      flex-direction: column-reverse;
+      margin-bottom:  40px;
+    }
+  }
+
+  .advantages {
+    .section__header {
+      display: block;
+    }
+  }
+}
