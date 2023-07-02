@@ -10,11 +10,15 @@
     h1{
       font-style: italic;
       font-weight: 700;
-      font-size: 72px;
-      line-height: 82px;
+      font-size: 38px;
       text-align: center;
+      line-height: 42px;
       text-transform: uppercase;
       color: #fff;
+      @media (min-width: $screen-md) {
+        font-size: 72px;
+        line-height: 82px;
+      }
     }
   }
   &__subtitle{
