@@ -13,7 +13,9 @@ function menu (){
     });
     let windowWidth = window.innerWidth;
     if (windowWidth < 992) {
-        $('.menu-mobile .menu-item-has-children > a').on('click', function (e) {
+        let link = $('.menu-mobile .menu-item-has-children > a');
+        link.on('click', function (e) {
+            console.log(link);
             e.preventDefault();
             $(this).parent().toggleClass('open');
         });
