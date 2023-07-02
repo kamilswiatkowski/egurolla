@@ -83,35 +83,68 @@ function testimonialsSlider() {
 }
 
 function advantagesSlider() {
-    $('.advantages__slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: false,
-                    dots: true,
-                    arrows: false
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1.2,
-                    slidesToScroll: 1,
-                    infinite: false,
-                    dots: true,
-                    arrows: false
-                }
-            },
-        ]
-    });
+    if ($('body').hasClass('post-type-archive-kariera')) {
+        $('.advantages__slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1.2,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+            ]
+        });
+    } else {
+        $('.advantages__slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1.2,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+            ]
+        });
+
+    }
 }
 
 function whyYouShouldDanceSlider() {
@@ -141,7 +174,7 @@ function whoIsAgustinSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        arrows: true,
+        arrows: false,
         infinite: false,
         responsive: [
             {
@@ -347,7 +380,7 @@ function historySlider() {
 }
 
 
-function slidersInit(){
+function slidersInit() {
     eventsSlider();
     advantagesSlider();
     whyYouShouldDanceSlider();

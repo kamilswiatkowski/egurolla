@@ -29,9 +29,6 @@ $styles = get_posts(
                 <div class="dancing-styles-in-our-school__slider">
                     <?php foreach ($styles as $style) {
                         Like\dance_style_box($style);
-                        Like\dance_style_box($style);
-                        Like\dance_style_box($style);
-                        Like\dance_style_box($style);
                     } ?>
                 </div>
             </div>
