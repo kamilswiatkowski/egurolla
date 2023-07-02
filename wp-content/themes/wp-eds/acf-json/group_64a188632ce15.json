@@ -1,0 +1,349 @@
+{
+  "key": "group_64a188632ce15",
+  "title": "CPT: Kariera",
+  "fields": [
+    {
+      "key": "field_64a18b10921e6",
+      "label": "Opis",
+      "name": "description",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "rows": "",
+      "placeholder": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_64a1886355b2d",
+      "label": "Miejsce pracy",
+      "name": "work_place",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a1889b55b2e",
+      "label": "Rodzaj pracy",
+      "name": "work_type",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a189d855b2f",
+      "label": "Tryb pracy",
+      "name": "work_mode",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a189f555b30",
+      "label": "Forma zatrudnienia",
+      "name": "work_contract",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a18a2455b31",
+      "label": "Zarobki Min",
+      "name": "payment_min",
+      "aria-label": "",
+      "type": "number",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "min": "",
+      "max": "",
+      "placeholder": "",
+      "step": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a18a3a55b32",
+      "label": "Zarobki Max",
+      "name": "payment_max",
+      "aria-label": "",
+      "type": "number",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "min": "",
+      "max": "",
+      "placeholder": "",
+      "step": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a18a4c55b33",
+      "label": "Wymagane umiejętności",
+      "name": "required_skills",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "table",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Dodaj wiersz",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_64a18a6b55b34",
+          "label": "Umiejętność",
+          "name": "skill",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a18a4c55b33"
+        }
+      ]
+    },
+    {
+      "key": "field_64a18a9a55b37",
+      "label": "Zakres obowiązków",
+      "name": "duties",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "table",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Dodaj wiersz",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_64a18ab255b38",
+          "label": "Obowiązek",
+          "name": "duty",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a18a9a55b37"
+        }
+      ]
+    },
+    {
+      "key": "field_64a18a7b55b35",
+      "label": "Wymagania",
+      "name": "requirements",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "table",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Dodaj wiersz",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_64a18a9055b36",
+          "label": "Wymaganie",
+          "name": "requirement",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a18a7b55b35"
+        }
+      ]
+    },
+    {
+      "key": "field_64a18abe55b39",
+      "label": "Oferujemy",
+      "name": "we_offer",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "table",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Dodaj wiersz",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_64a18ac855b3a",
+          "label": "Oferujemy",
+          "name": "offer",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a18abe55b39"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "kariera"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1688310784
+}
