@@ -1,16 +1,17 @@
 <?php
-
+$text = get_field('top_bar_text', 'option');
+$link = get_field('top_bar_link', 'option');
 ?>
 <section class="top-bar">
 		<div class="container">
 				<div class="row">
 						<div class="col-12">
 							<div class="top-bar__content flex-center">
-									<img class="top-bar__img" src="<?php echo get_template_directory_uri(); ?>/dist/images/shout.png" alt="logo">
+									<img class="top-bar__img" src="<?php echo get_template_directory_uri(); ?>/dist/images/shout-red.svg" alt="logo">
 									<div class="top-bar__text">
-											Oferta promocyjna: Teraz semestr za jedyne 200 zł/m-c!
+											<?php echo $text; ?>
 									</div>
-									<a href="#" class="top-bar__link">SPRAWDŹ</a>
+									<a href="<?php echo $link['url']; ?>" class="top-bar__link"><?php echo $link['title']; ?></a>
 							</div>
 						</div>
 				</div>
