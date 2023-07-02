@@ -35,6 +35,7 @@ class Main {
             sliders.teamLedBySlider();
             sliders.seeAlsoSlider();
             sliders.dancingStyleInOurSchoolSlider();
+            sliders.historySlider();
         });
     }
 

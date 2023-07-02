@@ -1,0 +1,152 @@
+{
+  "key": "group_64a1354918fad",
+  "title": "BLOK: Jedyna taka szkoła w Polsce",
+  "fields": [
+    {
+      "key": "field_64a13549713f1",
+      "label": "Label",
+      "name": "label",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a1355f713f2",
+      "label": "Tytuł",
+      "name": "title",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a13566713f3",
+      "label": "Bloczki",
+      "name": "boxes",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "table",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Dodaj wiersz",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_64a13576713f4",
+          "label": "Czerwony napis",
+          "name": "red_text",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a13566713f3"
+        },
+        {
+          "key": "field_64a135c4ac8cf",
+          "label": "Tytuł",
+          "name": "title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a13566713f3"
+        },
+        {
+          "key": "field_64a135cbac8d0",
+          "label": "Opis",
+          "name": "description",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "rows": "",
+          "placeholder": "",
+          "new_lines": "",
+          "parent_repeater": "field_64a13566713f3"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/only-one-school-in-poland"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1688286679
+}

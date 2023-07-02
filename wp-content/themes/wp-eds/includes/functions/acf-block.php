@@ -391,18 +391,42 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
           ]
         );
-		    acf_register_block(
-			    [
-				    'name'            => 'why-choose-us',
-				    'title'           => __('Dlaczego warto z nami jechać'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['dlaczego', 'warto', 'z', 'nami', 'jechać'],
-				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
-			    ]
-		    );
+        acf_register_block(
+          [
+            'name'            => 'why-choose-us',
+            'title'           => __('Dlaczego warto z nami jechać'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['dlaczego', 'warto', 'z', 'nami', 'jechać'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'only-one-school-in-poland',
+            'title'           => __('Jedyna taka szkoła w polsce'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['jedyna', 'taka', 'szkoła', 'w', 'Polsce'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'history-of-our-school',
+            'title'           => __('Poznaj historię naszej szkoły'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['poznaj', 'historię', 'naszej', 'szkoły'],
+            'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+          ]
+        );
     }
 }
 

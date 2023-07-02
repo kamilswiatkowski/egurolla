@@ -1,0 +1,140 @@
+.search-result {
+  background-color: $white;
+  border-radius:    8px;
+  box-shadow:       0px 0px 16px 0px rgba(0, 0, 0, 0.10);
+  padding:          20px 16px;
+  margin-bottom:    40px;
+
+  @include media-breakpoint-up(lg) {
+    padding:     32px;
+    display:     flex;
+    align-items: center;
+    flex-wrap:   wrap;
+  }
+
+  &__name {
+    color:          $red;
+    font-size:      17px;
+    line-height:    20px;
+    font-weight:    700;
+    text-transform: uppercase;
+    margin-bottom:  20px;
+
+    @include media-breakpoint-up(lg) {
+      font-size:     22px;
+      line-height:   26px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__course-details {
+    @include media-breakpoint-up(lg) {
+      display:     flex;
+      align-items: center;
+    }
+  }
+
+  &__date {
+    font-size:   14px;
+    line-height: 18px;
+    color:       $black;
+    font-weight: 700;
+  }
+
+  &__duration {
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__left {
+
+  }
+
+  &__info {
+
+    @include media-breakpoint-up(lg) {
+      display:         flex;
+      align-items:     center;
+      justify-content: flex-start;
+      flex-wrap:       wrap;
+    }
+
+    &__item {
+      display:         flex;
+      align-items:     center;
+      justify-content: space-between;
+      margin-bottom:   15px;
+
+      @include media-breakpoint-up(lg) {
+        justify-content: flex-start;
+        padding-right:   30px;
+      }
+
+      &:nth-of-type(1) {
+        margin-bottom: 20px;
+        @include media-breakpoint-up(lg) {
+          width:         100%;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    span {
+      font-size:   14px;
+      line-height: 18px;
+      display:     flex;
+      align-items: center;
+
+      @include media-breakpoint-up(lg) {
+        font-size:   16px;
+        line-height: 20px;
+      }
+
+      svg {
+        margin-right: 8px;
+        width:        14px;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 6px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__btn {
+    text-align: center;
+  }
+
+  &__links {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    list-style:      none;
+    margin-top:      20px;
+    width:           100%;
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-start;
+      border-top:      1px solid $light-gray;
+      padding-top:     32px;
+    }
+
+    li {
+      a {
+        color:       $red;
+        font-size:   12px;
+        line-height: 12px;
+        font-weight: 500;
+
+        @include media-breakpoint-up(lg) {
+          margin-right: 32px;
+          font-size:    14px;
+          line-height:  16px;
+        }
+      }
+    }
+  }
+}
