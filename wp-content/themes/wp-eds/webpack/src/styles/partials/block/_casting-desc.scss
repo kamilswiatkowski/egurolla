@@ -1,0 +1,101 @@
+.casting-desc {
+
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    background-color: white;
+
+    @include media-breakpoint-up(xl) {
+        padding: 120px 0 80px;
+
+        .container {
+            max-width: 1000px;
+
+        }
+        .row{
+            align-items: center;
+        }
+        
+    }
+
+    @media screen and (max-width: 992px) {
+        .col-left{
+            order:2;
+        }
+        .col-right{
+            order:1;
+        }
+    }
+    
+
+    &__image {
+        padding: 0px 0px 0px 50px;
+        
+        > img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            padding:0 0 24 0;
+        }    
+    }
+
+    &__data {
+            
+        &-title {
+            color: $red;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 34px;
+            text-transform: uppercase;
+            padding-bottom: 12px;
+
+            @include media-breakpoint-up(xl) {
+              font-size: 44px;
+              line-height: 46px;
+            }
+        }
+
+        &-date{
+   
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            padding-bottom:8px;
+            
+            @include media-breakpoint-up(xl) {
+                font-size: 14px;
+                line-height: 18px;
+              }
+
+        }
+
+        &-description{
+   
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            padding-bottom:8px;
+            
+            @include media-breakpoint-up(xl) {
+                font-size: 16px;
+                line-height: 20px;
+              }
+
+        }
+
+        &-bullets {
+            display: flex;
+            padding-bottom:12px;
+
+            @include media-breakpoint-up(xl) {
+            padding-bottom:15px;
+            }
+            svg{
+                height:22px;
+                width:22px;
+                margin-right:10px;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -505,6 +505,19 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams', 'events', 'instruktorzy'],
           ]
         );
+
+        acf_register_block(
+          [
+            'name'            => 'casting-desc',
+            'title'           => __('Casting - weź udział'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['casting', 'opis castingu', 'udział'],
+            'post_types'      => ['page', 'post', 'teams', 'events', 'instruktorzy'],
+          ]
+        );
     }
 }
 

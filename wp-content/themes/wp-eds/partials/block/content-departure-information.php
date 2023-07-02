@@ -106,7 +106,11 @@ $fields = [
                     <br>
                     <p class="departure-information__box__description">Wpisz Twój adres e-mail i otrzymaj zaproszenie na
                         zebranie informacyjne w aplikacji zoom.</p>
-                    <input type="email">
+                        <div class="departure-information__box__description-email">
+                            <span class="label-text">e-mail</span>
+                            <input type="email" name="email" id="email" class="email-input" required="">
+                            <input type="submit" value="zapisz się" class="btn btn--red btn--outline-red">
+                        </div>
                     <span class="departure-information__box__input-label">Wysyłając wiadomość akceptuję politykę prywatności oraz wyrażam zgodę na przetwarzanie moich danych w celach kontaktowych, jak również w celach wynikających z treści zapytania.</span>
                 </div>
                 <div class="departure-information__box">
