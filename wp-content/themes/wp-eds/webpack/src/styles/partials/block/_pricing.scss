@@ -1,0 +1,89 @@
+.pricing{
+  background-color: $white;
+  padding: 120px 0;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    &-text{
+      margin-right: 20px;
+    }
+  }
+  &__head{
+    background-color: $red;
+  }
+  &__even{
+    background-color: $white;
+  }
+  &__odd{
+    background-color: $light-gray2;
+  }
+  &__row-title{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  &__price{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .divTable{
+    display: table;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .divTableRow {
+    display: table-row;
+  }
+  &__head{
+    .divTableCell{
+      color:$white;
+    }
+  }
+  .divTableRow{
+    .divTableCell{
+      width: 33%;
+      text-align: center;
+     &:first-child{
+       border-radius: 8px 0 0 8px;
+     }
+      &:last-child{
+       border-radius: 0 8px 8px 0;
+     }
+    }
+  }
+  .divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+  }
+  .divTableCell, .divTableHead {
+    display: table-cell;
+    padding: 20px 17px;
+  }
+
+  .divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+    font-weight: bold;
+  }
+  .divTableFoot {
+    background-color: #EEE;
+    display: table-footer-group;
+    font-weight: bold;
+  }
+  .divTableBody {
+    display: table-row-group;
+  }
+}

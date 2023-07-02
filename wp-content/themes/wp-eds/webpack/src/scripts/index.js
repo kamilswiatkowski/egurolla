@@ -19,11 +19,7 @@ class Main {
 
     onDocumentLoad() {
         window.addEventListener("load", (event) => {
-            sliders.eventsSlider();
-            sliders.advantagesSlider();
-            sliders.whyYouShouldDanceSlider();
-            sliders.experienceSlider();
-            sliders.winsSlider();
+            sliders.slidersInit();
             accordion.accordion();
             map.mapInit();
             filters.filtersInit();
@@ -35,7 +31,6 @@ class Main {
             sliders.teamLedBySlider();
             sliders.seeAlsoSlider();
             sliders.dancingStyleInOurSchoolSlider();
-            sliders.historySlider();
         });
     }
 

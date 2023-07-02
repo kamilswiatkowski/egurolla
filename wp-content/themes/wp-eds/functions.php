@@ -12,11 +12,9 @@
 		foreach (array_diff($all, $ignore) as $filename) {
 				require_once $filename;
 		}
-
-		function eds_mime_types($mimes) {
-			$mimes['svg'] = 'image/svg+xml';
-			return $mimes;
+		
+		function cc_mime_types($mimes) {
+				$mimes['svg'] = 'image/svg+xml';
+				return $mimes;
 		}
-		
-		add_filter('upload_mimes', 'eds_mime_types');
-		
+		add_filter('upload_mimes', 'cc_mime_types');

@@ -482,6 +482,66 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
           ]
         );
+		    acf_register_block(
+			    [
+				    'name'            => 'why-choose-us',
+				    'title'           => __('Dlaczego warto z nami jechać'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['dlaczego', 'warto', 'z', 'nami', 'jechać'],
+				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+			    ]
+		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'testimonials',
+				    'title'           => __('Opinie kursantów'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['opinie', 'kursantów'],
+				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+			    ]
+		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'pricing',
+				    'title'           => __('Cennik'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['cennik'],
+				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+			    ]
+		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'important',
+				    'title'           => __('Ważne informacje'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['ważne', 'informacje'],
+				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+			    ]
+		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'lessons',
+				    'title'           => __('Lekcje indywidualne'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['lekcje', 'indywidualne'],
+				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+			    ]
+		    );
         acf_register_block(
           [
             'name'            => 'why-choose-us',
