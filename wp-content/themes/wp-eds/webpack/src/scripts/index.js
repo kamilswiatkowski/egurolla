@@ -7,6 +7,7 @@ import sliders from "./sliders";
 import map from './map.js';
 import filters from './filters';
 import accordion from "./accordion";
+import menu from "./menu";
 
 class Main {
     constructor() {
@@ -24,6 +25,7 @@ class Main {
             map.mapInit();
             filters.filtersInit();
             functions.timer();
+            menu.menu();
         });
     }
 
@@ -31,7 +33,6 @@ class Main {
         document.addEventListener("DOMContentLoaded", (event) => {
             functions.cookies();
             functions.scrollToSection();
-            functions.toggleMobileMenu();
         });
 
     }

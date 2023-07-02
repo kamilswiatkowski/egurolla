@@ -3,6 +3,7 @@
 		$title = get_field('title');
 		$subtitle = get_field('subtitle');
 		$sections = get_field('sections');
+		$direction = get_field('direction');
 ?>
 <section class="event-desc">
 		<div class="container">

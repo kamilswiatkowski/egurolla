@@ -58,12 +58,6 @@ function scrollToSection() {
     });
 }
 
-function toggleMobileMenu() {
-    $('[data-toggle-menu]').on('click', function () {
-        $('[data-menu]').toggleClass('open');
-    });
-}
-
 function timer(delayLoad = false) {
     const timers = $('[data-timer]:not(.loaded)');
     if (timers.length < 1) {
@@ -129,4 +123,4 @@ function timer(delayLoad = false) {
     });
 }
 
-export default {cookies, scrollToSection, toggleMobileMenu, timer};
+export default {cookies, scrollToSection, timer};
