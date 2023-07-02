@@ -361,6 +361,7 @@ function slidersInit(){
     seeAlsoSlider();
     dancingStyleInOurSchoolSlider();
     testimonialsSlider();
+    historySlider();
 }
 
 export default {

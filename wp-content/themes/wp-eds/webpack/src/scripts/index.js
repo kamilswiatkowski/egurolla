@@ -23,14 +23,7 @@ class Main {
             accordion.accordion();
             map.mapInit();
             filters.filtersInit();
-            sliders.whoIsAgustinSlider();
-            sliders.ourTeamSlider();
-            sliders.eventPlanSlider();
             functions.timer();
-            sliders.aboutInstructorSlider();
-            sliders.teamLedBySlider();
-            sliders.seeAlsoSlider();
-            sliders.dancingStyleInOurSchoolSlider();
         });
     }
 

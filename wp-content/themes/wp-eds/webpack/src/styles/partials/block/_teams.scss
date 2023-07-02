@@ -3,10 +3,10 @@
   padding: 50px 0;
   &__filters{
     display: flex;
-    max-width: 900px;
     margin: 0 auto 40px;
     align-items: center;
     font-weight: 400;
+    justify-content: center;
     &-text{
       margin-top: -8px;
     }
