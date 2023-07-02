@@ -28,20 +28,23 @@
 											            'link_after'  => '</span>',
 										            ]);
 								?>
+								<div class="menu-mobile__bottom">
 										<div class="btn btn--white-text">
 												ZNAJDŹ SZKOŁĘ
 										</div>
-								<div class="menu-mobile__contact">
-										<div class="menu-mobile__mail">
-												<?php echo Like\get_svg('mail'); ?>
-												studio@egurrola.pl
+										<div class="menu-mobile__contact">
+												<div class="menu-mobile__mail">
+														<?php echo Like\get_svg('mail'); ?>
+														studio@egurrola.pl
+												</div>
+												<div class="menu-mobile__phone">
+														<?php echo Like\get_svg('phone'); ?>
+														601 20 20 20
+												</div>
 										</div>
-										<div class="menu-mobile__phone">
-												<?php echo Like\get_svg('phone'); ?>
-												601 20 20 20
-										</div>
+										<?php include(Like\get_partial('socials')); ?>
 								</div>
-								<?php include(Like\get_partial('socials')); ?>
+
 						</div>
 						<div class="search-bar__logo">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

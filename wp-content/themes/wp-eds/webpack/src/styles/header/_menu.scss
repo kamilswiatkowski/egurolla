@@ -25,6 +25,10 @@
 
     }
     &__container{
+      height: calc(100vh - 149px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       .btn{
         width: fit-content;
         display: block;

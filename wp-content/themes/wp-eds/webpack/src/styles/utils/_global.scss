@@ -23,31 +23,36 @@
     border: 1px solid $red;
   }
 }
-.show-desktop-block{
+
+.show-desktop-block {
   display: none;
   @media (min-width: $screen-md) {
     display: block;
   }
 }
-.show-desktop-flex{
-    display: none !important;
-    @media (min-width: $screen-md) {
-        display: flex !important;
-    }
-}
-.show-mobile-flex{
+
+.show-desktop-flex {
+  display: none !important;
+  @media (min-width: $screen-md) {
     display: flex !important;
-    @media (min-width: $screen-md) {
-        display: none !important;
-    }
+  }
 }
-.show-mobile-block{
-    display: block;
-    @media (min-width: $screen-md) {
-        display: none;
-    }
+
+.show-mobile-flex {
+  display: flex !important;
+  @media (min-width: $screen-md) {
+    display: none !important;
+  }
 }
-.red-title-italic{
+
+.show-mobile-block {
+  display: block;
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.red-title-italic {
   font-style: italic;
   font-weight: 700;
   font-size: 28px;
@@ -55,39 +60,46 @@
   text-transform: uppercase;
   color: $red;
   margin-bottom: 20px;
-  &--white{
-    color:$white;
+
+  &--white {
+    color: $white;
   }
+
   @media (min-width: $screen-md) {
     font-weight: 700;
     font-size: 44px;
     line-height: 46px;
   }
-  
+
 }
-.red-subtitle{
+
+.red-subtitle {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-    color: $red;
-  &--white{
-    color:$white;
-    &:before{
+  color: $red;
+
+  &--white {
+    color: $white;
+
+    &:before {
       color: $white;
     }
   }
-  &:before{
+
+  &:before {
     content: '/';
     margin-right: 10px;
     color: $red;
   }
 }
-.red-button-white-text{
+
+.red-button-white-text {
   padding: 10px 20px;
-  color:$white;
+  color: $white;
   background: $red;
   border-radius: 40px;
   text-decoration: unset;
@@ -96,16 +108,21 @@
   line-height: 19px;
 }
 
-.black-subtitle-italic{
+.black-subtitle-italic {
 
-font-size: 17px;
-line-height: 20px;
-font-style: italic;
-font-weight: 700;
-text-transform:uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
 
-@include media-breakpoint-up(xl) {
-font-size: 22px;
-line-height: 26px;
+  @include media-breakpoint-up(xl) {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
+body{
+  &.overflow-hidden{
+    overflow: hidden;
+  }
 }
