@@ -439,6 +439,18 @@ function my_acf_init()
 				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
 			    ]
 		    );
+		    acf_register_block(
+			    [
+				    'name'            => 'lessons',
+				    'title'           => __('Lekcje indywidualne'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['lekcje', 'indywidualne'],
+				    'post_types'      => ['page', 'post', 'teams', 'instruktorzy'],
+			    ]
+		    );
     }
 }
 
