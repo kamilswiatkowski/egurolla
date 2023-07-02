@@ -7,9 +7,41 @@
       padding: 10px 0;
       position: relative;
     }
+    &__mail,&__phone{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      svg{
+        margin-top: 0;
+        padding-right: 10px;
+        width: 40px;
+      }
+    }
+    &__mail{
+
+    }
+    &__container{
+      height: calc(100vh - 149px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .btn{
+        width: fit-content;
+        display: block;
+        margin: 15px auto 15px;
+      }
+      .socials{
+        padding: 22px 0 0 0;
+      }
+    }
     &__close{
 
     }
+
     .menu-item{
       justify-content: center;
       max-width: unset;
