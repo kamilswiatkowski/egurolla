@@ -1,4 +1,5 @@
 <?php
+		
 		$title = get_field('title');
 		$tags = get_tags();
 		$posts = get_posts();
@@ -34,6 +35,18 @@
 										<?php } ?>
 								</div>
 						</div>
+				</div>
+
+		</div>
+</section>
+<section class="posts">
+		<div class="container">
+				<div class="row posts__container">
+						<?php foreach ($posts as $post) { ?>
+								<div class="col-md-4 col-12">
+										<?php Like\article_box($post->ID); ?>
+								</div>
+						<?php } ?>
 				</div>
 		</div>
 </section>

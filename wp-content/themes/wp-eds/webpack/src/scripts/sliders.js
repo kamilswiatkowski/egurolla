@@ -402,13 +402,13 @@ function featuredPosts(){
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        arrows: false,
+        arrows: true,
         infinite: false,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    arrows: false
+                    arrows: true
                 }
             },
         ]
