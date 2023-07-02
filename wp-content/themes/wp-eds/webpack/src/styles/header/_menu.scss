@@ -13,8 +13,32 @@
     .menu-item{
       justify-content: center;
       max-width: unset;
-      padding: 15px 15px;
+      padding: 17px;
       position: relative;
+      flex-direction: column;
+      &.menu-item-has-children{
+        position: relative;
+        > a{
+            position: relative;
+            &:after{
+              content: url("./images/arrow-red-bottom.svg");
+              position: absolute;
+              right: -15px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+        }
+        &.open{
+          .sub-menu{
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .sub-menu{
+          display: none;
+        }
+      }
       &:before{
         content: '';
         width: calc(100% - 30px);
@@ -42,6 +66,16 @@
       &.open{
         left: -15px;
         transition: left 0.3s ease-in-out;
+      }
+    }
+  }
+  .menu-item{
+    &.menu-item-has-children{
+      position: relative;
+      &:after{
+        content: url("./images/arrow-red-bottom.svg");
+        bottom: 0;
+        padding: 0 15px;
       }
     }
   }

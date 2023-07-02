@@ -11,6 +11,13 @@ function menu (){
         burgerBtn.classList.toggle('d-none');
         $('[data-mobile-menu]').toggleClass('open');
     });
+    let windowWidth = window.innerWidth;
+    if (windowWidth < 992) {
+        $('.menu-mobile .menu-item-has-children > a').on('click', function (e) {
+            e.preventDefault();
+            $(this).parent().toggleClass('open');
+        });
+    }
 
 }
 
