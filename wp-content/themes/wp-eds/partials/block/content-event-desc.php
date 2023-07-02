@@ -3,6 +3,7 @@
 		$title = get_field('title');
 		$subtitle = get_field('subtitle');
 		$sections = get_field('sections');
+		$direction = get_field('direction');
 ?>
 <section class="event-desc">
 		<div class="container">
@@ -18,6 +19,7 @@
 				</div>
 				<?php foreach ($sections as $key => $section) {
 						$odd = $key % 2 == 0 ? 'odd' : 'even';
+						if($direction) $odd = $direction ? 'even' : 'odd';
 						?>
 						<div class="row <?php echo $odd; ?>">
 								<div class="col-lg-6 col-12 event-desc__col">

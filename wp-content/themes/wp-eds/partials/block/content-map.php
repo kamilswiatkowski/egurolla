@@ -35,8 +35,8 @@
 		<div class="container">
 				<div class="row">
 						<div class="col-12">
-								<h2 class="map__title">ZNAJDŹ PUNKT PARTNERSKI <br>
-										I SKORZYSTAJ Z PROMOCJI</h2>
+								<h2 class="map__title">ZNAJDŹ DLA SIEBIE <br>
+								WYGODNĄ LOKALIZACJĘ</h2>
 						</div>
 						<div class="col-12">
 								<div class="map__subtitle">
