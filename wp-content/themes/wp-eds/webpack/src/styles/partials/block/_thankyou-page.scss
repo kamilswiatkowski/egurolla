@@ -1,0 +1,154 @@
+.thankyou-page {
+
+
+    &__image-box{
+        width:100%;
+        padding:15px;
+    }
+
+&__image{
+    width:100%;
+    padding:15px;
+}
+&__message{
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+    padding: 50px 0px;
+
+    &-label{
+        
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        padding-bottom:16px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            
+        }
+    }
+
+    &-sublabel{
+            
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: left;
+
+        @include media-breakpoint-up(lg) {
+
+            font-size: 32px;
+            line-height: 38px;
+ 
+
+        }
+    }
+}
+
+&__banner {
+    background-color: $red;
+    padding:          40px 0;
+    position:         relative;
+    overflow:         hidden;
+    align-items: center;
+    display: flex;
+    @include media-breakpoint-up(lg) {
+      padding: 30px 0;
+      min-height: 590px;
+    }
+  
+    .container {
+      position: relative;
+      z-index:  1;
+      max-width:1200px;
+
+      .grey-padding{
+        padding: 50px 0px;
+        display:flex;
+      }
+    }
+
+    .row.d-lg-flex.align-items-lg-center{
+        flex-direction: column-reverse;
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+          }
+    }
+
+    
+  
+    &::before {
+      background: radial-gradient(50% 50% at 50% 50%, #ED5A7F 0%, #CC0033 100%);
+      width:      160px;
+      height:     160px;
+      content:    '';
+      position:   absolute;
+      top:        -45px;
+      right:      -76px;
+  
+      @include media-breakpoint-up(lg) {
+        width: 600px;
+        height: 450px;
+        top:    -212px;
+        right:  -116px;
+      }
+    }
+  
+    &::after {
+      background: radial-gradient(50% 50% at 50% 50%, #ED5A7F 0%, #CC0033 100%);
+      width:      160px;
+      height:     160px;
+      content:    '';
+      position:   absolute;
+      display:    none;
+      @include media-breakpoint-up(lg) {
+        width: 489px;
+        height: 526px;
+        bottom: -167px;
+        left: -116px;
+        display: block;
+      }
+    }
+
+    &-title{
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 42px;
+        font-style: italic;
+        text-align: left;
+        color:white;
+        text-transform: uppercase;
+        padding-bottom:20px;
+
+        @include media-breakpoint-up(lg) {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 82px;
+        padding-bottom:12px;
+        }
+    }
+
+    &-description{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        color:white;
+        display:block;
+        padding-bottom:20px;
+
+        @include media-breakpoint-up(lg) {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        padding-bottom:32px
+        }
+    }
+
+}
+}

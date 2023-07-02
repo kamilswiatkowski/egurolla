@@ -1,0 +1,71 @@
+.contact {
+
+  padding: 30px 0 0 0;
+  margin: 0 auto;
+  background-color: white;
+
+  @include media-breakpoint-up(xl) {
+    padding: 120px 0 80px;
+
+    .container {
+      max-width: 1000px;
+
+    }
+  }
+
+  &__item {
+    max-width: 1000px;
+    padding-bottom:20px;
+
+    &-headline{
+      display: flex;
+      align-items:center;
+      
+      @include media-breakpoint-up(xl) {
+        padding-bottom:10px;
+        min-height: 60px;
+
+    }
+  }
+
+    &-icon{
+      width: 50px;
+      height: 50px;
+      padding-right: 20px;
+      
+      &-mail{
+        width: 50px;
+        height: 50px;
+        padding-right: 20px;
+        margin-top:-5px;
+      }
+    }
+
+    &-header{
+      font-style: italic;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
+      text-transform: uppercase;
+      
+      @include media-breakpoint-up(xl) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      
+    }
+    
+   
+    &-desc{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    
+    }
+  }
+}
