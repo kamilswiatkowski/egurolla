@@ -15,11 +15,12 @@ function menu (){
     });
     let windowWidth = window.innerWidth;
     if (windowWidth < 992) {
-        let link = $('.menu-mobile .menu-item-has-children > a');
-        link.on('click', function (e) {
+        let link = document.querySelector('.menu-mobile .menu-item-has-children > a');
+
+        link.addEventListener('click', function (e) {
             console.log(link);
             e.preventDefault();
-            $(this).parent().toggleClass('open');
+            link.parentElement.toggle('open');
         });
     }
 
