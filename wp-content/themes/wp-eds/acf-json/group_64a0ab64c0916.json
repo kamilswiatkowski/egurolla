@@ -25,7 +25,7 @@
         {
             "key": "field_64a0ab64c29e8",
             "label": "Dokument",
-            "name": "attachment",
+            "name": "document_download",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -107,5 +107,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688252848
+    "modified": 1688254262
 }
