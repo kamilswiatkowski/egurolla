@@ -397,6 +397,23 @@ function partnersSlider() {
     });
 }
 
+function featuredPosts(){
+    $('.featured__posts').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: true
+                }
+            },
+        ]
+    });
+}
 function opinionsSlider() {
     $('.opinions__slider').slick({
         slidesToShow: 3,
@@ -425,6 +442,7 @@ function opinionsSlider() {
 
 function slidersInit() {
     eventsSlider();
+    featuredPosts();
     advantagesSlider();
     whyYouShouldDanceSlider();
     experienceSlider();
