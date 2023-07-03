@@ -32,7 +32,9 @@ function showTeam($team)
             <?php } ?>
             <?php if (is_array($categories)) { ?>
                 <div class="teams__team-categories">
-                    <?php foreach ($categories as $category) { ?>
+                    <?php foreach ($categories as $category) {
+                        if($category->parent === 0) continue;
+                        ?>
                         <div class="teams__team-category">
                             <?php echo $category->name; ?>
                         </div>
