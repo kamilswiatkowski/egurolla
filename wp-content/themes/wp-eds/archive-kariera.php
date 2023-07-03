@@ -41,6 +41,24 @@ $fields = [
 
 ?>
 
+<section class="home-hero" style="background: url('<?php echo home_url(); ?>/wp-content/themes/wp-eds/dist/images/kariera-bg.png') center center no-repeat;">
+		<div class="container">
+				<div class="row">
+						<div class="col-12">
+								<div class="home-hero__wrapper">
+										<div class="home-hero__title">
+												<h1>dołącz do zespołu egurrola dance studio</h1>
+										</div>
+										<div class="home-hero__subtitle">
+                                        kariera
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</section>
+
+
     <section class="advantages">
         <div class="container">
             <div class="row align-items-center">

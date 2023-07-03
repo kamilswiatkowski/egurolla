@@ -4,6 +4,7 @@ namespace Like;
 
 function kariera_box(int $id)
 {
+    $apply_url = (is_single($id)) ? '#form' : get_permalink($id);
     ?>
     <div class="kariera__box">
         <div class="kariera__box__top">
@@ -36,7 +37,7 @@ function kariera_box(int $id)
                 </div>
             </div>
             <div class="kariera__box__btn-wrapper">
-                <a href="" class="btn btn--white btn--red-bg">Aplikuj</a>
+            <a href="<?php echo esc_url($apply_url); ?>" class="btn btn--white btn--red-bg">Aplikuj</a>
             </div>
         </div>
     </div>
