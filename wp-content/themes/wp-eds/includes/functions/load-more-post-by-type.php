@@ -8,7 +8,7 @@
 		{
 				ob_start();
 				$teams = get_posts([
-					                   'post_type'   => $_POST['post_type'],
+					                   'post_type'   => $_POST['type'],
 					                   'numberposts' => 6,
 					                   'paged'       => $_POST['page'],
 				                   ]);
@@ -20,8 +20,8 @@
 				wp_die();
 		}
 		
-		add_action('wp_ajax_loadMoreTeams', 'Like\loadMorePosts');
-		add_action('wp_ajax_nopriv_loadMoreTeams', 'Like\loadMorePosts');
+		add_action('wp_ajax_loadMorePosts', 'Like\loadMorePosts');
+		add_action('wp_ajax_nopriv_loadMorePosts', 'Like\loadMorePosts');
 		
 		function loadMorePostssByFilter()
 		{
@@ -49,5 +49,5 @@
 				wp_die();
 		}
 		
-		add_action('wp_ajax_loadMoreTeamsByFilter', 'Like\loadMoreTeamsByFilter');
-		add_action('wp_ajax_nopriv_loadMoreTeamsByFilter', 'Like\loadMoreTeamsByFilter');
+		add_action('wp_ajax_loadMorePostssByFilter', 'Like\loadMorePostssByFilter');
+		add_action('wp_ajax_nopriv_loadMorePostssByFilter', 'Like\loadMorePostssByFilter');

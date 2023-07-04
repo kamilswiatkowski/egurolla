@@ -70,7 +70,7 @@
 				</div>
 				<div class="row">
 						<div class="col-12">
-								<div class="teams__load-more">
+								<div class="teams__load-more" data-load-more>
 										ZAŁADUJ WIĘCEJ
 								</div>
 						</div>

@@ -2,7 +2,7 @@ function filtersInit(){
     let filters = document.querySelector('.teams__filters');
     if(filters){
         teamsFilters();
-        loadMoreButton();
+        loadMoreButton('[data-load-more]', 'loadMorePosts', '.teams__container', 'teams');
         clearFiltersButton();
     }
 }
@@ -36,14 +36,14 @@ function collectFiltersIds(filtersClass){
     });
     return JSON.stringify(filtersIds);
 }
-function loadMoreButton(button, action, containerClass){
-    let loadMoreButton = document.querySelector('.' + button);
+function loadMoreButton(button, action, containerClass, postType){
+    let loadMoreButton = document.querySelector(button);
     if(loadMoreButton) {
         let currentPage = 1;
         if (loadMoreButton) {
             loadMoreButton.addEventListener('click', (event) => {
                 currentPage++;
-                ajaxLoadMorePosts(currentPage, action, containerClass);
+                ajaxLoadMorePosts(currentPage, action, containerClass, postType);
             });
         }
     }
@@ -52,12 +52,13 @@ function ajaxLoadMorePosts(currentPage, action, containerClass){
     const ajaxData = {
         action: action,
         page: currentPage,
+        type: postType
     };
     $.post(settings.ajax_url, ajaxData)
         .done((response) => {
             response = JSON.parse(response);
             if(response.teams) {
-                let teamsContainer = document.querySelector('.' + containerClass);
+                let teamsContainer = document.querySelector(containerClass);
                 teamsContainer.innerHTML += response.teams;
             }
             hideLoadMoreButton();
