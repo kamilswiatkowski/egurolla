@@ -101,7 +101,7 @@
       }
 
       &__salary {
-        border-left: 1px solid $black;
+        border-left: 1px solid $red;
         padding:     0 6px 0 20px;
         margin:      8px 6px;
         position:    relative;
@@ -122,8 +122,8 @@
           content:       '';
           width:         6px;
           height:        100%;
-          border-top:    1px solid $black;
-          border-bottom: 1px solid $black;
+          border-top:    1px solid $red;
+          border-bottom: 1px solid $red;
         }
 
         &::before {
@@ -133,7 +133,7 @@
           position:         absolute;
           top:              50%;
           left:             0;
-          background-color: $black;
+          background-color: $red;
         }
       }
     }
