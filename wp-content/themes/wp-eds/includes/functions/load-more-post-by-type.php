@@ -4,11 +4,11 @@
 		
 		use function Like\showTeams;
 		
-		function loadMoreTeams($data)
+		function loadMorePosts($data)
 		{
 				ob_start();
 				$teams = get_posts([
-					                   'post_type'   => 'teams',
+					                   'post_type'   => $_POST['post_type'],
 					                   'numberposts' => 6,
 					                   'paged'       => $_POST['page'],
 				                   ]);
@@ -20,16 +20,16 @@
 				wp_die();
 		}
 		
-		add_action('wp_ajax_loadMoreTeams', 'Like\loadMoreTeams');
-		add_action('wp_ajax_nopriv_loadMoreTeams', 'Like\loadMoreTeams');
+		add_action('wp_ajax_loadMoreTeams', 'Like\loadMorePosts');
+		add_action('wp_ajax_nopriv_loadMoreTeams', 'Like\loadMorePosts');
 		
-		function loadMoreTeamsByFilter()
+		function loadMorePostssByFilter()
 		{
 				ob_start();
 				$filters = json_decode(stripslashes($_POST['filter']));
 				
 				$teams = get_posts([
-					                   'post_type'   => 'teams',
+					                   'post_type'   => $_POST['post_type'],
 					                   'numberposts' => 6,
 					                   'paged'       => $_POST['page'],
 					                   'tax_query'   => [

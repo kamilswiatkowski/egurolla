@@ -17,8 +17,9 @@
 										<div class="featured__category">
 												#wszystko
 										</div>
-										<?php foreach ($tags as $tag) { ?>
-												<div class="featured__category">
+										<?php foreach ($tags as $tag) {
+												?>
+												<div class="featured__category" data-tag="<?php echo $tag->term_id; ?>" data-current-filter>
 														#<?php echo $tag->name; ?>
 												</div>
 										<?php } ?>

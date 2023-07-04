@@ -16,44 +16,48 @@ function teamsFilters(){
                 let filterDropdown = item.parentElement;
                 filterDropdown.dataset.currentFilter = item.dataset.filter;
                 mainFilterName.innerHTML = item.innerHTML;
-                ajaxLoadMorePostsByFilter(1, collectFiltersIds());
+                ajaxLoadMorePostsByFilter(1, collectFiltersIds('.teams__dropdown'));
             });
         });
     }
 }
 
-function collectFiltersIds(){
+function singleFilter(){
+
+}
+
+function collectFiltersIds(filtersClass){
     let filtersIds = [];
-    let teamsDropdowns = document.querySelectorAll('.teams__dropdown');
-    teamsDropdowns.forEach((dropdown) => {
-        if(dropdown.dataset.currentFilter){
-            filtersIds.push(dropdown.dataset.currentFilter);
+    let teamsDropdowns = document.querySelectorAll(filtersClass);
+    teamsDropdowns.forEach((item) => {
+        if(item.dataset.currentFilter){
+            filtersIds.push(item.dataset.currentFilter);
         }
     });
     return JSON.stringify(filtersIds);
 }
-function loadMoreButton(){
-    let loadMoreButton = document.querySelector('.teams__load-more');
+function loadMoreButton(button, action, containerClass){
+    let loadMoreButton = document.querySelector('.' + button);
     if(loadMoreButton) {
         let currentPage = 1;
         if (loadMoreButton) {
             loadMoreButton.addEventListener('click', (event) => {
                 currentPage++;
-                ajaxLoadMorePosts(currentPage);
+                ajaxLoadMorePosts(currentPage, action, containerClass);
             });
         }
     }
 }
-function ajaxLoadMorePosts(currentPage){
+function ajaxLoadMorePosts(currentPage, action, containerClass){
     const ajaxData = {
-        action: 'loadMoreTeams',
+        action: action,
         page: currentPage,
     };
     $.post(settings.ajax_url, ajaxData)
         .done((response) => {
             response = JSON.parse(response);
             if(response.teams) {
-                let teamsContainer = document.querySelector('.teams__container');
+                let teamsContainer = document.querySelector('.' + containerClass);
                 teamsContainer.innerHTML += response.teams;
             }
             hideLoadMoreButton();
@@ -100,11 +104,11 @@ function clearFiltersButton(){
     }
 }
 
-function hideLoadMoreButton(){
-    let teamsElements = document.querySelectorAll('.teams__team');
+function hideLoadMoreButton(elementsToCheck){
+    let teamsElements = document.querySelectorAll(elementsToCheck);
     let maxElements = document.querySelector('[data-max-posts]');
     if(teamsElements.length >= maxElements.dataset.maxPosts) {
-        let loadMoreButton = document.querySelector('.teams__load-more');
+        let loadMoreButton = document.querySelector('[data-load-more]');
         if (loadMoreButton) {
             loadMoreButton.style.display = 'none';
         }
