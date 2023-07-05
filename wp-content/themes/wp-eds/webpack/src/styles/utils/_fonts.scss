@@ -1,7 +1,87 @@
-//@import url('https://fonts.cdnfonts.com/css/helvetica-neue-lt-pro-55?styles=17480,17484,17490,17456,17459,17458,17464,17465');
+//@import url('../../../fonts/https://fonts.cdnfonts.com/css/helvetica-neue-lt-pro-55?styles=17480,17484,17490,17456,17459,17458,17464,17465');
 
 
-@include fontface-otf("Helvetica", 'Helvetica-300', 300, normal);
-@include fontface-otf("Helvetica", 'Helvetica-500', 500, normal);
-@include fontface-otf("Helvetica", 'Helvetica-700', 700, normal);
-@include fontface-otf("Helvetica", 'Helvetica-700-italic', 700, italic);
+//@include fontface-otf("Helvetica", 'Helvetica-300', 300, normal);
+//@include fontface-otf("Helvetica", 'Helvetica-500', 500, normal);
+//@include fontface-otf("Helvetica", 'Helvetica-700', 700, normal);
+//@include fontface-otf("Helvetica", 'Helvetica-700-italic', 700, italic);
+
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src:         url('../../../fonts/helveticaneueltpro-bdcn-webfont.woff2') format('woff2'),
+               url('../../../fonts/helveticaneueltpro-bdcn-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style:  normal;
+
+}
+
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src:         url('../../../fonts/helveticaneueltpro-bdcno-webfont.woff2') format('woff2'),
+               url('../../../fonts/helveticaneueltpro-bdcno-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style:  italic;
+
+}
+
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src:         url('../../../fonts/helveticaneueltpro-cn-webfont.woff2') format('woff2'),
+               url('../../../fonts/helveticaneueltpro-cn-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style:  normal;
+
+}
+
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src:         url('../../../fonts/helveticaneueltpro-cno-webfont.woff2') format('woff2'),
+               url('../../../fonts/helveticaneueltpro-cno-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style:  italic;
+
+}
+
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src:         url('../../../fonts/helveticaneueltpro-hvcn-webfont.woff2') format('woff2'),
+               url('../../../fonts/helveticaneueltpro-hvcn-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style:  normal;
+
+}
+
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src:         url('../../../fonts/helveticaneueltpro-hvcno-webfont.woff2') format('woff2'),
+               url('../../../fonts/helveticaneueltpro-hvcno-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style:  italic;
+
+}
+
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src:         url('../../../fonts/helveticaneueltpro-mdcn-webfont.woff2') format('woff2'),
+               url('../../../fonts/helveticaneueltpro-mdcn-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style:  normal;
+
+}
+
+
+@font-face {
+  font-family: 'helvetica_neue_lt_proitalic';
+  src:         url('../../../fonts/helveticaneueltpro-mdcno-webfont.woff2') format('woff2'),
+               url('../../../fonts/helveticaneueltpro-mdcno-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style:  italic;
+
+}
