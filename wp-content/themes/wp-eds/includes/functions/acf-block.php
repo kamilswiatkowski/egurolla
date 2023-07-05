@@ -529,18 +529,18 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams', 'events', 'instruktorzy'],
           ]
         );
-		    acf_register_block(
-			    [
-				    'name'            => 'featured-post',
-				    'title'           => __('Wyróżniony posty'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['wyróżniony', 'posty'],
-				    'post_types'      => ['page', 'post', 'teams', 'events', 'instruktorzy'],
-			    ]
-		    );
+        acf_register_block(
+          [
+            'name'            => 'featured-post',
+            'title'           => __('Wyróżniony posty'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['wyróżniony', 'posty'],
+            'post_types'      => ['page', 'post', 'teams', 'events', 'instruktorzy'],
+          ]
+        );
 
         acf_register_block(
           [
@@ -564,6 +564,19 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['lokalizacje', 'szukamy', 'real', 'estate'],
+            'post_types'      => ['page', 'post', 'teams', 'events'],
+          ]
+        );
+
+        acf_register_block(
+          [
+            'name'            => 'faq',
+            'title'           => __('FAQ - Jakie tematy Cię interesują'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['faq', 'jakie', 'tematy', 'cię', 'interesują'],
             'post_types'      => ['page', 'post', 'teams', 'events'],
           ]
         );
