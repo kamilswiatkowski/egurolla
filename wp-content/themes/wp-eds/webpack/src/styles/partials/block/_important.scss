@@ -1,78 +1,102 @@
-.important{
+.important {
   background-color: $white;
-  &__title{
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px;
+  padding-bottom:   60px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    font-size:      32px;
+    font-style:     normal;
+    font-weight:    700;
+    line-height:    38px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom:  40px;
   }
-  &__box{
+
+  &__box {
     padding: 32px 66px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 30px;
+      height:        calc(100% - 30px);
+    }
   }
-  &__box{
+
+  &__box {
     border-radius: 8px;
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.10);
-    &-icon{
+    box-shadow:    0px 0px 16px 0px rgba(0, 0, 0, 0.10);
+
+    &-icon {
       margin-right: 12px;
     }
-    &-title{
-      font-size: 22px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 26px;
+
+    &-title {
+      font-size:      22px;
+      font-style:     normal;
+      font-weight:    700;
+      line-height:    26px;
       text-transform: uppercase;
     }
-    &-top{
-      display: flex;
+
+    &-top {
+      display:       flex;
       margin-bottom: 20px;
     }
-    &-content{
+
+    &-content {
       font-weight: 400;
       line-height: 20px;
-      font-size: 14px;
+      font-size:   14px;
       @media (min-width: $screen-md) {
         font-size: 16px;
       }
-      a{
+
+      a {
         color: $red;
       }
-      ul{
-        margin-top: 20px;
-        list-style: none;
+
+      ul {
+        margin-top:    20px;
+        list-style:    none;
         margin-bottom: 10px;
-        li{
+
+        li {
           font-size: 14px;
           @media (min-width: $screen-md) {
             font-size: 16px;
           }
-          &:before{
-            content: url("./images/red-tick.svg");
-            color: $red;
+
+          &:before {
+            content:      url("./images/red-tick.svg");
+            color:        $red;
             margin-right: 12px;
           }
         }
       }
     }
-    &-download{
+
+    &-download {
       border-radius: 8px;
-      display: flex;
-      padding: 20px 32px;
-      align-items: center;
-      margin-top: 20px;
-      a{
+      display:       flex;
+      padding:       20px 32px;
+      align-items:   center;
+      margin-top:    20px;
+
+      a {
         text-decoration: unset;
-        color:$black;
-        font-size: 14px;
+        color:           $black;
+        font-size:       14px;
         @media (min-width: $screen-md) {
           font-size: 16px;
         }
       }
-      svg{
+
+      svg {
         margin-right: 16px;
       }
-      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.10);
+
+      box-shadow:    0px 0px 16px 0px rgba(0, 0, 0, 0.10);
     }
   }
 }

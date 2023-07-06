@@ -72,4 +72,13 @@
       max-width: 430px;
     }
   }
+
+  &__sign {
+    height:      70px;
+    margin-left: auto;
+    @include media-breakpoint-up(lg) {
+      display:    block !important;
+      margin-top: 20px;
+    }
+  }
 }

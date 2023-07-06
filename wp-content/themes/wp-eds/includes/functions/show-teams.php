@@ -27,7 +27,7 @@ function showTeam($team)
             <?php ?>
             <?php if (get_field('open_casting', $team->ID)) { ?>
                 <div class="teams__team-casting">
-                    Otwarty Casting
+                    <?php echo get_svg('open-casting'); ?>Otwarty Casting
                 </div>
             <?php } ?>
             <?php if (is_array($categories)) { ?>
