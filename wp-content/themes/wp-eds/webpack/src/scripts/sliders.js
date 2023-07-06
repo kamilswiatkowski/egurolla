@@ -174,7 +174,7 @@ function whoIsAgustinSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        arrows: false,
+        arrows: true,
         infinite: false,
         responsive: [
             {
@@ -397,7 +397,7 @@ function partnersSlider() {
     });
 }
 
-function featuredPosts(){
+function featuredPosts() {
     $('.featured__posts').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -414,6 +414,7 @@ function featuredPosts(){
         ]
     });
 }
+
 function opinionsSlider() {
     $('.opinions__slider').slick({
         slidesToShow: 3,
