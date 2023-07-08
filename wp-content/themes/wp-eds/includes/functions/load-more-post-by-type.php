@@ -12,12 +12,24 @@
 					                   'numberposts' => 6,
 					                   'paged'       => $_POST['page'],
 				                   ]);
-				$teams = showTeams($teams);
-				$teams = ob_get_clean();
-				echo json_encode([
-					                 'teams' => $teams,
-				                 ]);
+				if($_POST['type'] === 'teams') {
+						$teams = showTeams($teams);
+						$teams = ob_get_clean();
+						echo json_encode([
+							                 'posts' => $teams,
+						                 ]);
+				} elseif($_POST['type'] === 'post') {
+						$posts = '';
+						foreach ($teams as $post) {
+								$posts .=	article_box($post->ID);
+						}
+						$posts = ob_get_clean();
+						echo json_encode([
+							                 'posts' => $posts,
+						                 ]);
+				}
 				wp_die();
+				
 		}
 		
 		add_action('wp_ajax_loadMorePosts', 'Like\loadMorePosts');

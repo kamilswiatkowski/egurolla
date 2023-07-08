@@ -2,7 +2,17 @@
 		
 		$title = get_field('title');
 		$tags = get_tags();
-		$posts = get_posts();
+		$featured = get_field('posts');
+		$featured_ids = [];
+		foreach ($featured as $post) {
+				$featured_ids[] = $post->ID;
+		}
+		$posts = get_posts(
+			[
+				'post__not_in' => $featured_ids,
+				'posts_per_page' => 9,
+			]
+		);
 ?>
 <section class="featured">
 		<div class="container">
@@ -29,9 +39,9 @@
 				<div class="row">
 						<div class="col-12">
 								<div class="featured__posts">
-										<?php foreach ($posts as $post) { ?>
+										<?php foreach ($featured as $post) { ?>
 												<div class="featured__post">
-														<?php Like\article_box($post->ID); ?>
+														<?php Like\article_box($post->ID, false); ?>
 												</div>
 										<?php } ?>
 								</div>
@@ -44,10 +54,15 @@
 		<div class="container">
 				<div class="row posts__container">
 						<?php foreach ($posts as $post) { ?>
-								<div class="col-md-4 col-12">
-										<?php Like\article_box($post->ID); ?>
-								</div>
+										<?php Like\article_box($post->ID,); ?>
 						<?php } ?>
+				</div>
+				<div class="row">
+						<div class="col-12">
+								<div class="teams__load-more" data-load-more="">
+										ZAŁADUJ WIĘCEJ
+								</div>
+						</div>
 				</div>
 		</div>
 </section>
