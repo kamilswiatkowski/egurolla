@@ -1,10 +1,12 @@
 function filtersInit(){
     let filters = document.querySelector('.teams__filters');
+
     if(filters){
         teamsFilters();
         loadMoreButton('[data-load-more]', 'loadMorePosts', '.teams__container', 'teams');
         clearFiltersButton();
     }
+
 }
 
 function teamsFilters(){
@@ -16,7 +18,7 @@ function teamsFilters(){
                 let filterDropdown = item.parentElement;
                 filterDropdown.dataset.currentFilter = item.dataset.filter;
                 mainFilterName.innerHTML = item.innerHTML;
-                ajaxLoadMorePostsByFilter(1, collectFiltersIds('.teams__dropdown'));
+                ajaxLoadMorePostsByFilter(1, collectFiltersIds('.teams__dropdown', '.teams__team'));
             });
         });
     }
@@ -48,7 +50,7 @@ function loadMoreButton(button, action, containerClass, postType){
         }
     }
 }
-function ajaxLoadMorePosts(currentPage, action, containerClass){
+function ajaxLoadMorePosts(currentPage, action, containerClass, postType){
     const ajaxData = {
         action: action,
         page: currentPage,
@@ -66,7 +68,7 @@ function ajaxLoadMorePosts(currentPage, action, containerClass){
 
 }
 
-function ajaxLoadMorePostsByFilter(currentPage, filter){
+function ajaxLoadMorePostsByFilter(currentPage, filter, elementsToHideClass){
     const ajaxData = {
         action: 'loadMoreTeamsByFilter',
         page: currentPage,
@@ -82,7 +84,7 @@ function ajaxLoadMorePostsByFilter(currentPage, filter){
                 let teamsContainer = document.querySelector('.teams__container');
                 teamsContainer.innerHTML = '<p class="teams__no-posts">Brak wyników</p>';
             }
-            hideLoadMoreButton();
+            hideLoadMoreButton(elementsToHideClass);
         });
 }
 
