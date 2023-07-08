@@ -580,6 +580,18 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams', 'events'],
           ]
         );
+		    acf_register_block(
+			    [
+				    'name'            => 'search',
+				    'title'           => __('Wyszukiwarka'),
+				    'render_callback' => 'my_acf_block_render_callback',
+				    'category'        => 'formatting',
+				    'icon'            => 'admin-comments',
+				    'align'           => 'full',
+				    'keywords'        => ['wyszukiwarka'],
+				    'post_types'      => ['page', 'post', 'teams', 'events'],
+			    ]
+		    );
     }
 }
 

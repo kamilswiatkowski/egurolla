@@ -2,7 +2,7 @@
 ?>
 <header>
 		<div class="container">
-				<div class="menu menu-desktop d-md-flex d-none">
+				<div class="menu menu-desktop justify-content-center d-md-flex d-none">
 						<?php
 								wp_nav_menu([
 									            'menu'        => 'primary',
