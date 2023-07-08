@@ -1,12 +1,38 @@
 .home-hero{
-  padding: 220px 0;
   background-size: cover !important;
+  position: relative;
+  &.low{
+    max-height: 400px;
+    height: 100%;
+    padding: 100px 0;
+    .home-hero__wrapper{
+      max-width: 860px;
+      .home-hero__title{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &.wide{
+    padding: 220px 0;
+    .home-hero__wrapper{
+      max-width: 775px;
+        .home-hero__title{
+            margin-bottom: 42px;
+        }
+    }
+  }
   &__wrapper{
     margin: 0 auto;
     max-width: 775px;
   }
+  &__bottom-arrow{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    right: 50%;
+  }
   &__title{
-    margin-bottom: 42px;
+
     h1{
       font-style: italic;
       font-weight: 700;
@@ -30,5 +56,10 @@
     margin-bottom: 42px;
     color:#fff;
     text-align: center;
+    &:before {
+      content: '/';
+      margin-right: 25px;
+      color:$white;
+    }
   }
 }

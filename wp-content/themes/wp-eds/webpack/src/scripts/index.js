@@ -9,6 +9,7 @@ import filters from './filters';
 import accordion from "./accordion";
 import menu from "./menu";
 import faq from "./faq";
+import hero from "./hero";
 
 class Main {
     constructor() {
@@ -24,6 +25,7 @@ class Main {
             sliders.slidersInit();
             accordion.accordion();
             accordion.faqItem();
+            hero.heroInit();
             map.mapInit();
             filters.filtersInit();
             functions.timer();
