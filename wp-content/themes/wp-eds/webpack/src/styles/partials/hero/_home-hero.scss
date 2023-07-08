@@ -1,6 +1,7 @@
 .home-hero{
   background-size: cover !important;
   position: relative;
+  overflow: hidden;
   &.low{
     max-height: 400px;
     height: 100%;
@@ -20,6 +21,30 @@
             margin-bottom: 42px;
         }
     }
+    .home-hero__video{
+      @media (min-width: $screen-md) {
+        margin-top: -50px;
+      }
+    }
+  }
+  .home-hero__video{
+    &-wrapper{
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    iframe{
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
   }
   &__wrapper{
     margin: 0 auto;
@@ -30,6 +55,7 @@
     bottom: 30px;
     left: 50%;
     right: 50%;
+    cursor: pointer;
   }
   &__title{
 
