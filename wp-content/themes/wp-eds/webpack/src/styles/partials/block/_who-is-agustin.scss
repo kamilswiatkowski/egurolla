@@ -1,5 +1,9 @@
 .who-is-agustin {
-  overflow: hidden;
+  overflow:    hidden;
+  padding-top: 60px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 120px;
+  }
 
   &__slider {
     .slick-slide {
@@ -45,14 +49,14 @@
       right: -5px;
 
       @include media-breakpoint-up(lg) {
-        right: -12px;
+        right: calc(50% - 600px - 24px);
       }
     }
 
     .slick-prev {
       left: -5px;
       @include media-breakpoint-up(lg) {
-        left: -12px;
+        left: calc(50% - 600px - 10px);
       }
 
       &::before {

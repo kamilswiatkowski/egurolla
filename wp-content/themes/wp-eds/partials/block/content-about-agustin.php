@@ -24,8 +24,10 @@ $fields = [
                     <p class="about-agustin__quote"><?php echo $fields['quote']; ?></p>
                     <img src="<?php echo $fields['sign']; ?>" alt="" class="about-agustin__sign">
                     <div class="about-agustin__btn-wrapper">
-                        <a href="<?php echo $fields['link']['url']; ?>"
-                           class="btn btn--white btn--red-bg"><?php echo $fields['link']['title']; ?></a>
+                        <?php if ($fields['link']) { ?>
+                            <a href="<?php echo $fields['link']['url']; ?>"
+                               class="btn btn--white btn--red-bg"><?php echo $fields['link']['title']; ?></a>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

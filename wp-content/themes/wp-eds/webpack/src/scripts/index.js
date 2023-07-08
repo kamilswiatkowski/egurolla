@@ -8,6 +8,7 @@ import map from './map.js';
 import filters from './filters';
 import accordion from "./accordion";
 import menu from "./menu";
+import faq from "./faq";
 
 class Main {
     constructor() {
@@ -22,10 +23,12 @@ class Main {
         window.addEventListener("load", (event) => {
             sliders.slidersInit();
             accordion.accordion();
+            accordion.faqItem();
             map.mapInit();
             filters.filtersInit();
             functions.timer();
             menu.menu();
+            faq.faqFilter();
         });
     }
 
