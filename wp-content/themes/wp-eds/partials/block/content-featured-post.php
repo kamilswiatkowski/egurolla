@@ -13,6 +13,7 @@
 				'posts_per_page' => 9,
 			]
 		);
+		$count_posts = wp_count_posts('post')->publish - count($featured);
 ?>
 <section class="featured">
 		<div class="container">
@@ -50,7 +51,7 @@
 
 		</div>
 </section>
-<section class="posts">
+<section class="posts" data-max-posts="<?php echo $count_posts; ?>">
 		<div class="container">
 				<div class="row posts__container">
 						<?php foreach ($posts as $post) { ?>

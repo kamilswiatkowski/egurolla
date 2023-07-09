@@ -112,9 +112,9 @@ function clearFiltersButton(){
 }
 
 function hideLoadMoreButton(elementsToCheck){
-    let teamsElements = document.querySelectorAll(elementsToCheck);
+    let postsElements = document.querySelectorAll(elementsToCheck);
     let maxElements = document.querySelector('[data-max-posts]');
-    if(teamsElements.length >= maxElements.dataset.maxPosts) {
+    if(postsElements.length >= maxElements.dataset.maxPosts) {
         let loadMoreButton = document.querySelector('[data-load-more]');
         if (loadMoreButton) {
             loadMoreButton.style.display = 'none';
