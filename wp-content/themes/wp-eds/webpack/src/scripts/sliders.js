@@ -441,6 +441,26 @@ function opinionsSlider() {
     });
 }
 
+
+function individualLessonsSlider() {
+    $('.individual-lessons__advantages').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    dots: true
+                }
+            },
+        ]
+    });
+}
+
 function slidersInit() {
     eventsSlider();
     featuredPosts();
@@ -459,6 +479,7 @@ function slidersInit() {
     historySlider();
     partnersSlider();
     opinionsSlider();
+    individualLessonsSlider();
 }
 
 export default {

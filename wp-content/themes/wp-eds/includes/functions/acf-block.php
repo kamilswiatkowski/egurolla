@@ -459,18 +459,6 @@ function my_acf_init()
         );
         acf_register_block(
           [
-            'name'            => 'lessons',
-            'title'           => __('Lekcje indywidualne'),
-            'render_callback' => 'my_acf_block_render_callback',
-            'category'        => 'formatting',
-            'icon'            => 'admin-comments',
-            'align'           => 'full',
-            'keywords'        => ['lekcje', 'indywidualne'],
-            'post_types'      => ['page', 'post', 'teams', 'events', 'instruktorzy'],
-          ]
-        );
-        acf_register_block(
-          [
             'name'            => 'why-choose-us',
             'title'           => __('Dlaczego warto z nami jechać'),
             'render_callback' => 'my_acf_block_render_callback',
@@ -577,6 +565,19 @@ function my_acf_init()
             'icon'            => 'admin-comments',
             'align'           => 'full',
             'keywords'        => ['faq', 'jakie', 'tematy', 'cię', 'interesują'],
+            'post_types'      => ['page', 'post', 'teams', 'events'],
+          ]
+        );
+
+        acf_register_block(
+          [
+            'name'            => 'individual-lessons',
+            'title'           => __('Lekcje indywidualne'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['lekcje', 'indywidualne'],
             'post_types'      => ['page', 'post', 'teams', 'events'],
           ]
         );

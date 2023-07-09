@@ -1,0 +1,391 @@
+{
+  "key": "group_64a71d96c50f1",
+  "title": "BLOK: Lekcje indywidualne",
+  "fields": [
+    {
+      "key": "field_64a71d961de50",
+      "label": "Tytuł",
+      "name": "title",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64a71dc539834",
+      "label": "Opis",
+      "name": "description",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "rows": "",
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_64a71fcde2650",
+      "label": "Zalety",
+      "name": "advantages",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "table",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Dodaj wiersz",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_64a71fd7e2651",
+          "label": "Nazwa",
+          "name": "name",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a71fcde2650"
+        },
+        {
+          "key": "field_64a71fdfe2652",
+          "label": "Zdjęcie",
+          "name": "image",
+          "aria-label": "",
+          "type": "image",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "url",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": "",
+          "preview_size": "medium",
+          "parent_repeater": "field_64a71fcde2650"
+        }
+      ]
+    },
+    {
+      "key": "field_64a72325b5f52",
+      "label": "Oferta",
+      "name": "offer",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "table",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Dodaj wiersz",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_64a72330b5f53",
+          "label": "Nazwa",
+          "name": "name",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a72325b5f52"
+        },
+        {
+          "key": "field_64a72338b5f54",
+          "label": "Opis",
+          "name": "description",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "rows": "",
+          "placeholder": "",
+          "new_lines": "",
+          "parent_repeater": "field_64a72325b5f52"
+        }
+      ]
+    },
+    {
+      "key": "field_64a728fcde515",
+      "label": "Czy pokazać cennik",
+      "name": "show_pricing",
+      "aria-label": "",
+      "type": "true_false",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "message": "",
+      "default_value": 0,
+      "ui": 0,
+      "ui_on_text": "",
+      "ui_off_text": ""
+    },
+    {
+      "key": "field_64a72e349f182",
+      "label": "Pakiety",
+      "name": "packages",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Dodaj wiersz",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_64a72e449f183",
+          "label": "Nazwa",
+          "name": "name",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a72e349f182"
+        },
+        {
+          "key": "field_64a72e4d9f184",
+          "label": "Cena",
+          "name": "price",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a72e349f182"
+        },
+        {
+          "key": "field_64a72e579f185",
+          "label": "ilość lekcji",
+          "name": "number_of_lessons",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_64a72e349f182"
+        },
+        {
+          "key": "field_64a72e679f186",
+          "label": "Opis",
+          "name": "description",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "rows": "",
+          "placeholder": "",
+          "new_lines": "br",
+          "parent_repeater": "field_64a72e349f182"
+        },
+        {
+          "key": "field_64aaa52db391a",
+          "label": "Super oferta",
+          "name": "super_offer",
+          "aria-label": "",
+          "type": "true_false",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "message": "",
+          "default_value": 0,
+          "ui": 0,
+          "ui_on_text": "",
+          "ui_off_text": "",
+          "parent_repeater": "field_64a72e349f182"
+        }
+      ]
+    },
+    {
+      "key": "field_64aaad2693f7d",
+      "label": "Pakiety Opis",
+      "name": "packages_description",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_64aaad4193f7e",
+      "label": "Pakiety numer",
+      "name": "packages_phone",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/individual-lessons"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1688907092
+}
