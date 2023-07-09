@@ -9,7 +9,7 @@ $fields = [
 'image' => get_field('404_image', 'option'),
 ];
 ?>
-
+<?php if($fields['title']) { ?>
 <section class="about-augstin error-404">
     <div class="container">
         <div class="row">
@@ -30,6 +30,8 @@ $fields = [
         </div>
     </div>
 </section>
+<?php } ?>
 
-<?get_footer(); 
+<?php
+    get_footer();
 ?>
