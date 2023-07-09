@@ -3,9 +3,16 @@
 
   ul {
     list-style-type: none;
+    display:         flex;
+    flex-wrap:       wrap;
 
     li {
       margin-bottom: 8px;
+      width:         50%;
+
+      @include media-breakpoint-up(md) {
+        width: 33%;
+      }
 
       a {
         font-size:       12px;

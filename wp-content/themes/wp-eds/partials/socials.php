@@ -1,7 +1,7 @@
 <section class="socials">
     <ul>
         <li>
-            <a href="">
+            <a href="https://www.facebook.com/egurroladancestudio">
                 <div class="socials__icon-wrapper">
                     <?php echo Like\get_svg('icon-fb'); ?>
                 </div>
@@ -10,7 +10,7 @@
         </li>
 
         <li>
-            <a href="">
+            <a href="https://www.youtube.com/user/EGURROLATV">
                 <div class="socials__icon-wrapper">
                     <?php echo Like\get_svg('icon-yt'); ?>
                 </div>
@@ -19,7 +19,7 @@
         </li>
 
         <li>
-            <a href="">
+            <a href="https://www.instagram.com/egurroladancestudio/">
                 <div class="socials__icon-wrapper">
                     <?php echo Like\get_svg('icon-ig'); ?>
                 </div>
@@ -28,7 +28,7 @@
         </li>
 
         <li>
-            <a href="">
+            <a href="https://www.tiktok.com/@egurrola_official">
                 <div class="socials__icon-wrapper">
                     <?php echo Like\get_svg('icon-tiktok'); ?>
                 </div>
