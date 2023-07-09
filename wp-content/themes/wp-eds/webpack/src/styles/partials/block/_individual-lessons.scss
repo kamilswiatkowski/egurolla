@@ -1,0 +1,230 @@
+.individual-lessons {
+  background-color: $red;
+  padding:          60px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 120px;
+  }
+
+  &__title {
+    font-size:      38px;
+    color:          $white;
+    font-weight:    700;
+    line-height:    42px;
+    text-transform: uppercase;
+    margin-bottom:  20px;
+
+    @include media-breakpoint-up(lg) {
+      font-size:     72px;
+      line-height:   82px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__advantages {
+    margin-top:    20px;
+    margin-bottom: 40px !important;
+
+    .slick-dots {
+      bottom: -5px !important;
+    }
+
+    .slick-track {
+      display:        flex;
+      align-items:    stretch;
+      padding-bottom: 32px;
+    }
+
+    .slick-slide {
+      height: auto;
+      flex:   1;
+
+      & > div {
+        height: 100%;
+      }
+    }
+
+    .slick-slide {
+      padding: 0 4px;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 10px;
+      }
+    }
+
+    .slick-dots {
+      li {
+        width:            8px;
+        height:           8px;
+        border-radius:    8px;
+        background-color: $white;
+        transition:       all 350ms;
+
+        &.slick-active {
+          width: 28px;
+        }
+
+        button {
+          padding: 0;
+          width:   inherit;
+          height:  inherit;
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__box {
+      &__thumb {
+        padding-bottom:      220px;
+        background-size:     cover;
+        background-position: center;
+        border-radius:       8px;
+        margin-bottom:       20px;
+
+        @include media-breakpoint-up(lg) {
+          padding-bottom: 430px;
+          margin-bottom:  30px;
+        }
+      }
+
+      &__name {
+        color:          $white;
+        font-size:      17px;
+        line-height:    20px;
+        font-weight:    700;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(lg) {
+          font-size:   22px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  &__box {
+    margin-bottom: 40px;
+
+    &.super {
+      .individual-lessons__box {
+        &__top {
+          border:           1px solid $white;
+          background-color: $red;
+
+          &__label {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &__top {
+      background-color: $black;
+      border-radius:    8px;
+      color:            $white;
+      padding:          16px;
+      font-size:        17px;
+      line-height:      20px;
+      font-weight:      700;
+      z-index:          2;
+      position:         relative;
+      text-transform:   uppercase;
+
+      &__label {
+        position:         absolute;
+        background-color: $white;
+        color:            $red;
+        padding:          8px 12px;
+        border-radius:    8px;
+        font-size:        12px;
+        line-height:      16px;
+        left:             8px;
+        top:              -20px;
+        display:          none;
+      }
+    }
+
+    &__bottom {
+      border-radius:    8px;
+      background-color: $white;
+      padding:          40px 16px 32px;
+      position:         relative;
+      top:              -8px;
+    }
+
+    &__price {
+      font-size:      24px;
+      line-height:    28px;
+      font-weight:    700;
+      text-transform: uppercase;
+      margin-bottom:  20px;
+
+      span {
+        font-weight:    400;
+        font-size:      14px;
+        line-height:    16px;
+        text-transform: lowercase;
+      }
+    }
+
+    &__description {
+      p {
+        font-size:   14px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &__contact {
+    display:     flex;
+    align-items: center;
+
+    &__left {
+      display:     flex;
+      align-items: center;
+
+      svg * {
+        fill: $white;
+      }
+    }
+
+    &__right {
+      margin-left:    20px;
+      display:        flex;
+      flex-direction: column;
+    }
+
+    span, a {
+      display:         block;
+      color:           $white;
+      text-decoration: none;
+    }
+
+    span {
+      font-size:   14px;
+      line-height: 18px;
+      font-weight: 700;
+
+      @include media-breakpoint-up(lg) {
+        font-size:   16px;
+        line-height: 20px;
+      }
+    }
+
+    a {
+      margin-top:  8px;
+      font-size:   17px;
+      line-height: 20px;
+      font-weight: 700;
+
+      @include media-breakpoint-up(lg) {
+        margin-top:  5px;
+        font-size:   22px;
+        line-height: 26px;
+      }
+    }
+  }
+}
