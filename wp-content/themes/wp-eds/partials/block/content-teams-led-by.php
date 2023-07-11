@@ -19,11 +19,6 @@ $fields = [
                 <div class="teams-led-by__slider">
                     <?php foreach ($fields['teams'] as $team) {
                         Like\showTeam($team);
-                        Like\showTeam($team);
-                        Like\showTeam($team);
-                        Like\showTeam($team);
-                        Like\showTeam($team);
-                        Like\showTeam($team);
                     } ?>
                 </div>
             </div>
