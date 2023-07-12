@@ -10,7 +10,7 @@ import accordion from "./accordion";
 import menu from "./menu";
 import faq from "./faq";
 import hero from "./hero";
-
+import exp from './experience';
 class Main {
     constructor() {
         this.onDOMLoaded();
@@ -31,6 +31,7 @@ class Main {
             functions.timer();
             menu.menu();
             faq.faqFilter();
+            exp.experienceInit();
         });
     }
 

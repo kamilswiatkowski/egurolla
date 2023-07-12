@@ -22,10 +22,10 @@
 												<div class="experience__filters-text">
 														Filtruj po:
 												</div>
-												<div class="experience__filter experience__filter-active red-button-white-text">
+												<div class="experience__filter experience__filter--active experience__filter-active red-button-white-text" data-img-toggler>
 														Zdjęcia
 												</div>
-												<div class="experience__filter red-button-white-text">
+												<div class="experience__filter red-button-white-text" data-movie-toggler>
 														Filmy
 												</div>
 										</div>
@@ -34,9 +34,14 @@
 				</div>
 				<div class="row">
 						<div class="col-12">
-								<div class="experience__slider">
+								<div class="experience__slider" data-image-slider>
 										<?php foreach ($images as $img){ ?>
 												<img class="experience__img" src="<?php echo $img['image']['url']; ?>" alt="">
+										<?php } ?>
+								</div>
+								<div class="experience__slider hide-slider" data-movie-slider>
+										<?php foreach ($images as $img){ ?>
+												<iframe src="https://www.youtube.com/embed/oBYbxw8f5OI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 										<?php } ?>
 								</div>
 						</div>
