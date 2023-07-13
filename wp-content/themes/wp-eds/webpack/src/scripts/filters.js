@@ -96,7 +96,7 @@ function ajaxLoadMorePostsByFilter(currentPage, filter, elementsToHideClass, pos
             response = JSON.parse(response);
             if(response.posts) {
                 let teamsContainer = document.querySelector(responseContainerClass);
-                teamsContainer.innerHTML = response.teams;
+                teamsContainer.innerHTML = response.posts;
             } else {
                 let teamsContainer = document.querySelector(responseContainerClass);
                 teamsContainer.innerHTML = '<p class="teams__no-posts">Brak wyników</p>';
