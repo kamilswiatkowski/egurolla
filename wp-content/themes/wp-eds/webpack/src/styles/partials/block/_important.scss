@@ -1,8 +1,10 @@
 .important {
   background-color: $white;
+  padding-top:      30px;
   padding-bottom:   60px;
 
   @include media-breakpoint-up(lg) {
+    padding-top:    60px;
     padding-bottom: 120px;
   }
 
