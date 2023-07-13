@@ -1,6 +1,6 @@
 {
     "key": "group_64a1fd3450ef4",
-    "title": "BLOK: Wyróżnione artykuły",
+    "title": "BLOK: Aktualności",
     "fields": [
         {
             "key": "field_64a1fd342f2ed",
@@ -72,5 +72,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688339142
+    "modified": 1688820461
 }

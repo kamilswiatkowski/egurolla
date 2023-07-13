@@ -1,10 +1,14 @@
 function filtersInit(){
     let filters = document.querySelector('.teams__filters');
-
+    let postsFilters = document.querySelector('.featured__categories');
     if(filters){
         teamsFilters();
         loadMoreButton('[data-load-more]', 'loadMorePosts', '.teams__container', 'teams');
         clearFiltersButton();
+    }
+
+    if(postsFilters){
+        loadMoreButton('[data-load-more]', 'loadMorePosts', '.posts__container', 'post');
     }
 
 }
@@ -59,9 +63,9 @@ function ajaxLoadMorePosts(currentPage, action, containerClass, postType){
     $.post(settings.ajax_url, ajaxData)
         .done((response) => {
             response = JSON.parse(response);
-            if(response.teams) {
-                let teamsContainer = document.querySelector(containerClass);
-                teamsContainer.innerHTML += response.teams;
+            if(response.posts) {
+                let postsContainer = document.querySelector(containerClass);
+                postsContainer.innerHTML += response.posts;
             }
             hideLoadMoreButton();
         });
@@ -108,9 +112,9 @@ function clearFiltersButton(){
 }
 
 function hideLoadMoreButton(elementsToCheck){
-    let teamsElements = document.querySelectorAll(elementsToCheck);
+    let postsElements = document.querySelectorAll(elementsToCheck);
     let maxElements = document.querySelector('[data-max-posts]');
-    if(teamsElements.length >= maxElements.dataset.maxPosts) {
+    if(postsElements.length >= maxElements.dataset.maxPosts) {
         let loadMoreButton = document.querySelector('[data-load-more]');
         if (loadMoreButton) {
             loadMoreButton.style.display = 'none';
