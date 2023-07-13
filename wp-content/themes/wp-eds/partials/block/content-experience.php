@@ -41,7 +41,7 @@
 								</div>
 								<div class="experience__slider hide-slider" data-movie-slider>
 										<?php foreach ($images as $img){ ?>
-												<iframe src="https://www.youtube.com/embed/oBYbxw8f5OI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+												<iframe src="https://www.youtube.com/embed/oBYbxw8f5OI?modestbranding=1&autohide=1&showinfo=0&controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
 										<?php } ?>
 								</div>
 						</div>
