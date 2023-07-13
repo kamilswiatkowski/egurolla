@@ -15,7 +15,7 @@
 		);
 		$count_posts = wp_count_posts('post')->publish - count($featured);
 ?>
-<section class="featured">
+<section class="featured" data-featured-ids="<?php echo json_encode($featured_ids); ?>">
 		<div class="container">
 				<div class="row">
 						<div class="col-12">

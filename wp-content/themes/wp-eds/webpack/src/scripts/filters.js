@@ -8,7 +8,8 @@ function filtersInit(){
     }
 
     if(postsFilters){
-        loadMoreButton('[data-load-more]', 'loadMorePosts', '.posts__container', 'post');
+        let excludedPosts = document.querySelector('[data-featured-ids]').dataset.featuredIds;
+        loadMoreButton('[data-load-more]', 'loadMorePosts', '.posts__container', 'post', excludedPosts);
     }
 
 }
@@ -42,23 +43,24 @@ function collectFiltersIds(filtersClass){
     });
     return JSON.stringify(filtersIds);
 }
-function loadMoreButton(button, action, containerClass, postType){
+function loadMoreButton(button, action, containerClass, postType, postExcluded = null){
     let loadMoreButton = document.querySelector(button);
     if(loadMoreButton) {
         let currentPage = 1;
         if (loadMoreButton) {
             loadMoreButton.addEventListener('click', (event) => {
                 currentPage++;
-                ajaxLoadMorePosts(currentPage, action, containerClass, postType);
+                ajaxLoadMorePosts(currentPage, action, containerClass, postType, postExcluded);
             });
         }
     }
 }
-function ajaxLoadMorePosts(currentPage, action, containerClass, postType){
+function ajaxLoadMorePosts(currentPage, action, containerClass, postType, postExcluded){
     const ajaxData = {
         action: action,
         page: currentPage,
-        type: postType
+        type: postType,
+        featured_ids: postExcluded,
     };
     $.post(settings.ajax_url, ajaxData)
         .done((response) => {
