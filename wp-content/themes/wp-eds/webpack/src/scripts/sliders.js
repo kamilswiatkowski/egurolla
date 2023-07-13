@@ -461,6 +461,55 @@ function individualLessonsSlider() {
     });
 }
 
+
+function cooperationPossibilitiesSlider() {
+    $('.see-cooperation-posibilites__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+}
+
+function discoverCooperationPossibilitiesSlider() {
+    $('.discover-the-possibilities-of-cooperation__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+}
+
 function slidersInit() {
     eventsSlider();
     featuredPosts();
@@ -480,6 +529,8 @@ function slidersInit() {
     partnersSlider();
     opinionsSlider();
     individualLessonsSlider();
+    cooperationPossibilitiesSlider();
+    discoverCooperationPossibilitiesSlider();
 }
 
 export default {

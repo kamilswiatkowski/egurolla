@@ -581,18 +581,42 @@ function my_acf_init()
             'post_types'      => ['page', 'post', 'teams', 'events'],
           ]
         );
-		    acf_register_block(
-			    [
-				    'name'            => 'search',
-				    'title'           => __('Wyszukiwarka'),
-				    'render_callback' => 'my_acf_block_render_callback',
-				    'category'        => 'formatting',
-				    'icon'            => 'admin-comments',
-				    'align'           => 'full',
-				    'keywords'        => ['wyszukiwarka'],
-				    'post_types'      => ['page', 'post', 'teams', 'events'],
-			    ]
-		    );
+        acf_register_block(
+          [
+            'name'            => 'search',
+            'title'           => __('Wyszukiwarka'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['wyszukiwarka'],
+            'post_types'      => ['page', 'post', 'teams', 'events'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'see-cooperation-posibilites',
+            'title'           => __('Zobacz możliwości współpracy'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['Zobacz', 'możliwości', 'współpracy'],
+            'post_types'      => ['page', 'post', 'teams', 'events'],
+          ]
+        );
+        acf_register_block(
+          [
+            'name'            => 'discover-the-possibilities-of-cooperation',
+            'title'           => __('Poznaj możliwości współpracy'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category'        => 'formatting',
+            'icon'            => 'admin-comments',
+            'align'           => 'full',
+            'keywords'        => ['Poznaj', 'możliwości', 'współpracy'],
+            'post_types'      => ['page', 'post', 'teams', 'events'],
+          ]
+        );
     }
 }
 
