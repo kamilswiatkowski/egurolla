@@ -2,7 +2,7 @@ function filtersInit(){
     let filters = document.querySelector('.teams__filters');
     let postsFilters = document.querySelector('.featured__categories');
     if(filters){
-        teamsFilters();
+        teamsFilters('teams');
         loadMoreButton('[data-load-more]', 'loadMorePosts', '.teams__container', 'teams');
         clearFiltersButton();
     }
@@ -10,11 +10,12 @@ function filtersInit(){
     if(postsFilters){
         let excludedPosts = document.querySelector('[data-featured-ids]').dataset.featuredIds;
         loadMoreButton('[data-load-more]', 'loadMorePosts', '.posts__container', 'post', excludedPosts);
+        singleFilter();
     }
 
 }
 
-function teamsFilters(){
+function teamsFilters(postType){
     let filterItems = document.querySelectorAll('.teams__dropdown-item');
     if(filterItems){
         filterItems.forEach((item) => {
@@ -23,14 +24,23 @@ function teamsFilters(){
                 let filterDropdown = item.parentElement;
                 filterDropdown.dataset.currentFilter = item.dataset.filter;
                 mainFilterName.innerHTML = item.innerHTML;
-                ajaxLoadMorePostsByFilter(1, collectFiltersIds('.teams__dropdown', '.teams__team'));
+                ajaxLoadMorePostsByFilter(1, collectFiltersIds('.teams__dropdown'), '.teams__team', postType, '.teams__container');
             });
         });
     }
 }
 
 function singleFilter(){
-
+    let tagFilters = document.querySelectorAll('[data-tag-filter]');
+    if(tagFilters){
+        tagFilters.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                item.dataset.currentFilter = item.dataset.tagFilter;
+                item.classList.toggle('active');
+                ajaxLoadMorePostsByFilter(1, collectFiltersIds('[data-current-filter]'), '.article-box', 'post', '.posts__container');
+            });
+        });
+    }
 }
 
 function collectFiltersIds(filtersClass){
@@ -74,20 +84,21 @@ function ajaxLoadMorePosts(currentPage, action, containerClass, postType, postEx
 
 }
 
-function ajaxLoadMorePostsByFilter(currentPage, filter, elementsToHideClass){
+function ajaxLoadMorePostsByFilter(currentPage, filter, elementsToHideClass, postType, responseContainerClass = null){
     const ajaxData = {
-        action: 'loadMoreTeamsByFilter',
+        action: 'loadMorePostsByFilter',
         page: currentPage,
-        filter: filter
+        filter: filter,
+        type : postType,
     };
     $.post(settings.ajax_url, ajaxData)
         .done((response) => {
             response = JSON.parse(response);
-            if(response.teams) {
-                let teamsContainer = document.querySelector('.teams__container');
+            if(response.posts) {
+                let teamsContainer = document.querySelector(responseContainerClass);
                 teamsContainer.innerHTML = response.teams;
             } else {
-                let teamsContainer = document.querySelector('.teams__container');
+                let teamsContainer = document.querySelector(responseContainerClass);
                 teamsContainer.innerHTML = '<p class="teams__no-posts">Brak wyników</p>';
             }
             hideLoadMoreButton(elementsToHideClass);

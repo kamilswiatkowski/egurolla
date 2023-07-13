@@ -3,6 +3,7 @@
 		$title = get_field('title');
 		$tags = get_tags();
 		$featured = get_field('posts');
+		$all = get_term_by('slug', 'wszystkie', 'post_tag');
 		$featured_ids = [];
 		foreach ($featured as $post) {
 				$featured_ids[] = $post->ID;
@@ -25,12 +26,13 @@
 				<div class="row">
 						<div class="col-12">
 								<div class="featured__categories">
-										<div class="featured__category">
-												#wszystko
+										<div class="featured__category" data-tag-filter="<?php echo $all->term_id; ?>" data-current-filter>
+												#wszystkie
 										</div>
 										<?php foreach ($tags as $tag) {
+												if($tag->slug === 'wszystkie') continue;
 												?>
-												<div class="featured__category" data-tag="<?php echo $tag->term_id; ?>" data-current-filter>
+												<div class="featured__category" data-tag-filter="<?php echo $tag->term_id; ?>" data-current-filter>
 														#<?php echo $tag->name; ?>
 												</div>
 										<?php } ?>
