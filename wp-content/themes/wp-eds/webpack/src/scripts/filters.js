@@ -4,7 +4,7 @@ function filtersInit(){
     if(filters){
         teamsFilters('teams');
         loadMoreButton('[data-load-more]', 'loadMorePosts', '.teams__container', 'teams');
-        clearFiltersButton();
+        clearFiltersButton('.teams__dropdown', '.teams__team', 'teams', '.teams__container');
     }
 
     if(postsFilters){
@@ -84,7 +84,7 @@ function ajaxLoadMorePosts(currentPage, action, containerClass, postType, postEx
 
 }
 
-function ajaxLoadMorePostsByFilter(currentPage, filter, elementsToHideClass, postType, responseContainerClass = null){
+function ajaxLoadMorePostsByFilter(currentPage, filter, elementsToHideClass = null, postType = null, responseContainerClass = null){
     const ajaxData = {
         action: 'loadMorePostsByFilter',
         page: currentPage,
@@ -114,12 +114,12 @@ function clearFilters(){
     });
 }
 
-function clearFiltersButton(){
+function clearFiltersButton(filtersClass, elementsToHideClass = null, postType = null, responseContainerClass = null){
     let clearFiltersButton = document.querySelector('.teams__filters-clear');
     if(clearFiltersButton){
         clearFiltersButton.addEventListener('click', (event) => {
             clearFilters();
-            ajaxLoadMorePostsByFilter(1, collectFiltersIds());
+            ajaxLoadMorePostsByFilter(1, collectFiltersIds(filtersClass), elementsToHideClass, postType, responseContainerClass);
         });
     }
 }
