@@ -1,3 +1,12 @@
+<?php
+
+$fields = [
+  'description' => get_field('footer__banner__description', 'options'),
+  'link'        => get_field('footer__banner__link', 'options'),
+];
+
+?>
+
 <section class="footer__banner">
     <div class="container">
         <div class="row d-lg-flex align-items-lg-center">
@@ -7,11 +16,11 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5">
-                <p class="footer__banner__description">Egurrola Dance Studio to szkoły tańca dla każdego, kto lubi
-                    aktywnie spędzać czas wolny - dołącz do nas i odkryj swoją nową taneczną pasję!</p>
+                <p class="footer__banner__description"><?php echo $fields['description']; ?></p>
             </div>
             <div class="col-12 offset-lg-1 col-lg-3">
-                <a href="<?php echo get_the_permalink(349); ?>" class="btn btn--white-bg btn--red">Skontaktuj się</a>
+                <a href="<?php echo $fields['link']['url']; ?>"
+                   class="btn btn--white-bg btn--red"><?php echo $fields['link']['title']; ?></a>
             </div>
         </div>
     </div>
